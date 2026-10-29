@@ -38,6 +38,8 @@ the original extracted archive, not this repository's repackaged layout.
 - Make three manuscript-only tests explicitly skip when the separately held
   `check_code_alignment` and `validate_scenario` modules are absent. Other
   tests in those files remain enabled.
+- Use a pytest temporary directory that can be created in a fresh checkout,
+  without depending on an existing `.tmp/` parent directory.
 
 Only `code/src/ceo_arena/harness/bun.py` differs from the supplied runtime source.
 The source fingerprint changes, so this checkout must not be substituted into

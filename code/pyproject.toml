@@ -34,7 +34,7 @@ packages = ["src/ceo_arena"]
 link-mode = "copy"
 
 [tool.pytest.ini_options]
-addopts = "-q --basetemp=.tmp/pytest"
+addopts = "-q --basetemp=.pytest-tmp"
 cache_dir = ".tmp/pytest-cache"
 testpaths = ["tests"]
 pythonpath = ["."]
