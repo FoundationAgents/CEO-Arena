@@ -1,0 +1,53 @@
+name: Offline checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          submodules: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          enable-cache: false
+      - name: Install locked Python dependencies
+        working-directory: code
+        run: uv sync --frozen --extra dev
+      - name: Install pinned Bun
+        working-directory: code
+        run: uv run ceo-arena setup-worker
+      - name: Install pinned OpenCode dependencies
+        working-directory: code/OpenCode
+        run: ../agent_worker/.tools/node_modules/.bin/bun install --frozen-lockfile --ignore-scripts
+      - name: Type-check the worker
+        run: node code/agent_worker/scripts/typecheck.mjs
+      - name: Test the worker
+        working-directory: code/agent_worker
+        run: .tools/node_modules/.bin/bun test ./src
+      - name: Test Python
+        working-directory: code
+        run: uv run python -m pytest -ra
+      - name: Verify paper results
+        run: |
+          code/.venv/bin/python paper/scripts/verify_formal_results.py
+          code/.venv/bin/python paper/scripts/reproduce_robustness.py
+          code/.venv/bin/python paper/scripts/terminal_valuation_sensitivity.py
+          code/.venv/bin/python paper/scripts/analyze_mechanisms.py
+          code/.venv/bin/python paper/scripts/build_mechanism_evidence.py
+      - name: Check a complete rule-only run and replay
+        run: |
+          code/.venv/bin/ceo-arena run-rule --companies 8 --days 14 --seed 11 --output runs/ci-smoke --fresh
+          code/.venv/bin/ceo-arena replay runs/ci-smoke

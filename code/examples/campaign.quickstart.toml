@@ -1,0 +1,29 @@
+# A small integration campaign: two models plus the automatic Rule replacement.
+# Planning is offline. Running requires real credentials and incurs model costs.
+schema_version = 1
+campaign_id = "ceo-arena-quickstart"
+base_url = "https://api.example.com/v1"
+company_count = 2
+days = 14
+seeds = [11]
+model_order = ["your-model-a", "your-model-b"]
+
+[[api]]
+api_key = "REPLACE_WITH_YOUR_API_KEY"
+models = ["your-model-a", "your-model-b"]
+
+[inference."your-model-a"]
+protocol = "openai-compatible-chat"
+output_token_field = "max_tokens"
+max_output_tokens = 8192
+
+[inference."your-model-b"]
+protocol = "openai-compatible-chat"
+output_token_field = "max_tokens"
+max_output_tokens = 8192
+
+[execution]
+max_concurrent_runs = 1
+max_inflight_decisions = 2
+max_run_attempts = 1
+schedule = "seed_priority"

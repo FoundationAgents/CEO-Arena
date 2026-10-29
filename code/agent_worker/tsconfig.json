@@ -1,0 +1,19 @@
+{
+  "extends": "../OpenCode/packages/llm/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@opencode-ai/llm": ["../OpenCode/packages/llm/src/index.ts"],
+      "@opencode-ai/llm/*": ["../OpenCode/packages/llm/src/*"],
+      "@opencode-ai/schema": ["../OpenCode/packages/schema/src/index.ts"],
+      "effect": ["../OpenCode/packages/llm/node_modules/effect/dist/index.js"],
+      "effect/unstable/*": [
+        "../OpenCode/packages/llm/node_modules/effect/dist/unstable/*/index.js"
+      ],
+      "effect/*": ["../OpenCode/packages/llm/node_modules/effect/dist/*.js"]
+    },
+    "typeRoots": ["../OpenCode/packages/llm/node_modules/@types"],
+    "types": ["bun"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
+}

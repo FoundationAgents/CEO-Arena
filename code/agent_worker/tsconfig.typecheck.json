@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@opencode-ai/llm": ["../OpenCode/packages/llm/src/index.ts"],
+      "@opencode-ai/llm/*": ["../OpenCode/packages/llm/src/*"],
+      "@opencode-ai/schema": ["../OpenCode/packages/schema/src/index.ts"],
+      "effect": [
+        "../OpenCode/packages/llm/node_modules/effect/dist/index.d.ts"
+      ],
+      "effect/unstable/*": [
+        "../OpenCode/packages/llm/node_modules/effect/dist/unstable/*/index.d.ts"
+      ],
+      "effect/*": ["../OpenCode/packages/llm/node_modules/effect/dist/*.d.ts"]
+    }
+  }
+}

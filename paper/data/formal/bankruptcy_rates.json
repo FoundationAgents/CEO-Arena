@@ -1,0 +1,11 @@
+{
+  "claude-sonnet-5": 0.125,
+  "deepseek-v4-flash": 0.041666666666666664,
+  "deepseek-v4-pro": 0.125,
+  "deterministic-rule-ceo": 0,
+  "doubao-seed-1.8": 0.375,
+  "gemini-3.8-flash": 0,
+  "gpt-5.6-sol": 0,
+  "gpt-6-astra": 0,
+  "qwen3.8-max": 0
+}

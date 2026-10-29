@@ -1,0 +1,12 @@
+{
+  "extension": "No Action CEO policy, shared deterministic base, test, and minimal protocol/export/route integration",
+  "formal_git_commit": "a39d283fd1c0560ec0b726f288fc0aa206606f15",
+  "formal_metadata_archive_sha256": "075d0e194d2de537aba31417c20abeda2ac82a6413f11115295cc6d365ff592e",
+  "opencode_commit": "1be9fd55a9326d5e7b09786195e5669e311e61b4",
+  "source_archive": "1603_CEO_Arena_Evaluating_Long_Supplementary Material.zip",
+  "source_archive_sha256": "b1c71f93f566f529eeb40ac3935a025c7fc20faf54d52104b66f5bfc0f61770e",
+  "source_manifest_verified_files": 6730,
+  "public_release_date": "2026-10-29",
+  "paper": "https://arxiv.org/abs/2609.34821v1",
+  "repository": "https://github.com/FoundationAgents/CEO-Arena"
+}

@@ -1,0 +1,514 @@
+[
+  {
+    "seed": 11,
+    "run": "run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-1",
+    "model": "gpt-6-astra",
+    "day": 7,
+    "status": "sealed",
+    "sha256": "6dd909d82c68945b85e654e712b7be53f93b894512929bed52657e7f6ea72ecc",
+    "source": "data/runs/seed-11/lineup-371cd70e840d7b06/agent-traces/run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb/company-1-7-0960e247b14ea134.ndjson",
+    "line": 2549,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_EcbeMKgiEYVDsTyWDSAqiVHe",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (7688 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (7688 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (7688 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 29,
+    "run": "run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-1",
+    "model": "gpt-6-astra",
+    "day": 147,
+    "status": "sealed",
+    "sha256": "429161001a78fcaedebd9ffe785686ca13cc456e9ab807bf7e831d229f5803ce",
+    "source": "data/runs/seed-29/lineup-371cd70e840d7b06/agent-traces/run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463/company-1-147-d3009619bc914d06.ndjson",
+    "line": 1761,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_GNV91FQ8Wsm6NbBi4uWZ2I13",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (3791 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (3791 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (3791 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 47,
+    "run": "run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-1",
+    "model": "gpt-6-astra",
+    "day": 7,
+    "status": "sealed",
+    "sha256": "15ff135bb29c611e220295bc8381cdd0aa28359589a280bdd1ad9a0b39290594",
+    "source": "data/runs/seed-47/lineup-371cd70e840d7b06/agent-traces/run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7/company-1-7-bd16ae56816ff1bc.ndjson",
+    "line": 1343,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_77zlXvsRaVGm4wSCT6os7lJw",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (2482 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (2482 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (2482 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 11,
+    "run": "run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-5",
+    "model": "gpt-5.6-sol",
+    "day": 126,
+    "status": "sealed",
+    "sha256": "7f00dcf38e70f916eec7564ea5e730975d46297ecd578ae1973ba4255389640f",
+    "source": "data/runs/seed-11/lineup-371cd70e840d7b06/agent-traces/run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb/company-5-126-0f2f5d73a601f33b.ndjson",
+    "line": 1374,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_kYLkiFBZDCptTFT3uHh0Gkna",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (2041 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (2041 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (2041 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 29,
+    "run": "run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-5",
+    "model": "gpt-5.6-sol",
+    "day": 231,
+    "status": "sealed",
+    "sha256": "e69422a2680f0da5fe8866882e7fc342f08215fb3d12e29bacec56ffc846e627",
+    "source": "data/runs/seed-29/lineup-371cd70e840d7b06/agent-traces/run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463/company-5-231-751e850497acbe7c.ndjson",
+    "line": 1995,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_D3CthQDli9vmEyvm1AY1bTA5",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (3672 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (3672 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (3672 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 47,
+    "run": "run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-5",
+    "model": "gpt-5.6-sol",
+    "day": 7,
+    "status": "sealed",
+    "sha256": "c4f07ca8835293ba4f039331cc56ae5dc4ecf6ff642735bbe7c8b185f48f30ec",
+    "source": "data/runs/seed-47/lineup-371cd70e840d7b06/agent-traces/run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7/company-5-7-c719a6aba535b60e.ndjson",
+    "line": 2212,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_9x8mvT6p1RbXSraYKWstdarc",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (4236 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (4236 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (4236 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 11,
+    "run": "run-665f7924e763a2c5744d1a696852dbcae569d2237f365eca61cc3c73d1315383",
+    "lineup": "lineup-4f045970ec7d4ea3",
+    "omitted": "deepseek-v4-pro",
+    "company": "company-4",
+    "model": "qwen3.8-max",
+    "day": 224,
+    "status": "sealed",
+    "sha256": "3e7065302213c1a9ef8c460c4828a2da2827b5b0d463eaeeb474e974382011c4",
+    "source": "data/runs/seed-11/lineup-4f045970ec7d4ea3/agent-traces/run-665f7924e763a2c5744d1a696852dbcae569d2237f365eca61cc3c73d1315383/company-4-224-294a303693f1d4de.ndjson",
+    "line": 8013,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_d1804ed0de584462b6391035",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (18188 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (18188 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (18188 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 29,
+    "run": "run-7c9cc5bbc50ad1dc650e853e9304a2ebcb7cb3d6a9f7c398e6ad8845c782f2ac",
+    "lineup": "lineup-f13f4e4537977edd",
+    "omitted": "gpt-6-astra",
+    "company": "company-4",
+    "model": "qwen3.8-max",
+    "day": 56,
+    "status": "sealed",
+    "sha256": "5157bef38ad5e00c234d33ded6cb246a5c56836444771f15821f0115dc5e1d51",
+    "source": "data/runs/seed-29/lineup-f13f4e4537977edd/agent-traces/run-7c9cc5bbc50ad1dc650e853e9304a2ebcb7cb3d6a9f7c398e6ad8845c782f2ac/company-4-56-875df803abf04978.ndjson",
+    "line": 11559,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_fe3c87216992464e8d10b2ff",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (15621 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (15621 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (15621 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 47,
+    "run": "run-d8107e58113dba59749a6b69ef39c802c049ff7cea939581e0884327b9d56f07",
+    "lineup": "lineup-4f045970ec7d4ea3",
+    "omitted": "deepseek-v4-pro",
+    "company": "company-4",
+    "model": "qwen3.8-max",
+    "day": 350,
+    "status": "sealed",
+    "sha256": "ca91c7c852ef2062836e04f6b537e02a8a7ffa78faa78fb7dc5ea5171aa0be00",
+    "source": "data/runs/seed-47/lineup-4f045970ec7d4ea3/agent-traces/run-d8107e58113dba59749a6b69ef39c802c049ff7cea939581e0884327b9d56f07/company-4-350-777c7d2ff2a2e36f.ndjson",
+    "line": 8966,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_389cd5608cf9415ab25d94ef",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (4493 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (4493 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (4493 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 11,
+    "run": "run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-8",
+    "model": "doubao-seed-1.8",
+    "day": 84,
+    "status": "sealed",
+    "sha256": "797aa9d9915c3b68ec28cf95fda24cf6af5dd094848b1a16c61e99c4def23799",
+    "source": "data/runs/seed-11/lineup-371cd70e840d7b06/agent-traces/run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb/company-8-84-e8ddbbfaf9842120.ndjson",
+    "line": 11875,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_f8rdiwu7pqvvyoit5ep1cjoe",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (2930 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (2930 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (2930 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 29,
+    "run": "run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-8",
+    "model": "doubao-seed-1.8",
+    "day": 98,
+    "status": "sealed",
+    "sha256": "abfead9026b333556df03f5e43414a94804816442933bbc089dea0834b1a2091",
+    "source": "data/runs/seed-29/lineup-371cd70e840d7b06/agent-traces/run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463/company-8-98-bae345520eded325.ndjson",
+    "line": 25309,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_dgd4eap17kvivumlfvgoxbte",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (2013 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (2013 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (2013 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 47,
+    "run": "run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-8",
+    "model": "doubao-seed-1.8",
+    "day": 28,
+    "status": "sealed",
+    "sha256": "37501db75bc1d551aa2e80baf42ddcc2c8e10d4c84e6c547951bb43498d8ea70",
+    "source": "data/runs/seed-47/lineup-371cd70e840d7b06/agent-traces/run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7/company-8-28-51f2cb46b440acd4.ndjson",
+    "line": 13559,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_31vqtsql0rmk8nwizj563m99",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (1853 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (1853 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (1853 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 11,
+    "run": "run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-3",
+    "model": "claude-sonnet-5",
+    "day": 42,
+    "status": "sealed",
+    "sha256": "846eb9f7cc15b913a3e1dd32061191fce0a2105d24f7b86cb427540595f5a6c4",
+    "source": "data/runs/seed-11/lineup-371cd70e840d7b06/agent-traces/run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb/company-3-42-1a4fc5a38c5e557d.ndjson",
+    "line": 1860,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "toolu_bdrk_011D55FqPhGVHwrwfNfXJUHF",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (7215 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (7215 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (7215 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 47,
+    "run": "run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-3",
+    "model": "claude-sonnet-5",
+    "day": 70,
+    "status": "sealed",
+    "sha256": "1e35c072c6920cdeecccf8ce777d91e5fb153bf672a5c2311aa8f5f286b81b75",
+    "source": "data/runs/seed-47/lineup-371cd70e840d7b06/agent-traces/run-067a23cf0a5e56ce35a935c723b96fa80d7bb48a784758eeb8b2842e4b512ef7/company-3-70-6483b98c56d4ee53.ndjson",
+    "line": 2367,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "toolu_bdrk_01H4ourq5ihiEaE6B2xQqLtV",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (10475 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (10475 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (10475 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 29,
+    "run": "run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-7",
+    "model": "deepseek-v4-flash",
+    "day": 28,
+    "status": "sealed",
+    "sha256": "ed03c5fa208314b4bed735d849b7aa1a6718aab0b744e2eed65c7fe2781d3d31",
+    "source": "data/runs/seed-29/lineup-371cd70e840d7b06/agent-traces/run-ef03e11076a59b9414bb0f17b83ce2209bed225012b602e9abb6f9344db18463/company-7-28-b39f6d0ac1ec8b8d.ndjson",
+    "line": 61945,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_01_i8QWRmzD5HFthEB1R1H28205",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (4354 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (4354 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (4354 bytes)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 11,
+    "run": "run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb",
+    "lineup": "lineup-371cd70e840d7b06",
+    "omitted": "deterministic-rule-ceo",
+    "company": "company-2",
+    "model": "deepseek-v4-pro",
+    "day": 21,
+    "status": "sealed",
+    "sha256": "05f919a9de603bf13e1df1bf39fa26054d750feb98d0552d4d3559de6967270b",
+    "source": "data/runs/seed-11/lineup-371cd70e840d7b06/agent-traces/run-71a3e82592675650fe488f2f35f3c4fa0eceba661ba8a9e7bbb501a16ed710fb/company-2-21-dd39f8ae4d5cc20c.ndjson",
+    "line": 20581,
+    "kind": "memory-receipt",
+    "call": {
+      "type": "tool-result",
+      "id": "call_00_13dgQg5YHmOyDO5uqOhL8812",
+      "name": "write_file",
+      "result": {
+        "type": "text",
+        "value": "File written: MEMORY.md (3389 bytes)"
+      },
+      "output": {
+        "structured": "File written: MEMORY.md (3389 bytes)",
+        "content": [
+          {
+            "type": "text",
+            "text": "File written: MEMORY.md (3389 bytes)"
+          }
+        ]
+      }
+    }
+  }
+]

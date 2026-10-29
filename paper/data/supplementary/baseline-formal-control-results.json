@@ -1,0 +1,683 @@
+{
+  "definition": "Single-observation baseline comparison: common control is only the formal seed11 all-LLM run. Active Rule replacement is only the formal seed11 replacement run. No Action replacement is its single supplementary seed11 run. No averaging across controls, replicates, or seeds. Each difference is control minus replacement.",
+  "unit": "All numeric monetary values are cents; divide by 100000 for USD thousands.",
+  "uncertainty": "No confidence intervals. Each baseline replacement has one observation, and the same control is shared across all 8 entrants. Formal and supplementary harness protocols differ. These comparisons are observed baseline sensitivity, not isolated causal policy effects.",
+  "formal_control_scores_cents": {
+    "claude-sonnet-5": -48787677,
+    "deepseek-v4-flash": -7103850,
+    "deepseek-v4-pro": -7817339,
+    "doubao-seed-1.8": -51557674,
+    "gemini-3.8-flash": 2091009,
+    "gpt-5.6-sol": 6286093,
+    "gpt-6-astra": 10314886,
+    "qwen3.8-max": -5360198
+  },
+  "formal_control_market_score_cents": -101934750,
+  "counts": {
+    "entrant_same_sign": {
+      "private": 7,
+      "others": 4,
+      "market": 5
+    },
+    "directed_same_sign": 43,
+    "directed_total": 56,
+    "directed_positive_to_positive": 20,
+    "directed_negative_to_negative": 23,
+    "directed_positive_to_negative": 8,
+    "directed_negative_to_positive": 5,
+    "directed_same_sign_by_entrant": {
+      "claude-sonnet-5": 5,
+      "deepseek-v4-flash": 7,
+      "deepseek-v4-pro": 6,
+      "doubao-seed-1.8": 3,
+      "gemini-3.8-flash": 7,
+      "gpt-5.6-sol": 5,
+      "gpt-6-astra": 6,
+      "qwen3.8-max": 4
+    }
+  },
+  "entrants": [
+    {
+      "model": "claude-sonnet-5",
+      "noop_run_id": "run-8b42b2570427b3950b3dde00a77e85b06cde1550c593e42fd3308b2dfa07669a",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": -42329729,
+          "no_action_difference_cents": -31637655,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 10692074
+        },
+        "others": {
+          "active_rule_difference_cents": 37624257,
+          "no_action_difference_cents": 187130,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": -37437127
+        },
+        "market": {
+          "active_rule_difference_cents": -4705472,
+          "no_action_difference_cents": -31450525,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": -26745053
+        }
+      }
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "noop_run_id": "run-705d710e36957bd590d5d53a7e204efd102e60f97a6eaa5c2078960c9d6e18f9",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": 1133331,
+          "no_action_difference_cents": 10214705,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 9081374
+        },
+        "others": {
+          "active_rule_difference_cents": 22048163,
+          "no_action_difference_cents": -11682673,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": -33730836
+        },
+        "market": {
+          "active_rule_difference_cents": 23181494,
+          "no_action_difference_cents": -1467968,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": -24649462
+        }
+      }
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "noop_run_id": "run-bb24492b64537b06e9b8894fae0d5b66b8d101c1bec49c75fa9b5b102ca42a48",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": -6890695,
+          "no_action_difference_cents": 8970173,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": 15860868
+        },
+        "others": {
+          "active_rule_difference_cents": -101789125,
+          "no_action_difference_cents": -61061101,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 40728024
+        },
+        "market": {
+          "active_rule_difference_cents": -108679820,
+          "no_action_difference_cents": -52090928,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 56588892
+        }
+      }
+    },
+    {
+      "model": "doubao-seed-1.8",
+      "noop_run_id": "run-d604323a04e0db6ab7f7e1943e6878811a4eaf4ff3de40c40c58402d454c8ccd",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": -50016569,
+          "no_action_difference_cents": -35068149,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 14948420
+        },
+        "others": {
+          "active_rule_difference_cents": -26400372,
+          "no_action_difference_cents": 17635338,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": 44035710
+        },
+        "market": {
+          "active_rule_difference_cents": -76416941,
+          "no_action_difference_cents": -17432811,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 58984130
+        }
+      }
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "noop_run_id": "run-82ba24c489381344bb26b69908f4ce98a3fa87c69084b270163a2b528cc8a2b8",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": 10251025,
+          "no_action_difference_cents": 19113281,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 8862256
+        },
+        "others": {
+          "active_rule_difference_cents": -6664337,
+          "no_action_difference_cents": -33951221,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": -27286884
+        },
+        "market": {
+          "active_rule_difference_cents": 3586688,
+          "no_action_difference_cents": -14837940,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": -18424628
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "noop_run_id": "run-52b1e796bc4d7afc8c3c975f53f4a554cff08abebb215761da536d65db6a4dfe",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": 13877540,
+          "no_action_difference_cents": 22928890,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 9051350
+        },
+        "others": {
+          "active_rule_difference_cents": -33256855,
+          "no_action_difference_cents": -27589344,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 5667511
+        },
+        "market": {
+          "active_rule_difference_cents": -19379315,
+          "no_action_difference_cents": -4660454,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 14718861
+        }
+      }
+    },
+    {
+      "model": "gpt-6-astra",
+      "noop_run_id": "run-e657fa1b2692d42a346728c31b31a1abc55f461d6d73e0b07f92107dc1f1f89c",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": 18223722,
+          "no_action_difference_cents": 27595257,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 9371535
+        },
+        "others": {
+          "active_rule_difference_cents": 36586630,
+          "no_action_difference_cents": -13677172,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": -50263802
+        },
+        "market": {
+          "active_rule_difference_cents": 54810352,
+          "no_action_difference_cents": 13918085,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": -40892267
+        }
+      }
+    },
+    {
+      "model": "qwen3.8-max",
+      "noop_run_id": "run-426eb4ccbe7a6b9d81c979d9ac58e4822204dcb826e21faa2ec8b16d57a6b376",
+      "metrics": {
+        "private": {
+          "active_rule_difference_cents": 3168958,
+          "no_action_difference_cents": 11424479,
+          "same_sign": true,
+          "no_action_minus_active_rule_difference_cents": 8255521
+        },
+        "others": {
+          "active_rule_difference_cents": 39399127,
+          "no_action_difference_cents": -42014562,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": -81413689
+        },
+        "market": {
+          "active_rule_difference_cents": 42568085,
+          "no_action_difference_cents": -30590083,
+          "same_sign": false,
+          "no_action_minus_active_rule_difference_cents": -73158168
+        }
+      }
+    }
+  ],
+  "directed_edges": [
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": 5889511,
+      "no_action_difference_cents": 10053784,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 4164273
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": -2669789,
+      "no_action_difference_cents": 7357705,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": 10027494
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -2518599,
+      "no_action_difference_cents": -16188736,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -13670137
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 28647174,
+      "no_action_difference_cents": 3525073,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -25122101
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": -3396008,
+      "no_action_difference_cents": -9499231,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -6103223
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": 2882488,
+      "no_action_difference_cents": 5706298,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 2823810
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": 8789480,
+      "no_action_difference_cents": -767763,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -9557243
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -17069741,
+      "no_action_difference_cents": -27655552,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -10585811
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": 14736875,
+      "no_action_difference_cents": 17886720,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 3149845
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -11910743,
+      "no_action_difference_cents": -21396452,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -9485709
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 27354868,
+      "no_action_difference_cents": 15240416,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -12114452
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": 5405266,
+      "no_action_difference_cents": 7847548,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 2442282
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": 8505434,
+      "no_action_difference_cents": 649735,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -7855699
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": -4973796,
+      "no_action_difference_cents": -4255088,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 718708
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -21645566,
+      "no_action_difference_cents": -51144798,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -29499232
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": -10363047,
+      "no_action_difference_cents": -4052523,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 6310524
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -15118581,
+      "no_action_difference_cents": -22023636,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -6905055
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 15959749,
+      "no_action_difference_cents": 17610881,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 1651132
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": -25067866,
+      "no_action_difference_cents": -5230057,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 19837809
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": -17615699,
+      "no_action_difference_cents": 15805753,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": 33421452
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": -27938115,
+      "no_action_difference_cents": -12026721,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 15911394
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -32814068,
+      "no_action_difference_cents": -31311816,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 1502252
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": 5149271,
+      "no_action_difference_cents": -7911468,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -13060739
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": -6186811,
+      "no_action_difference_cents": 45070220,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": 51257031
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 19031232,
+      "no_action_difference_cents": 24867859,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 5836627
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": -7416330,
+      "no_action_difference_cents": 2586888,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": 10003218
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": -967862,
+      "no_action_difference_cents": 7066240,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": 8034102
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": -3195804,
+      "no_action_difference_cents": -22732585,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -19536781
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -12954279,
+      "no_action_difference_cents": -48363336,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -35409057
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": -6153547,
+      "no_action_difference_cents": -7249211,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -1095664
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": 538725,
+      "no_action_difference_cents": 10563348,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 10024623
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -902665,
+      "no_action_difference_cents": -262591,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 640074
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": 3969758,
+      "no_action_difference_cents": 1307499,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -2662259
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": 6540296,
+      "no_action_difference_cents": 9675618,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 3135322
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": 2297375,
+      "no_action_difference_cents": 377452,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -1919923
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -34015892,
+      "no_action_difference_cents": -35090770,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -1074878
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": 11197183,
+      "no_action_difference_cents": 16383930,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 5186747
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": -1185102,
+      "no_action_difference_cents": -1175395,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 9707
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -27914333,
+      "no_action_difference_cents": -322383,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 27591950
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 8924781,
+      "no_action_difference_cents": 11353837,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 2429056
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": 6246183,
+      "no_action_difference_cents": -727434,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -6973617
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": 3490325,
+      "no_action_difference_cents": -18011129,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -21501454
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -8182510,
+      "no_action_difference_cents": -29444222,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -21261712
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": 7500531,
+      "no_action_difference_cents": -9165654,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -16666185
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": 23333457,
+      "no_action_difference_cents": 22157425,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -1176032
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -29432,
+      "no_action_difference_cents": -7791320,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -7761888
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 13103919,
+      "no_action_difference_cents": 16587833,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": 3483914
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": 5884624,
+      "no_action_difference_cents": 984566,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -4900058
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "qwen3.8-max",
+      "active_rule_difference_cents": -5023959,
+      "no_action_difference_cents": -7005800,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -1981841
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "claude-sonnet-5",
+      "active_rule_difference_cents": -8874388,
+      "no_action_difference_cents": -39249437,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -30375049
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "deepseek-v4-flash",
+      "active_rule_difference_cents": 15106755,
+      "no_action_difference_cents": 4252962,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -10853793
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "deepseek-v4-pro",
+      "active_rule_difference_cents": 11244296,
+      "no_action_difference_cents": -6233223,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -17477519
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "doubao-seed-1.8",
+      "active_rule_difference_cents": -9072234,
+      "no_action_difference_cents": -9319959,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -247725
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "gemini-3.8-flash",
+      "active_rule_difference_cents": 25840024,
+      "no_action_difference_cents": 16576953,
+      "same_sign": true,
+      "no_action_minus_active_rule_difference_cents": -9263071
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "gpt-5.6-sol",
+      "active_rule_difference_cents": 1140938,
+      "no_action_difference_cents": -356001,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -1496939
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "gpt-6-astra",
+      "active_rule_difference_cents": 4013736,
+      "no_action_difference_cents": -7685857,
+      "same_sign": false,
+      "no_action_minus_active_rule_difference_cents": -11699593
+    }
+  ]
+}

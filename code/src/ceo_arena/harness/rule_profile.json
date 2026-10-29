@@ -1,0 +1,14 @@
+{
+  "focus": "mainstream",
+  "price_multiplier_bps": 10000,
+  "reorder_targets": [
+    150,
+    100,
+    50
+  ],
+  "development_daily_cents": 5000,
+  "marketing_daily_cents": 5000,
+  "reliability_daily_cents": 2500,
+  "support_daily_cents": 5000,
+  "cash_floor_cents": 5000000
+}

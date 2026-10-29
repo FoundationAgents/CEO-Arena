@@ -1,0 +1,8423 @@
+{
+  "runs": {
+    "rows": 27,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "days": [
+        "int"
+      ],
+      "windows": [
+        "int"
+      ],
+      "config_hash": [
+        "str"
+      ],
+      "scenario_hash": [
+        "str"
+      ],
+      "checkpoint_sha256": [
+        "str"
+      ],
+      "trace_sha256": [
+        "str"
+      ],
+      "evidence_directory": [
+        "str"
+      ]
+    }
+  },
+  "assignments": {
+    "rows": 216,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "harness_id": [
+        "str"
+      ],
+      "inference.protocol": [
+        "str"
+      ],
+      "inference.effort": [
+        "str"
+      ],
+      "inference.thinking": [
+        "NoneType",
+        "str"
+      ],
+      "inference.enable_thinking": [
+        "bool"
+      ],
+      "inference.preserve_thinking": [
+        "bool"
+      ],
+      "inference.output_token_field": [
+        "str"
+      ],
+      "inference.max_output_tokens": [
+        "int"
+      ],
+      "inference.expected_model_ids_json": [
+        "str"
+      ],
+      "inference": [
+        "NoneType"
+      ]
+    }
+  },
+  "company_results": {
+    "rows": 216,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "status": [
+        "str"
+      ],
+      "bankruptcy_day": [
+        "NoneType",
+        "int"
+      ],
+      "official_score_cents": [
+        "int"
+      ],
+      "terminal_cash_cents": [
+        "int"
+      ],
+      "terminal_salvage_cents": [
+        "int"
+      ],
+      "cumulative_revenue_cents": [
+        "int"
+      ],
+      "cumulative_cost_cents": [
+        "int"
+      ],
+      "cumulative_refunds_cents": [
+        "int"
+      ],
+      "consumer_orders": [
+        "int"
+      ],
+      "fulfilled_units": [
+        "int"
+      ],
+      "abandoned_units": [
+        "int"
+      ],
+      "expenses_cents.procurement": [
+        "int"
+      ],
+      "expenses_cents.capacity_operations": [
+        "int"
+      ],
+      "expenses_cents.marketing": [
+        "int"
+      ],
+      "expenses_cents.development": [
+        "int"
+      ],
+      "expenses_cents.reliability": [
+        "int"
+      ],
+      "expenses_cents.support": [
+        "int"
+      ],
+      "expenses_cents.innovation": [
+        "int"
+      ],
+      "expenses_cents.capacity_investment": [
+        "int"
+      ],
+      "expenses_cents.capacity_adjustment": [
+        "int"
+      ],
+      "expenses_cents.market_research": [
+        "int"
+      ],
+      "expenses_cents.holding": [
+        "int"
+      ],
+      "expenses_cents.remediation": [
+        "int"
+      ],
+      "expenses_cents.contract_penalties": [
+        "int"
+      ],
+      "decisions": [
+        "int"
+      ],
+      "status_counts.sealed": [
+        "int"
+      ],
+      "usage.provider_turns": [
+        "int"
+      ],
+      "usage.finalization_turns": [
+        "int"
+      ],
+      "usage.tool_calls": [
+        "int"
+      ],
+      "usage.input_tokens": [
+        "int"
+      ],
+      "usage.output_tokens": [
+        "int"
+      ],
+      "usage.reasoning_tokens": [
+        "int"
+      ],
+      "usage.cache_read_tokens": [
+        "int"
+      ],
+      "usage.cache_write_tokens": [
+        "int"
+      ],
+      "usage.latency_ms": [
+        "int"
+      ],
+      "action_counts.products": [
+        "int"
+      ],
+      "action_counts.reliability_budget_cents": [
+        "int"
+      ],
+      "action_counts.support_budget_cents": [
+        "int"
+      ],
+      "action_counts.research_project_tier": [
+        "int"
+      ],
+      "action_counts.market_research": [
+        "int"
+      ],
+      "action_counts.product_price_cents": [
+        "int"
+      ],
+      "action_counts.product_promotion_cents": [
+        "int"
+      ],
+      "action_counts.product_reorder_target": [
+        "int"
+      ],
+      "action_counts.product_development_budget_cents": [
+        "int"
+      ],
+      "action_counts.marketing": [
+        "int"
+      ],
+      "action_counts.capacity_target_tier": [
+        "int"
+      ],
+      "action_counts.cancel_capacity_project_id": [
+        "int"
+      ],
+      "action_counts.enterprise_bids": [
+        "int"
+      ],
+      "action_counts.capacity_downsize_tier": [
+        "int"
+      ],
+      "action_receipts.set_product:applied": [
+        "int"
+      ],
+      "action_receipts.set_operations:applied": [
+        "int"
+      ],
+      "action_receipts.start_research_project:applied": [
+        "int"
+      ],
+      "action_receipts.request_market_research:applied": [
+        "int"
+      ],
+      "action_receipts.set_marketing:applied": [
+        "int"
+      ],
+      "action_receipts.expand_capacity:applied": [
+        "int"
+      ],
+      "action_receipts.cancel_capacity_project:cancelled": [
+        "int"
+      ],
+      "action_receipts.submit_enterprise_bid:applied": [
+        "int"
+      ],
+      "action_receipts.seal_decision:no_op": [
+        "int"
+      ],
+      "action_receipts.expand_capacity:completed": [
+        "int"
+      ],
+      "action_receipts.downsize_capacity:applied": [
+        "int"
+      ],
+      "action_receipts.downsize_capacity:completed": [
+        "int"
+      ],
+      "max_capacity_tier": [
+        "int"
+      ],
+      "end_capacity_tier": [
+        "int"
+      ],
+      "max_inventory_units": [
+        "int"
+      ],
+      "end_inventory_units": [
+        "int"
+      ],
+      "blocks_100_days_json": [
+        "str"
+      ],
+      "cash_milestones_cents.0": [
+        "int"
+      ],
+      "cash_milestones_cents.50": [
+        "int"
+      ],
+      "cash_milestones_cents.100": [
+        "int"
+      ],
+      "cash_milestones_cents.150": [
+        "int"
+      ],
+      "cash_milestones_cents.200": [
+        "int"
+      ],
+      "cash_milestones_cents.250": [
+        "int"
+      ],
+      "cash_milestones_cents.300": [
+        "int"
+      ],
+      "cash_milestones_cents.350": [
+        "int"
+      ],
+      "cash_milestones_cents.400": [
+        "int"
+      ],
+      "cash_milestones_cents.450": [
+        "int"
+      ],
+      "cash_milestones_cents.500": [
+        "int"
+      ],
+      "initial_enterprise_value_cents": [
+        "int"
+      ],
+      "status_counts.budget_exhausted": [
+        "int"
+      ],
+      "status_counts.timeout": [
+        "int"
+      ],
+      "action_receipts.expand_capacity:no_op": [
+        "int"
+      ],
+      "status_counts.protocol_error": [
+        "int"
+      ]
+    }
+  },
+  "company_initial": {
+    "rows": 216,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "status": [
+        "str"
+      ],
+      "cash_cents": [
+        "int"
+      ],
+      "initial_cash_cents": [
+        "int"
+      ],
+      "initial_enterprise_value_cents": [
+        "int"
+      ],
+      "prices_cents.A": [
+        "int"
+      ],
+      "prices_cents.B": [
+        "int"
+      ],
+      "prices_cents.C": [
+        "int"
+      ],
+      "promotions_cents.A": [
+        "int"
+      ],
+      "promotions_cents.B": [
+        "int"
+      ],
+      "promotions_cents.C": [
+        "int"
+      ],
+      "reorder_targets.A": [
+        "int"
+      ],
+      "reorder_targets.B": [
+        "int"
+      ],
+      "reorder_targets.C": [
+        "int"
+      ],
+      "inventory.A": [
+        "int"
+      ],
+      "inventory.B": [
+        "int"
+      ],
+      "inventory.C": [
+        "int"
+      ],
+      "reserved_inventory.A": [
+        "int"
+      ],
+      "reserved_inventory.B": [
+        "int"
+      ],
+      "reserved_inventory.C": [
+        "int"
+      ],
+      "inbound_shipments_json": [
+        "str"
+      ],
+      "backlog_json": [
+        "str"
+      ],
+      "marketing_budget_cents.mainstream.search": [
+        "int"
+      ],
+      "marketing_budget_cents.mainstream.display": [
+        "int"
+      ],
+      "marketing_budget_cents.mainstream.affiliate": [
+        "int"
+      ],
+      "marketing_budget_cents.premium.search": [
+        "int"
+      ],
+      "marketing_budget_cents.premium.display": [
+        "int"
+      ],
+      "marketing_budget_cents.premium.affiliate": [
+        "int"
+      ],
+      "marketing_budget_cents.value.search": [
+        "int"
+      ],
+      "marketing_budget_cents.value.display": [
+        "int"
+      ],
+      "marketing_budget_cents.value.affiliate": [
+        "int"
+      ],
+      "goodwill.mainstream": [
+        "float"
+      ],
+      "goodwill.premium": [
+        "float"
+      ],
+      "goodwill.value": [
+        "float"
+      ],
+      "awareness.mainstream": [
+        "float"
+      ],
+      "awareness.premium": [
+        "float"
+      ],
+      "awareness.value": [
+        "float"
+      ],
+      "satisfaction.mainstream": [
+        "float"
+      ],
+      "satisfaction.premium": [
+        "float"
+      ],
+      "satisfaction.value": [
+        "float"
+      ],
+      "loyalty.mainstream": [
+        "float"
+      ],
+      "loyalty.premium": [
+        "float"
+      ],
+      "loyalty.value": [
+        "float"
+      ],
+      "development_budget_cents.A": [
+        "int"
+      ],
+      "development_budget_cents.B": [
+        "int"
+      ],
+      "development_budget_cents.C": [
+        "int"
+      ],
+      "knowledge_capital_cents.A": [
+        "float"
+      ],
+      "knowledge_capital_cents.B": [
+        "float"
+      ],
+      "knowledge_capital_cents.C": [
+        "float"
+      ],
+      "innovation_pipeline_json": [
+        "str"
+      ],
+      "innovation_projects_json": [
+        "str"
+      ],
+      "reliability_budget_cents": [
+        "int"
+      ],
+      "support_budget_cents": [
+        "int"
+      ],
+      "support_backlog": [
+        "int"
+      ],
+      "capacity_tier": [
+        "int"
+      ],
+      "capacity_projects_json": [
+        "str"
+      ],
+      "research_jobs_json": [
+        "str"
+      ],
+      "research_reports_json": [
+        "str"
+      ],
+      "beliefs.mainstream.base_daily_demand.mean": [
+        "float"
+      ],
+      "beliefs.mainstream.base_daily_demand.variance": [
+        "float"
+      ],
+      "beliefs.mainstream.base_daily_demand.updated_day": [
+        "int"
+      ],
+      "beliefs.mainstream.price_weight.mean": [
+        "float"
+      ],
+      "beliefs.mainstream.price_weight.variance": [
+        "float"
+      ],
+      "beliefs.mainstream.price_weight.updated_day": [
+        "int"
+      ],
+      "beliefs.mainstream.expected_quality.mean": [
+        "float"
+      ],
+      "beliefs.mainstream.expected_quality.variance": [
+        "float"
+      ],
+      "beliefs.mainstream.expected_quality.updated_day": [
+        "int"
+      ],
+      "beliefs.premium.base_daily_demand.mean": [
+        "float"
+      ],
+      "beliefs.premium.base_daily_demand.variance": [
+        "float"
+      ],
+      "beliefs.premium.base_daily_demand.updated_day": [
+        "int"
+      ],
+      "beliefs.premium.price_weight.mean": [
+        "float"
+      ],
+      "beliefs.premium.price_weight.variance": [
+        "float"
+      ],
+      "beliefs.premium.price_weight.updated_day": [
+        "int"
+      ],
+      "beliefs.premium.expected_quality.mean": [
+        "float"
+      ],
+      "beliefs.premium.expected_quality.variance": [
+        "float"
+      ],
+      "beliefs.premium.expected_quality.updated_day": [
+        "int"
+      ],
+      "beliefs.value.base_daily_demand.mean": [
+        "float"
+      ],
+      "beliefs.value.base_daily_demand.variance": [
+        "float"
+      ],
+      "beliefs.value.base_daily_demand.updated_day": [
+        "int"
+      ],
+      "beliefs.value.price_weight.mean": [
+        "float"
+      ],
+      "beliefs.value.price_weight.variance": [
+        "float"
+      ],
+      "beliefs.value.price_weight.updated_day": [
+        "int"
+      ],
+      "beliefs.value.expected_quality.mean": [
+        "float"
+      ],
+      "beliefs.value.expected_quality.variance": [
+        "float"
+      ],
+      "beliefs.value.expected_quality.updated_day": [
+        "int"
+      ],
+      "daily_history_json": [
+        "str"
+      ],
+      "cumulative_revenue_cents": [
+        "int"
+      ],
+      "cumulative_cost_cents": [
+        "int"
+      ],
+      "cumulative_refunds_cents": [
+        "int"
+      ],
+      "action_receipts_json": [
+        "str"
+      ],
+      "cumulative_consumer_orders": [
+        "int"
+      ],
+      "cumulative_fulfilled_units": [
+        "int"
+      ],
+      "cumulative_abandoned_units": [
+        "int"
+      ]
+    }
+  },
+  "company_terminal": {
+    "rows": 216,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "status": [
+        "str"
+      ],
+      "cash_cents": [
+        "int"
+      ],
+      "initial_cash_cents": [
+        "int"
+      ],
+      "initial_enterprise_value_cents": [
+        "int"
+      ],
+      "prices_cents.A": [
+        "int"
+      ],
+      "prices_cents.B": [
+        "int"
+      ],
+      "prices_cents.C": [
+        "int"
+      ],
+      "promotions_cents.A": [
+        "int"
+      ],
+      "promotions_cents.B": [
+        "int"
+      ],
+      "promotions_cents.C": [
+        "int"
+      ],
+      "reorder_targets.A": [
+        "int"
+      ],
+      "reorder_targets.B": [
+        "int"
+      ],
+      "reorder_targets.C": [
+        "int"
+      ],
+      "inventory.A": [
+        "int"
+      ],
+      "inventory.B": [
+        "int"
+      ],
+      "inventory.C": [
+        "int"
+      ],
+      "reserved_inventory.A": [
+        "int"
+      ],
+      "reserved_inventory.B": [
+        "int"
+      ],
+      "reserved_inventory.C": [
+        "int"
+      ],
+      "inbound_shipments_json": [
+        "str"
+      ],
+      "backlog_json": [
+        "str"
+      ],
+      "marketing_budget_cents.mainstream.search": [
+        "int"
+      ],
+      "marketing_budget_cents.mainstream.display": [
+        "int"
+      ],
+      "marketing_budget_cents.mainstream.affiliate": [
+        "int"
+      ],
+      "marketing_budget_cents.premium.search": [
+        "int"
+      ],
+      "marketing_budget_cents.premium.display": [
+        "int"
+      ],
+      "marketing_budget_cents.premium.affiliate": [
+        "int"
+      ],
+      "marketing_budget_cents.value.search": [
+        "int"
+      ],
+      "marketing_budget_cents.value.display": [
+        "int"
+      ],
+      "marketing_budget_cents.value.affiliate": [
+        "int"
+      ],
+      "goodwill.mainstream": [
+        "float"
+      ],
+      "goodwill.premium": [
+        "float"
+      ],
+      "goodwill.value": [
+        "float"
+      ],
+      "awareness.mainstream": [
+        "float"
+      ],
+      "awareness.premium": [
+        "float"
+      ],
+      "awareness.value": [
+        "float"
+      ],
+      "satisfaction.mainstream": [
+        "float"
+      ],
+      "satisfaction.premium": [
+        "float"
+      ],
+      "satisfaction.value": [
+        "float"
+      ],
+      "loyalty.mainstream": [
+        "float"
+      ],
+      "loyalty.premium": [
+        "float"
+      ],
+      "loyalty.value": [
+        "float"
+      ],
+      "development_budget_cents.A": [
+        "int"
+      ],
+      "development_budget_cents.B": [
+        "int"
+      ],
+      "development_budget_cents.C": [
+        "int"
+      ],
+      "knowledge_capital_cents.A": [
+        "float"
+      ],
+      "knowledge_capital_cents.B": [
+        "float"
+      ],
+      "knowledge_capital_cents.C": [
+        "float"
+      ],
+      "innovation_pipeline_json": [
+        "str"
+      ],
+      "innovation_projects_json": [
+        "str"
+      ],
+      "reliability_budget_cents": [
+        "int"
+      ],
+      "support_budget_cents": [
+        "int"
+      ],
+      "support_backlog": [
+        "int"
+      ],
+      "capacity_tier": [
+        "int"
+      ],
+      "capacity_projects_json": [
+        "str"
+      ],
+      "research_jobs_json": [
+        "str"
+      ],
+      "research_reports_json": [
+        "str"
+      ],
+      "beliefs.mainstream.base_daily_demand.mean": [
+        "float"
+      ],
+      "beliefs.mainstream.base_daily_demand.variance": [
+        "float"
+      ],
+      "beliefs.mainstream.base_daily_demand.updated_day": [
+        "int"
+      ],
+      "beliefs.mainstream.price_weight.mean": [
+        "float"
+      ],
+      "beliefs.mainstream.price_weight.variance": [
+        "float"
+      ],
+      "beliefs.mainstream.price_weight.updated_day": [
+        "int"
+      ],
+      "beliefs.mainstream.expected_quality.mean": [
+        "float"
+      ],
+      "beliefs.mainstream.expected_quality.variance": [
+        "float"
+      ],
+      "beliefs.mainstream.expected_quality.updated_day": [
+        "int"
+      ],
+      "beliefs.premium.base_daily_demand.mean": [
+        "float"
+      ],
+      "beliefs.premium.base_daily_demand.variance": [
+        "float"
+      ],
+      "beliefs.premium.base_daily_demand.updated_day": [
+        "int"
+      ],
+      "beliefs.premium.price_weight.mean": [
+        "float"
+      ],
+      "beliefs.premium.price_weight.variance": [
+        "float"
+      ],
+      "beliefs.premium.price_weight.updated_day": [
+        "int"
+      ],
+      "beliefs.premium.expected_quality.mean": [
+        "float"
+      ],
+      "beliefs.premium.expected_quality.variance": [
+        "float"
+      ],
+      "beliefs.premium.expected_quality.updated_day": [
+        "int"
+      ],
+      "beliefs.value.base_daily_demand.mean": [
+        "float"
+      ],
+      "beliefs.value.base_daily_demand.variance": [
+        "float"
+      ],
+      "beliefs.value.base_daily_demand.updated_day": [
+        "int"
+      ],
+      "beliefs.value.price_weight.mean": [
+        "float"
+      ],
+      "beliefs.value.price_weight.variance": [
+        "float"
+      ],
+      "beliefs.value.price_weight.updated_day": [
+        "int"
+      ],
+      "beliefs.value.expected_quality.mean": [
+        "float"
+      ],
+      "beliefs.value.expected_quality.variance": [
+        "float"
+      ],
+      "beliefs.value.expected_quality.updated_day": [
+        "int"
+      ],
+      "cumulative_revenue_cents": [
+        "int"
+      ],
+      "cumulative_cost_cents": [
+        "int"
+      ],
+      "cumulative_refunds_cents": [
+        "int"
+      ],
+      "cumulative_consumer_orders": [
+        "int"
+      ],
+      "cumulative_fulfilled_units": [
+        "int"
+      ],
+      "cumulative_abandoned_units": [
+        "int"
+      ]
+    }
+  },
+  "company_daily": {
+    "rows": 108000,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "day": [
+        "int"
+      ],
+      "revenue_cents": [
+        "int"
+      ],
+      "costs_cents": [
+        "int"
+      ],
+      "expense_breakdown.procurement": [
+        "int"
+      ],
+      "expense_breakdown.capacity_operations": [
+        "int"
+      ],
+      "expense_breakdown.marketing": [
+        "int"
+      ],
+      "expense_breakdown.development": [
+        "int"
+      ],
+      "expense_breakdown.reliability": [
+        "int"
+      ],
+      "expense_breakdown.support": [
+        "int"
+      ],
+      "expense_breakdown.innovation": [
+        "int"
+      ],
+      "expense_breakdown.capacity_investment": [
+        "int"
+      ],
+      "expense_breakdown.capacity_adjustment": [
+        "int"
+      ],
+      "expense_breakdown.market_research": [
+        "int"
+      ],
+      "expense_breakdown.holding": [
+        "int"
+      ],
+      "expense_breakdown.remediation": [
+        "int"
+      ],
+      "expense_breakdown.contract_penalties": [
+        "int"
+      ],
+      "refunds_cents": [
+        "int"
+      ],
+      "cogs_cents": [
+        "int"
+      ],
+      "ending_cash_cents": [
+        "int"
+      ],
+      "consumer_orders": [
+        "int"
+      ],
+      "fulfilled_units": [
+        "int"
+      ],
+      "abandoned_units": [
+        "int"
+      ],
+      "support_backlog": [
+        "int"
+      ],
+      "fulfillment_backlog_units": [
+        "int"
+      ],
+      "capacity_tier": [
+        "int"
+      ],
+      "fulfilled_by_product.A": [
+        "int"
+      ],
+      "fulfilled_by_product.B": [
+        "int"
+      ],
+      "fulfilled_by_product.C": [
+        "int"
+      ],
+      "fulfilled_by_segment.mainstream": [
+        "int"
+      ],
+      "fulfilled_by_segment.premium": [
+        "int"
+      ],
+      "fulfilled_by_segment.value": [
+        "int"
+      ],
+      "failures_by_segment.mainstream": [
+        "int"
+      ],
+      "failures_by_segment.premium": [
+        "int"
+      ],
+      "failures_by_segment.value": [
+        "int"
+      ],
+      "ending_inventory.A": [
+        "int"
+      ],
+      "ending_inventory.B": [
+        "int"
+      ],
+      "ending_inventory.C": [
+        "int"
+      ],
+      "satisfaction.mainstream": [
+        "float"
+      ],
+      "satisfaction.premium": [
+        "float"
+      ],
+      "satisfaction.value": [
+        "float"
+      ],
+      "beginning_cash_cents": [
+        "int"
+      ],
+      "net_cashflow_cents": [
+        "int"
+      ],
+      "gross_profit_cents": [
+        "int"
+      ],
+      "status_at_day_end": [
+        "str"
+      ]
+    }
+  },
+  "action_receipts": {
+    "rows": 27496,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "receipt_index": [
+        "int"
+      ],
+      "day": [
+        "int"
+      ],
+      "action": [
+        "str"
+      ],
+      "status": [
+        "str"
+      ],
+      "message": [
+        "str"
+      ],
+      "charged_cents": [
+        "int"
+      ],
+      "refunded_cents": [
+        "int"
+      ],
+      "effective_day": [
+        "NoneType",
+        "int"
+      ],
+      "project_id": [
+        "NoneType",
+        "str"
+      ],
+      "target_tier": [
+        "NoneType",
+        "int"
+      ]
+    }
+  },
+  "company_100day_periods": {
+    "rows": 1080,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "revenue_cents": [
+        "int"
+      ],
+      "costs_cents": [
+        "int"
+      ],
+      "cashflow_cents": [
+        "int"
+      ],
+      "fulfilled_units": [
+        "int"
+      ],
+      "consumer_orders": [
+        "int"
+      ]
+    }
+  },
+  "company_cash_milestones": {
+    "rows": 2376,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "day": [
+        "int"
+      ],
+      "cash_cents": [
+        "int"
+      ]
+    }
+  },
+  "windows": {
+    "rows": 1944,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "window_index": [
+        "int"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "start_world_version": [
+        "int"
+      ],
+      "start_state_hash": [
+        "str"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "end_world_version": [
+        "int"
+      ],
+      "day_fingerprints_json": [
+        "str"
+      ],
+      "end_state_hash": [
+        "str"
+      ],
+      "decision_count": [
+        "int"
+      ]
+    }
+  },
+  "company_decisions": {
+    "rows": 15078,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "window_index": [
+        "int"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "agent_status": [
+        "str"
+      ],
+      "decision.company_id": [
+        "str"
+      ],
+      "decision.world_version": [
+        "int"
+      ],
+      "decision.products_json": [
+        "str"
+      ],
+      "decision.marketing_json": [
+        "str"
+      ],
+      "decision.reliability_budget_cents": [
+        "NoneType",
+        "int"
+      ],
+      "decision.support_budget_cents": [
+        "NoneType",
+        "int"
+      ],
+      "decision.research_project_tier": [
+        "NoneType",
+        "int"
+      ],
+      "decision.capacity_target_tier": [
+        "NoneType",
+        "int"
+      ],
+      "decision.capacity_downsize_tier": [
+        "NoneType",
+        "int"
+      ],
+      "decision.cancel_capacity_project_id": [
+        "NoneType",
+        "str"
+      ],
+      "decision.enterprise_bids_json": [
+        "str"
+      ],
+      "decision.market_research_json": [
+        "str"
+      ],
+      "usage.provider_turns": [
+        "int"
+      ],
+      "usage.finalization_turns": [
+        "int"
+      ],
+      "usage.tool_calls": [
+        "int"
+      ],
+      "usage.input_tokens": [
+        "int"
+      ],
+      "usage.output_tokens": [
+        "int"
+      ],
+      "usage.reasoning_tokens": [
+        "int"
+      ],
+      "usage.cache_read_tokens": [
+        "int"
+      ],
+      "usage.cache_write_tokens": [
+        "int"
+      ],
+      "usage.latency_ms": [
+        "int"
+      ],
+      "diagnostics.protocol_errors": [
+        "int"
+      ],
+      "diagnostics.tool_errors": [
+        "int"
+      ],
+      "diagnostics.recovered": [
+        "bool"
+      ],
+      "diagnostics.budget_usage_incomplete": [
+        "bool"
+      ],
+      "failure": [
+        "NoneType"
+      ],
+      "error": [
+        "NoneType",
+        "str"
+      ],
+      "harness_trace_path": [
+        "NoneType",
+        "str"
+      ],
+      "harness_trace_sha256": [
+        "NoneType",
+        "str"
+      ],
+      "failure.category": [
+        "str"
+      ],
+      "failure.message": [
+        "str"
+      ],
+      "failure.retryable": [
+        "bool"
+      ],
+      "failure.http_status": [
+        "NoneType",
+        "int"
+      ],
+      "failure.reason": [
+        "str"
+      ],
+      "failure.retry_after_seconds": [
+        "NoneType",
+        "float"
+      ],
+      "failure.attempt": [
+        "NoneType",
+        "int"
+      ],
+      "failure.frame_sha256": [
+        "NoneType",
+        "str"
+      ],
+      "failure.frame_bytes": [
+        "NoneType",
+        "int"
+      ]
+    }
+  },
+  "decision_products": {
+    "rows": 19593,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "window_index": [
+        "int"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "item_index": [
+        "int"
+      ],
+      "product_id": [
+        "str"
+      ],
+      "price_cents": [
+        "NoneType",
+        "int"
+      ],
+      "promotion_cents": [
+        "NoneType",
+        "int"
+      ],
+      "reorder_target": [
+        "NoneType",
+        "int"
+      ],
+      "development_budget_cents": [
+        "NoneType",
+        "int"
+      ]
+    }
+  },
+  "decision_market_research": {
+    "rows": 1510,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "window_index": [
+        "int"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "item_index": [
+        "int"
+      ],
+      "segment_id": [
+        "str"
+      ],
+      "level": [
+        "int"
+      ]
+    }
+  },
+  "decision_marketing": {
+    "rows": 24114,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "window_index": [
+        "int"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "item_index": [
+        "int"
+      ],
+      "segment_id": [
+        "str"
+      ],
+      "channel": [
+        "str"
+      ],
+      "daily_budget_cents": [
+        "int"
+      ]
+    }
+  },
+  "decision_enterprise_bids": {
+    "rows": 3608,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "window_index": [
+        "int"
+      ],
+      "start_day": [
+        "int"
+      ],
+      "end_day": [
+        "int"
+      ],
+      "item_index": [
+        "int"
+      ],
+      "tender_id": [
+        "str"
+      ],
+      "unit_price_cents": [
+        "int"
+      ]
+    }
+  },
+  "market_daily": {
+    "rows": 13500,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "day": [
+        "int"
+      ],
+      "revenue_cents": [
+        "int"
+      ],
+      "costs_cents": [
+        "int"
+      ],
+      "refunds_cents": [
+        "int"
+      ],
+      "cogs_cents": [
+        "int"
+      ],
+      "ending_cash_cents": [
+        "int"
+      ],
+      "consumer_orders": [
+        "int"
+      ],
+      "fulfilled_units": [
+        "int"
+      ],
+      "abandoned_units": [
+        "int"
+      ],
+      "support_backlog": [
+        "int"
+      ],
+      "fulfillment_backlog_units": [
+        "int"
+      ],
+      "macro_index": [
+        "float"
+      ],
+      "market_signals.day": [
+        "int"
+      ],
+      "market_signals.demand_index": [
+        "float"
+      ],
+      "market_signals.quality_expectation_index": [
+        "float"
+      ],
+      "active_companies_at_day_end": [
+        "int"
+      ]
+    }
+  },
+  "enterprise_tenders": {
+    "rows": 972,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "tender_id": [
+        "str"
+      ],
+      "product_id": [
+        "str"
+      ],
+      "quantity": [
+        "int"
+      ],
+      "minimum_quality": [
+        "float"
+      ],
+      "reservation_price_cents": [
+        "int"
+      ],
+      "opened_day": [
+        "int"
+      ],
+      "deadline_day": [
+        "int"
+      ],
+      "delivery_due_day": [
+        "int"
+      ],
+      "bids.company-2": [
+        "int"
+      ],
+      "bids.company-7": [
+        "int"
+      ],
+      "winner_company_id": [
+        "NoneType",
+        "str"
+      ],
+      "winning_unit_price_cents": [
+        "NoneType",
+        "int"
+      ],
+      "settled": [
+        "bool"
+      ],
+      "bids.company-4": [
+        "int"
+      ],
+      "bids.company-5": [
+        "int"
+      ],
+      "bids.company-1": [
+        "int"
+      ],
+      "bids.company-6": [
+        "int"
+      ],
+      "bids.company-8": [
+        "int"
+      ],
+      "bids.company-3": [
+        "int"
+      ]
+    }
+  },
+  "market_state": {
+    "rows": 54,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "series": [
+        "str"
+      ],
+      "values.0": [
+        "float"
+      ],
+      "values.1": [
+        "float"
+      ],
+      "values.2": [
+        "float"
+      ],
+      "values.3": [
+        "float"
+      ],
+      "values.4": [
+        "float"
+      ],
+      "values.5": [
+        "float"
+      ],
+      "values.6": [
+        "float"
+      ],
+      "values.7": [
+        "float"
+      ],
+      "values.8": [
+        "float"
+      ],
+      "values.9": [
+        "float"
+      ],
+      "values.10": [
+        "float"
+      ],
+      "values.11": [
+        "float"
+      ],
+      "values.12": [
+        "float"
+      ],
+      "values.13": [
+        "float"
+      ],
+      "values.14": [
+        "float"
+      ],
+      "values.15": [
+        "float"
+      ],
+      "values.16": [
+        "float"
+      ],
+      "values.17": [
+        "float"
+      ],
+      "values.18": [
+        "float"
+      ],
+      "values.19": [
+        "float"
+      ],
+      "values.20": [
+        "float"
+      ],
+      "values.21": [
+        "float"
+      ],
+      "values.22": [
+        "float"
+      ],
+      "values.23": [
+        "float"
+      ],
+      "values.24": [
+        "float"
+      ],
+      "values.25": [
+        "float"
+      ],
+      "values.26": [
+        "float"
+      ],
+      "values.27": [
+        "float"
+      ],
+      "values.28": [
+        "float"
+      ],
+      "values.29": [
+        "float"
+      ],
+      "values.30": [
+        "float"
+      ],
+      "values.31": [
+        "float"
+      ],
+      "values.32": [
+        "float"
+      ],
+      "values.33": [
+        "float"
+      ],
+      "values.34": [
+        "float"
+      ],
+      "values.35": [
+        "float"
+      ],
+      "values.36": [
+        "float"
+      ],
+      "values.37": [
+        "float"
+      ],
+      "values.38": [
+        "float"
+      ],
+      "values.39": [
+        "float"
+      ],
+      "values.40": [
+        "float"
+      ],
+      "values.41": [
+        "float"
+      ],
+      "values.42": [
+        "float"
+      ],
+      "values.43": [
+        "float"
+      ],
+      "values.44": [
+        "float"
+      ],
+      "values.45": [
+        "float"
+      ],
+      "values.46": [
+        "float"
+      ],
+      "values.47": [
+        "float"
+      ],
+      "values.48": [
+        "float"
+      ],
+      "values.49": [
+        "float"
+      ],
+      "values.50": [
+        "float"
+      ],
+      "values.51": [
+        "float"
+      ],
+      "values.52": [
+        "float"
+      ],
+      "values.53": [
+        "float"
+      ],
+      "values.54": [
+        "float"
+      ],
+      "values.55": [
+        "float"
+      ],
+      "values.56": [
+        "float"
+      ],
+      "values.57": [
+        "float"
+      ],
+      "values.58": [
+        "float"
+      ],
+      "values.59": [
+        "float"
+      ],
+      "values.60": [
+        "float"
+      ],
+      "values.61": [
+        "float"
+      ],
+      "values.62": [
+        "float"
+      ],
+      "values.63": [
+        "float"
+      ],
+      "values.64": [
+        "float"
+      ],
+      "values.65": [
+        "float"
+      ],
+      "values.66": [
+        "float"
+      ],
+      "values.67": [
+        "float"
+      ],
+      "values.68": [
+        "float"
+      ],
+      "values.69": [
+        "float"
+      ],
+      "values.70": [
+        "float"
+      ],
+      "values.71": [
+        "float"
+      ],
+      "values.72": [
+        "float"
+      ],
+      "values.73": [
+        "float"
+      ],
+      "values.74": [
+        "float"
+      ],
+      "values.75": [
+        "float"
+      ],
+      "values.76": [
+        "float"
+      ],
+      "values.77": [
+        "float"
+      ],
+      "values.78": [
+        "float"
+      ],
+      "values.79": [
+        "float"
+      ],
+      "values.80": [
+        "float"
+      ],
+      "values.81": [
+        "float"
+      ],
+      "values.82": [
+        "float"
+      ],
+      "values.83": [
+        "float"
+      ],
+      "values.84": [
+        "float"
+      ],
+      "values.85": [
+        "float"
+      ],
+      "values.86": [
+        "float"
+      ],
+      "values.87": [
+        "float"
+      ],
+      "values.88": [
+        "float"
+      ],
+      "values.89": [
+        "float"
+      ],
+      "values.90": [
+        "float"
+      ],
+      "values.91": [
+        "float"
+      ],
+      "values.92": [
+        "float"
+      ],
+      "values.93": [
+        "float"
+      ],
+      "values.94": [
+        "float"
+      ],
+      "values.95": [
+        "float"
+      ],
+      "values.96": [
+        "float"
+      ],
+      "values.97": [
+        "float"
+      ],
+      "values.98": [
+        "float"
+      ],
+      "values.99": [
+        "float"
+      ],
+      "values.100": [
+        "float"
+      ],
+      "values.101": [
+        "float"
+      ],
+      "values.102": [
+        "float"
+      ],
+      "values.103": [
+        "float"
+      ],
+      "values.104": [
+        "float"
+      ],
+      "values.105": [
+        "float"
+      ],
+      "values.106": [
+        "float"
+      ],
+      "values.107": [
+        "float"
+      ],
+      "values.108": [
+        "float"
+      ],
+      "values.109": [
+        "float"
+      ],
+      "values.110": [
+        "float"
+      ],
+      "values.111": [
+        "float"
+      ],
+      "values.112": [
+        "float"
+      ],
+      "values.113": [
+        "float"
+      ],
+      "values.114": [
+        "float"
+      ],
+      "values.115": [
+        "float"
+      ],
+      "values.116": [
+        "float"
+      ],
+      "values.117": [
+        "float"
+      ],
+      "values.118": [
+        "float"
+      ],
+      "values.119": [
+        "float"
+      ],
+      "values.120": [
+        "float"
+      ],
+      "values.121": [
+        "float"
+      ],
+      "values.122": [
+        "float"
+      ],
+      "values.123": [
+        "float"
+      ],
+      "values.124": [
+        "float"
+      ],
+      "values.125": [
+        "float"
+      ],
+      "values.126": [
+        "float"
+      ],
+      "values.127": [
+        "float"
+      ],
+      "values.128": [
+        "float"
+      ],
+      "values.129": [
+        "float"
+      ],
+      "values.130": [
+        "float"
+      ],
+      "values.131": [
+        "float"
+      ],
+      "values.132": [
+        "float"
+      ],
+      "values.133": [
+        "float"
+      ],
+      "values.134": [
+        "float"
+      ],
+      "values.135": [
+        "float"
+      ],
+      "values.136": [
+        "float"
+      ],
+      "values.137": [
+        "float"
+      ],
+      "values.138": [
+        "float"
+      ],
+      "values.139": [
+        "float"
+      ],
+      "values.140": [
+        "float"
+      ],
+      "values.141": [
+        "float"
+      ],
+      "values.142": [
+        "float"
+      ],
+      "values.143": [
+        "float"
+      ],
+      "values.144": [
+        "float"
+      ],
+      "values.145": [
+        "float"
+      ],
+      "values.146": [
+        "float"
+      ],
+      "values.147": [
+        "float"
+      ],
+      "values.148": [
+        "float"
+      ],
+      "values.149": [
+        "float"
+      ],
+      "values.150": [
+        "float"
+      ],
+      "values.151": [
+        "float"
+      ],
+      "values.152": [
+        "float"
+      ],
+      "values.153": [
+        "float"
+      ],
+      "values.154": [
+        "float"
+      ],
+      "values.155": [
+        "float"
+      ],
+      "values.156": [
+        "float"
+      ],
+      "values.157": [
+        "float"
+      ],
+      "values.158": [
+        "float"
+      ],
+      "values.159": [
+        "float"
+      ],
+      "values.160": [
+        "float"
+      ],
+      "values.161": [
+        "float"
+      ],
+      "values.162": [
+        "float"
+      ],
+      "values.163": [
+        "float"
+      ],
+      "values.164": [
+        "float"
+      ],
+      "values.165": [
+        "float"
+      ],
+      "values.166": [
+        "float"
+      ],
+      "values.167": [
+        "float"
+      ],
+      "values.168": [
+        "float"
+      ],
+      "values.169": [
+        "float"
+      ],
+      "values.170": [
+        "float"
+      ],
+      "values.171": [
+        "float"
+      ],
+      "values.172": [
+        "float"
+      ],
+      "values.173": [
+        "float"
+      ],
+      "values.174": [
+        "float"
+      ],
+      "values.175": [
+        "float"
+      ],
+      "values.176": [
+        "float"
+      ],
+      "values.177": [
+        "float"
+      ],
+      "values.178": [
+        "float"
+      ],
+      "values.179": [
+        "float"
+      ],
+      "values.180": [
+        "float"
+      ],
+      "values.181": [
+        "float"
+      ],
+      "values.182": [
+        "float"
+      ],
+      "values.183": [
+        "float"
+      ],
+      "values.184": [
+        "float"
+      ],
+      "values.185": [
+        "float"
+      ],
+      "values.186": [
+        "float"
+      ],
+      "values.187": [
+        "float"
+      ],
+      "values.188": [
+        "float"
+      ],
+      "values.189": [
+        "float"
+      ],
+      "values.190": [
+        "float"
+      ],
+      "values.191": [
+        "float"
+      ],
+      "values.192": [
+        "float"
+      ],
+      "values.193": [
+        "float"
+      ],
+      "values.194": [
+        "float"
+      ],
+      "values.195": [
+        "float"
+      ],
+      "values.196": [
+        "float"
+      ],
+      "values.197": [
+        "float"
+      ],
+      "values.198": [
+        "float"
+      ],
+      "values.199": [
+        "float"
+      ],
+      "values.200": [
+        "float"
+      ],
+      "values.201": [
+        "float"
+      ],
+      "values.202": [
+        "float"
+      ],
+      "values.203": [
+        "float"
+      ],
+      "values.204": [
+        "float"
+      ],
+      "values.205": [
+        "float"
+      ],
+      "values.206": [
+        "float"
+      ],
+      "values.207": [
+        "float"
+      ],
+      "values.208": [
+        "float"
+      ],
+      "values.209": [
+        "float"
+      ],
+      "values.210": [
+        "float"
+      ],
+      "values.211": [
+        "float"
+      ],
+      "values.212": [
+        "float"
+      ],
+      "values.213": [
+        "float"
+      ],
+      "values.214": [
+        "float"
+      ],
+      "values.215": [
+        "float"
+      ],
+      "values.216": [
+        "float"
+      ],
+      "values.217": [
+        "float"
+      ],
+      "values.218": [
+        "float"
+      ],
+      "values.219": [
+        "float"
+      ],
+      "values.220": [
+        "float"
+      ],
+      "values.221": [
+        "float"
+      ],
+      "values.222": [
+        "float"
+      ],
+      "values.223": [
+        "float"
+      ],
+      "values.224": [
+        "float"
+      ],
+      "values.225": [
+        "float"
+      ],
+      "values.226": [
+        "float"
+      ],
+      "values.227": [
+        "float"
+      ],
+      "values.228": [
+        "float"
+      ],
+      "values.229": [
+        "float"
+      ],
+      "values.230": [
+        "float"
+      ],
+      "values.231": [
+        "float"
+      ],
+      "values.232": [
+        "float"
+      ],
+      "values.233": [
+        "float"
+      ],
+      "values.234": [
+        "float"
+      ],
+      "values.235": [
+        "float"
+      ],
+      "values.236": [
+        "float"
+      ],
+      "values.237": [
+        "float"
+      ],
+      "values.238": [
+        "float"
+      ],
+      "values.239": [
+        "float"
+      ],
+      "values.240": [
+        "float"
+      ],
+      "values.241": [
+        "float"
+      ],
+      "values.242": [
+        "float"
+      ],
+      "values.243": [
+        "float"
+      ],
+      "values.244": [
+        "float"
+      ],
+      "values.245": [
+        "float"
+      ],
+      "values.246": [
+        "float"
+      ],
+      "values.247": [
+        "float"
+      ],
+      "values.248": [
+        "float"
+      ],
+      "values.249": [
+        "float"
+      ],
+      "values.250": [
+        "float"
+      ],
+      "values.251": [
+        "float"
+      ],
+      "values.252": [
+        "float"
+      ],
+      "values.253": [
+        "float"
+      ],
+      "values.254": [
+        "float"
+      ],
+      "values.255": [
+        "float"
+      ],
+      "values.256": [
+        "float"
+      ],
+      "values.257": [
+        "float"
+      ],
+      "values.258": [
+        "float"
+      ],
+      "values.259": [
+        "float"
+      ],
+      "values.260": [
+        "float"
+      ],
+      "values.261": [
+        "float"
+      ],
+      "values.262": [
+        "float"
+      ],
+      "values.263": [
+        "float"
+      ],
+      "values.264": [
+        "float"
+      ],
+      "values.265": [
+        "float"
+      ],
+      "values.266": [
+        "float"
+      ],
+      "values.267": [
+        "float"
+      ],
+      "values.268": [
+        "float"
+      ],
+      "values.269": [
+        "float"
+      ],
+      "values.270": [
+        "float"
+      ],
+      "values.271": [
+        "float"
+      ],
+      "values.272": [
+        "float"
+      ],
+      "values.273": [
+        "float"
+      ],
+      "values.274": [
+        "float"
+      ],
+      "values.275": [
+        "float"
+      ],
+      "values.276": [
+        "float"
+      ],
+      "values.277": [
+        "float"
+      ],
+      "values.278": [
+        "float"
+      ],
+      "values.279": [
+        "float"
+      ],
+      "values.280": [
+        "float"
+      ],
+      "values.281": [
+        "float"
+      ],
+      "values.282": [
+        "float"
+      ],
+      "values.283": [
+        "float"
+      ],
+      "values.284": [
+        "float"
+      ],
+      "values.285": [
+        "float"
+      ],
+      "values.286": [
+        "float"
+      ],
+      "values.287": [
+        "float"
+      ],
+      "values.288": [
+        "float"
+      ],
+      "values.289": [
+        "float"
+      ],
+      "values.290": [
+        "float"
+      ],
+      "values.291": [
+        "float"
+      ],
+      "values.292": [
+        "float"
+      ],
+      "values.293": [
+        "float"
+      ],
+      "values.294": [
+        "float"
+      ],
+      "values.295": [
+        "float"
+      ],
+      "values.296": [
+        "float"
+      ],
+      "values.297": [
+        "float"
+      ],
+      "values.298": [
+        "float"
+      ],
+      "values.299": [
+        "float"
+      ],
+      "values.300": [
+        "float"
+      ],
+      "values.301": [
+        "float"
+      ],
+      "values.302": [
+        "float"
+      ],
+      "values.303": [
+        "float"
+      ],
+      "values.304": [
+        "float"
+      ],
+      "values.305": [
+        "float"
+      ],
+      "values.306": [
+        "float"
+      ],
+      "values.307": [
+        "float"
+      ],
+      "values.308": [
+        "float"
+      ],
+      "values.309": [
+        "float"
+      ],
+      "values.310": [
+        "float"
+      ],
+      "values.311": [
+        "float"
+      ],
+      "values.312": [
+        "float"
+      ],
+      "values.313": [
+        "float"
+      ],
+      "values.314": [
+        "float"
+      ],
+      "values.315": [
+        "float"
+      ],
+      "values.316": [
+        "float"
+      ],
+      "values.317": [
+        "float"
+      ],
+      "values.318": [
+        "float"
+      ],
+      "values.319": [
+        "float"
+      ],
+      "values.320": [
+        "float"
+      ],
+      "values.321": [
+        "float"
+      ],
+      "values.322": [
+        "float"
+      ],
+      "values.323": [
+        "float"
+      ],
+      "values.324": [
+        "float"
+      ],
+      "values.325": [
+        "float"
+      ],
+      "values.326": [
+        "float"
+      ],
+      "values.327": [
+        "float"
+      ],
+      "values.328": [
+        "float"
+      ],
+      "values.329": [
+        "float"
+      ],
+      "values.330": [
+        "float"
+      ],
+      "values.331": [
+        "float"
+      ],
+      "values.332": [
+        "float"
+      ],
+      "values.333": [
+        "float"
+      ],
+      "values.334": [
+        "float"
+      ],
+      "values.335": [
+        "float"
+      ],
+      "values.336": [
+        "float"
+      ],
+      "values.337": [
+        "float"
+      ],
+      "values.338": [
+        "float"
+      ],
+      "values.339": [
+        "float"
+      ],
+      "values.340": [
+        "float"
+      ],
+      "values.341": [
+        "float"
+      ],
+      "values.342": [
+        "float"
+      ],
+      "values.343": [
+        "float"
+      ],
+      "values.344": [
+        "float"
+      ],
+      "values.345": [
+        "float"
+      ],
+      "values.346": [
+        "float"
+      ],
+      "values.347": [
+        "float"
+      ],
+      "values.348": [
+        "float"
+      ],
+      "values.349": [
+        "float"
+      ],
+      "values.350": [
+        "float"
+      ],
+      "values.351": [
+        "float"
+      ],
+      "values.352": [
+        "float"
+      ],
+      "values.353": [
+        "float"
+      ],
+      "values.354": [
+        "float"
+      ],
+      "values.355": [
+        "float"
+      ],
+      "values.356": [
+        "float"
+      ],
+      "values.357": [
+        "float"
+      ],
+      "values.358": [
+        "float"
+      ],
+      "values.359": [
+        "float"
+      ],
+      "values.360": [
+        "float"
+      ],
+      "values.361": [
+        "float"
+      ],
+      "values.362": [
+        "float"
+      ],
+      "values.363": [
+        "float"
+      ],
+      "values.364": [
+        "float"
+      ],
+      "values.365": [
+        "float"
+      ],
+      "values.366": [
+        "float"
+      ],
+      "values.367": [
+        "float"
+      ],
+      "values.368": [
+        "float"
+      ],
+      "values.369": [
+        "float"
+      ],
+      "values.370": [
+        "float"
+      ],
+      "values.371": [
+        "float"
+      ],
+      "values.372": [
+        "float"
+      ],
+      "values.373": [
+        "float"
+      ],
+      "values.374": [
+        "float"
+      ],
+      "values.375": [
+        "float"
+      ],
+      "values.376": [
+        "float"
+      ],
+      "values.377": [
+        "float"
+      ],
+      "values.378": [
+        "float"
+      ],
+      "values.379": [
+        "float"
+      ],
+      "values.380": [
+        "float"
+      ],
+      "values.381": [
+        "float"
+      ],
+      "values.382": [
+        "float"
+      ],
+      "values.383": [
+        "float"
+      ],
+      "values.384": [
+        "float"
+      ],
+      "values.385": [
+        "float"
+      ],
+      "values.386": [
+        "float"
+      ],
+      "values.387": [
+        "float"
+      ],
+      "values.388": [
+        "float"
+      ],
+      "values.389": [
+        "float"
+      ],
+      "values.390": [
+        "float"
+      ],
+      "values.391": [
+        "float"
+      ],
+      "values.392": [
+        "float"
+      ],
+      "values.393": [
+        "float"
+      ],
+      "values.394": [
+        "float"
+      ],
+      "values.395": [
+        "float"
+      ],
+      "values.396": [
+        "float"
+      ],
+      "values.397": [
+        "float"
+      ],
+      "values.398": [
+        "float"
+      ],
+      "values.399": [
+        "float"
+      ],
+      "values.400": [
+        "float"
+      ],
+      "values.401": [
+        "float"
+      ],
+      "values.402": [
+        "float"
+      ],
+      "values.403": [
+        "float"
+      ],
+      "values.404": [
+        "float"
+      ],
+      "values.405": [
+        "float"
+      ],
+      "values.406": [
+        "float"
+      ],
+      "values.407": [
+        "float"
+      ],
+      "values.408": [
+        "float"
+      ],
+      "values.409": [
+        "float"
+      ],
+      "values.410": [
+        "float"
+      ],
+      "values.411": [
+        "float"
+      ],
+      "values.412": [
+        "float"
+      ],
+      "values.413": [
+        "float"
+      ],
+      "values.414": [
+        "float"
+      ],
+      "values.415": [
+        "float"
+      ],
+      "values.416": [
+        "float"
+      ],
+      "values.417": [
+        "float"
+      ],
+      "values.418": [
+        "float"
+      ],
+      "values.419": [
+        "float"
+      ],
+      "values.420": [
+        "float"
+      ],
+      "values.421": [
+        "float"
+      ],
+      "values.422": [
+        "float"
+      ],
+      "values.423": [
+        "float"
+      ],
+      "values.424": [
+        "float"
+      ],
+      "values.425": [
+        "float"
+      ],
+      "values.426": [
+        "float"
+      ],
+      "values.427": [
+        "float"
+      ],
+      "values.428": [
+        "float"
+      ],
+      "values.429": [
+        "float"
+      ],
+      "values.430": [
+        "float"
+      ],
+      "values.431": [
+        "float"
+      ],
+      "values.432": [
+        "float"
+      ],
+      "values.433": [
+        "float"
+      ],
+      "values.434": [
+        "float"
+      ],
+      "values.435": [
+        "float"
+      ],
+      "values.436": [
+        "float"
+      ],
+      "values.437": [
+        "float"
+      ],
+      "values.438": [
+        "float"
+      ],
+      "values.439": [
+        "float"
+      ],
+      "values.440": [
+        "float"
+      ],
+      "values.441": [
+        "float"
+      ],
+      "values.442": [
+        "float"
+      ],
+      "values.443": [
+        "float"
+      ],
+      "values.444": [
+        "float"
+      ],
+      "values.445": [
+        "float"
+      ],
+      "values.446": [
+        "float"
+      ],
+      "values.447": [
+        "float"
+      ],
+      "values.448": [
+        "float"
+      ],
+      "values.449": [
+        "float"
+      ],
+      "values.450": [
+        "float"
+      ],
+      "values.451": [
+        "float"
+      ],
+      "values.452": [
+        "float"
+      ],
+      "values.453": [
+        "float"
+      ],
+      "values.454": [
+        "float"
+      ],
+      "values.455": [
+        "float"
+      ],
+      "values.456": [
+        "float"
+      ],
+      "values.457": [
+        "float"
+      ],
+      "values.458": [
+        "float"
+      ],
+      "values.459": [
+        "float"
+      ],
+      "values.460": [
+        "float"
+      ],
+      "values.461": [
+        "float"
+      ],
+      "values.462": [
+        "float"
+      ],
+      "values.463": [
+        "float"
+      ],
+      "values.464": [
+        "float"
+      ],
+      "values.465": [
+        "float"
+      ],
+      "values.466": [
+        "float"
+      ],
+      "values.467": [
+        "float"
+      ],
+      "values.468": [
+        "float"
+      ],
+      "values.469": [
+        "float"
+      ],
+      "values.470": [
+        "float"
+      ],
+      "values.471": [
+        "float"
+      ],
+      "values.472": [
+        "float"
+      ],
+      "values.473": [
+        "float"
+      ],
+      "values.474": [
+        "float"
+      ],
+      "values.475": [
+        "float"
+      ],
+      "values.476": [
+        "float"
+      ],
+      "values.477": [
+        "float"
+      ],
+      "values.478": [
+        "float"
+      ],
+      "values.479": [
+        "float"
+      ],
+      "values.480": [
+        "float"
+      ],
+      "values.481": [
+        "float"
+      ],
+      "values.482": [
+        "float"
+      ],
+      "values.483": [
+        "float"
+      ],
+      "values.484": [
+        "float"
+      ],
+      "values.485": [
+        "float"
+      ],
+      "values.486": [
+        "float"
+      ],
+      "values.487": [
+        "float"
+      ],
+      "values.488": [
+        "float"
+      ],
+      "values.489": [
+        "float"
+      ],
+      "values.490": [
+        "float"
+      ],
+      "values.491": [
+        "float"
+      ],
+      "values.492": [
+        "float"
+      ],
+      "values.493": [
+        "float"
+      ],
+      "values.494": [
+        "float"
+      ],
+      "values.495": [
+        "float"
+      ],
+      "values.496": [
+        "float"
+      ],
+      "values.497": [
+        "float"
+      ],
+      "values.498": [
+        "float"
+      ],
+      "values.499": [
+        "float"
+      ],
+      "values.500": [
+        "float"
+      ],
+      "values.0.day": [
+        "int"
+      ],
+      "values.0.demand_index": [
+        "float"
+      ],
+      "values.0.quality_expectation_index": [
+        "float"
+      ],
+      "values.1.day": [
+        "int"
+      ],
+      "values.1.demand_index": [
+        "float"
+      ],
+      "values.1.quality_expectation_index": [
+        "float"
+      ],
+      "values.2.day": [
+        "int"
+      ],
+      "values.2.demand_index": [
+        "float"
+      ],
+      "values.2.quality_expectation_index": [
+        "float"
+      ],
+      "values.3.day": [
+        "int"
+      ],
+      "values.3.demand_index": [
+        "float"
+      ],
+      "values.3.quality_expectation_index": [
+        "float"
+      ],
+      "values.4.day": [
+        "int"
+      ],
+      "values.4.demand_index": [
+        "float"
+      ],
+      "values.4.quality_expectation_index": [
+        "float"
+      ],
+      "values.5.day": [
+        "int"
+      ],
+      "values.5.demand_index": [
+        "float"
+      ],
+      "values.5.quality_expectation_index": [
+        "float"
+      ],
+      "values.6.day": [
+        "int"
+      ],
+      "values.6.demand_index": [
+        "float"
+      ],
+      "values.6.quality_expectation_index": [
+        "float"
+      ],
+      "values.7.day": [
+        "int"
+      ],
+      "values.7.demand_index": [
+        "float"
+      ],
+      "values.7.quality_expectation_index": [
+        "float"
+      ],
+      "values.8.day": [
+        "int"
+      ],
+      "values.8.demand_index": [
+        "float"
+      ],
+      "values.8.quality_expectation_index": [
+        "float"
+      ],
+      "values.9.day": [
+        "int"
+      ],
+      "values.9.demand_index": [
+        "float"
+      ],
+      "values.9.quality_expectation_index": [
+        "float"
+      ],
+      "values.10.day": [
+        "int"
+      ],
+      "values.10.demand_index": [
+        "float"
+      ],
+      "values.10.quality_expectation_index": [
+        "float"
+      ],
+      "values.11.day": [
+        "int"
+      ],
+      "values.11.demand_index": [
+        "float"
+      ],
+      "values.11.quality_expectation_index": [
+        "float"
+      ],
+      "values.12.day": [
+        "int"
+      ],
+      "values.12.demand_index": [
+        "float"
+      ],
+      "values.12.quality_expectation_index": [
+        "float"
+      ],
+      "values.13.day": [
+        "int"
+      ],
+      "values.13.demand_index": [
+        "float"
+      ],
+      "values.13.quality_expectation_index": [
+        "float"
+      ],
+      "values.14.day": [
+        "int"
+      ],
+      "values.14.demand_index": [
+        "float"
+      ],
+      "values.14.quality_expectation_index": [
+        "float"
+      ],
+      "values.15.day": [
+        "int"
+      ],
+      "values.15.demand_index": [
+        "float"
+      ],
+      "values.15.quality_expectation_index": [
+        "float"
+      ],
+      "values.16.day": [
+        "int"
+      ],
+      "values.16.demand_index": [
+        "float"
+      ],
+      "values.16.quality_expectation_index": [
+        "float"
+      ],
+      "values.17.day": [
+        "int"
+      ],
+      "values.17.demand_index": [
+        "float"
+      ],
+      "values.17.quality_expectation_index": [
+        "float"
+      ],
+      "values.18.day": [
+        "int"
+      ],
+      "values.18.demand_index": [
+        "float"
+      ],
+      "values.18.quality_expectation_index": [
+        "float"
+      ],
+      "values.19.day": [
+        "int"
+      ],
+      "values.19.demand_index": [
+        "float"
+      ],
+      "values.19.quality_expectation_index": [
+        "float"
+      ],
+      "values.20.day": [
+        "int"
+      ],
+      "values.20.demand_index": [
+        "float"
+      ],
+      "values.20.quality_expectation_index": [
+        "float"
+      ],
+      "values.21.day": [
+        "int"
+      ],
+      "values.21.demand_index": [
+        "float"
+      ],
+      "values.21.quality_expectation_index": [
+        "float"
+      ],
+      "values.22.day": [
+        "int"
+      ],
+      "values.22.demand_index": [
+        "float"
+      ],
+      "values.22.quality_expectation_index": [
+        "float"
+      ],
+      "values.23.day": [
+        "int"
+      ],
+      "values.23.demand_index": [
+        "float"
+      ],
+      "values.23.quality_expectation_index": [
+        "float"
+      ],
+      "values.24.day": [
+        "int"
+      ],
+      "values.24.demand_index": [
+        "float"
+      ],
+      "values.24.quality_expectation_index": [
+        "float"
+      ],
+      "values.25.day": [
+        "int"
+      ],
+      "values.25.demand_index": [
+        "float"
+      ],
+      "values.25.quality_expectation_index": [
+        "float"
+      ],
+      "values.26.day": [
+        "int"
+      ],
+      "values.26.demand_index": [
+        "float"
+      ],
+      "values.26.quality_expectation_index": [
+        "float"
+      ],
+      "values.27.day": [
+        "int"
+      ],
+      "values.27.demand_index": [
+        "float"
+      ],
+      "values.27.quality_expectation_index": [
+        "float"
+      ],
+      "values.28.day": [
+        "int"
+      ],
+      "values.28.demand_index": [
+        "float"
+      ],
+      "values.28.quality_expectation_index": [
+        "float"
+      ],
+      "values.29.day": [
+        "int"
+      ],
+      "values.29.demand_index": [
+        "float"
+      ],
+      "values.29.quality_expectation_index": [
+        "float"
+      ],
+      "values.30.day": [
+        "int"
+      ],
+      "values.30.demand_index": [
+        "float"
+      ],
+      "values.30.quality_expectation_index": [
+        "float"
+      ],
+      "values.31.day": [
+        "int"
+      ],
+      "values.31.demand_index": [
+        "float"
+      ],
+      "values.31.quality_expectation_index": [
+        "float"
+      ],
+      "values.32.day": [
+        "int"
+      ],
+      "values.32.demand_index": [
+        "float"
+      ],
+      "values.32.quality_expectation_index": [
+        "float"
+      ],
+      "values.33.day": [
+        "int"
+      ],
+      "values.33.demand_index": [
+        "float"
+      ],
+      "values.33.quality_expectation_index": [
+        "float"
+      ],
+      "values.34.day": [
+        "int"
+      ],
+      "values.34.demand_index": [
+        "float"
+      ],
+      "values.34.quality_expectation_index": [
+        "float"
+      ],
+      "values.35.day": [
+        "int"
+      ],
+      "values.35.demand_index": [
+        "float"
+      ],
+      "values.35.quality_expectation_index": [
+        "float"
+      ],
+      "values.36.day": [
+        "int"
+      ],
+      "values.36.demand_index": [
+        "float"
+      ],
+      "values.36.quality_expectation_index": [
+        "float"
+      ],
+      "values.37.day": [
+        "int"
+      ],
+      "values.37.demand_index": [
+        "float"
+      ],
+      "values.37.quality_expectation_index": [
+        "float"
+      ],
+      "values.38.day": [
+        "int"
+      ],
+      "values.38.demand_index": [
+        "float"
+      ],
+      "values.38.quality_expectation_index": [
+        "float"
+      ],
+      "values.39.day": [
+        "int"
+      ],
+      "values.39.demand_index": [
+        "float"
+      ],
+      "values.39.quality_expectation_index": [
+        "float"
+      ],
+      "values.40.day": [
+        "int"
+      ],
+      "values.40.demand_index": [
+        "float"
+      ],
+      "values.40.quality_expectation_index": [
+        "float"
+      ],
+      "values.41.day": [
+        "int"
+      ],
+      "values.41.demand_index": [
+        "float"
+      ],
+      "values.41.quality_expectation_index": [
+        "float"
+      ],
+      "values.42.day": [
+        "int"
+      ],
+      "values.42.demand_index": [
+        "float"
+      ],
+      "values.42.quality_expectation_index": [
+        "float"
+      ],
+      "values.43.day": [
+        "int"
+      ],
+      "values.43.demand_index": [
+        "float"
+      ],
+      "values.43.quality_expectation_index": [
+        "float"
+      ],
+      "values.44.day": [
+        "int"
+      ],
+      "values.44.demand_index": [
+        "float"
+      ],
+      "values.44.quality_expectation_index": [
+        "float"
+      ],
+      "values.45.day": [
+        "int"
+      ],
+      "values.45.demand_index": [
+        "float"
+      ],
+      "values.45.quality_expectation_index": [
+        "float"
+      ],
+      "values.46.day": [
+        "int"
+      ],
+      "values.46.demand_index": [
+        "float"
+      ],
+      "values.46.quality_expectation_index": [
+        "float"
+      ],
+      "values.47.day": [
+        "int"
+      ],
+      "values.47.demand_index": [
+        "float"
+      ],
+      "values.47.quality_expectation_index": [
+        "float"
+      ],
+      "values.48.day": [
+        "int"
+      ],
+      "values.48.demand_index": [
+        "float"
+      ],
+      "values.48.quality_expectation_index": [
+        "float"
+      ],
+      "values.49.day": [
+        "int"
+      ],
+      "values.49.demand_index": [
+        "float"
+      ],
+      "values.49.quality_expectation_index": [
+        "float"
+      ],
+      "values.50.day": [
+        "int"
+      ],
+      "values.50.demand_index": [
+        "float"
+      ],
+      "values.50.quality_expectation_index": [
+        "float"
+      ],
+      "values.51.day": [
+        "int"
+      ],
+      "values.51.demand_index": [
+        "float"
+      ],
+      "values.51.quality_expectation_index": [
+        "float"
+      ],
+      "values.52.day": [
+        "int"
+      ],
+      "values.52.demand_index": [
+        "float"
+      ],
+      "values.52.quality_expectation_index": [
+        "float"
+      ],
+      "values.53.day": [
+        "int"
+      ],
+      "values.53.demand_index": [
+        "float"
+      ],
+      "values.53.quality_expectation_index": [
+        "float"
+      ],
+      "values.54.day": [
+        "int"
+      ],
+      "values.54.demand_index": [
+        "float"
+      ],
+      "values.54.quality_expectation_index": [
+        "float"
+      ],
+      "values.55.day": [
+        "int"
+      ],
+      "values.55.demand_index": [
+        "float"
+      ],
+      "values.55.quality_expectation_index": [
+        "float"
+      ],
+      "values.56.day": [
+        "int"
+      ],
+      "values.56.demand_index": [
+        "float"
+      ],
+      "values.56.quality_expectation_index": [
+        "float"
+      ],
+      "values.57.day": [
+        "int"
+      ],
+      "values.57.demand_index": [
+        "float"
+      ],
+      "values.57.quality_expectation_index": [
+        "float"
+      ],
+      "values.58.day": [
+        "int"
+      ],
+      "values.58.demand_index": [
+        "float"
+      ],
+      "values.58.quality_expectation_index": [
+        "float"
+      ],
+      "values.59.day": [
+        "int"
+      ],
+      "values.59.demand_index": [
+        "float"
+      ],
+      "values.59.quality_expectation_index": [
+        "float"
+      ],
+      "values.60.day": [
+        "int"
+      ],
+      "values.60.demand_index": [
+        "float"
+      ],
+      "values.60.quality_expectation_index": [
+        "float"
+      ],
+      "values.61.day": [
+        "int"
+      ],
+      "values.61.demand_index": [
+        "float"
+      ],
+      "values.61.quality_expectation_index": [
+        "float"
+      ],
+      "values.62.day": [
+        "int"
+      ],
+      "values.62.demand_index": [
+        "float"
+      ],
+      "values.62.quality_expectation_index": [
+        "float"
+      ],
+      "values.63.day": [
+        "int"
+      ],
+      "values.63.demand_index": [
+        "float"
+      ],
+      "values.63.quality_expectation_index": [
+        "float"
+      ],
+      "values.64.day": [
+        "int"
+      ],
+      "values.64.demand_index": [
+        "float"
+      ],
+      "values.64.quality_expectation_index": [
+        "float"
+      ],
+      "values.65.day": [
+        "int"
+      ],
+      "values.65.demand_index": [
+        "float"
+      ],
+      "values.65.quality_expectation_index": [
+        "float"
+      ],
+      "values.66.day": [
+        "int"
+      ],
+      "values.66.demand_index": [
+        "float"
+      ],
+      "values.66.quality_expectation_index": [
+        "float"
+      ],
+      "values.67.day": [
+        "int"
+      ],
+      "values.67.demand_index": [
+        "float"
+      ],
+      "values.67.quality_expectation_index": [
+        "float"
+      ],
+      "values.68.day": [
+        "int"
+      ],
+      "values.68.demand_index": [
+        "float"
+      ],
+      "values.68.quality_expectation_index": [
+        "float"
+      ],
+      "values.69.day": [
+        "int"
+      ],
+      "values.69.demand_index": [
+        "float"
+      ],
+      "values.69.quality_expectation_index": [
+        "float"
+      ],
+      "values.70.day": [
+        "int"
+      ],
+      "values.70.demand_index": [
+        "float"
+      ],
+      "values.70.quality_expectation_index": [
+        "float"
+      ],
+      "values.71.day": [
+        "int"
+      ],
+      "values.71.demand_index": [
+        "float"
+      ],
+      "values.71.quality_expectation_index": [
+        "float"
+      ],
+      "values.72.day": [
+        "int"
+      ],
+      "values.72.demand_index": [
+        "float"
+      ],
+      "values.72.quality_expectation_index": [
+        "float"
+      ],
+      "values.73.day": [
+        "int"
+      ],
+      "values.73.demand_index": [
+        "float"
+      ],
+      "values.73.quality_expectation_index": [
+        "float"
+      ],
+      "values.74.day": [
+        "int"
+      ],
+      "values.74.demand_index": [
+        "float"
+      ],
+      "values.74.quality_expectation_index": [
+        "float"
+      ],
+      "values.75.day": [
+        "int"
+      ],
+      "values.75.demand_index": [
+        "float"
+      ],
+      "values.75.quality_expectation_index": [
+        "float"
+      ],
+      "values.76.day": [
+        "int"
+      ],
+      "values.76.demand_index": [
+        "float"
+      ],
+      "values.76.quality_expectation_index": [
+        "float"
+      ],
+      "values.77.day": [
+        "int"
+      ],
+      "values.77.demand_index": [
+        "float"
+      ],
+      "values.77.quality_expectation_index": [
+        "float"
+      ],
+      "values.78.day": [
+        "int"
+      ],
+      "values.78.demand_index": [
+        "float"
+      ],
+      "values.78.quality_expectation_index": [
+        "float"
+      ],
+      "values.79.day": [
+        "int"
+      ],
+      "values.79.demand_index": [
+        "float"
+      ],
+      "values.79.quality_expectation_index": [
+        "float"
+      ],
+      "values.80.day": [
+        "int"
+      ],
+      "values.80.demand_index": [
+        "float"
+      ],
+      "values.80.quality_expectation_index": [
+        "float"
+      ],
+      "values.81.day": [
+        "int"
+      ],
+      "values.81.demand_index": [
+        "float"
+      ],
+      "values.81.quality_expectation_index": [
+        "float"
+      ],
+      "values.82.day": [
+        "int"
+      ],
+      "values.82.demand_index": [
+        "float"
+      ],
+      "values.82.quality_expectation_index": [
+        "float"
+      ],
+      "values.83.day": [
+        "int"
+      ],
+      "values.83.demand_index": [
+        "float"
+      ],
+      "values.83.quality_expectation_index": [
+        "float"
+      ],
+      "values.84.day": [
+        "int"
+      ],
+      "values.84.demand_index": [
+        "float"
+      ],
+      "values.84.quality_expectation_index": [
+        "float"
+      ],
+      "values.85.day": [
+        "int"
+      ],
+      "values.85.demand_index": [
+        "float"
+      ],
+      "values.85.quality_expectation_index": [
+        "float"
+      ],
+      "values.86.day": [
+        "int"
+      ],
+      "values.86.demand_index": [
+        "float"
+      ],
+      "values.86.quality_expectation_index": [
+        "float"
+      ],
+      "values.87.day": [
+        "int"
+      ],
+      "values.87.demand_index": [
+        "float"
+      ],
+      "values.87.quality_expectation_index": [
+        "float"
+      ],
+      "values.88.day": [
+        "int"
+      ],
+      "values.88.demand_index": [
+        "float"
+      ],
+      "values.88.quality_expectation_index": [
+        "float"
+      ],
+      "values.89.day": [
+        "int"
+      ],
+      "values.89.demand_index": [
+        "float"
+      ],
+      "values.89.quality_expectation_index": [
+        "float"
+      ],
+      "values.90.day": [
+        "int"
+      ],
+      "values.90.demand_index": [
+        "float"
+      ],
+      "values.90.quality_expectation_index": [
+        "float"
+      ],
+      "values.91.day": [
+        "int"
+      ],
+      "values.91.demand_index": [
+        "float"
+      ],
+      "values.91.quality_expectation_index": [
+        "float"
+      ],
+      "values.92.day": [
+        "int"
+      ],
+      "values.92.demand_index": [
+        "float"
+      ],
+      "values.92.quality_expectation_index": [
+        "float"
+      ],
+      "values.93.day": [
+        "int"
+      ],
+      "values.93.demand_index": [
+        "float"
+      ],
+      "values.93.quality_expectation_index": [
+        "float"
+      ],
+      "values.94.day": [
+        "int"
+      ],
+      "values.94.demand_index": [
+        "float"
+      ],
+      "values.94.quality_expectation_index": [
+        "float"
+      ],
+      "values.95.day": [
+        "int"
+      ],
+      "values.95.demand_index": [
+        "float"
+      ],
+      "values.95.quality_expectation_index": [
+        "float"
+      ],
+      "values.96.day": [
+        "int"
+      ],
+      "values.96.demand_index": [
+        "float"
+      ],
+      "values.96.quality_expectation_index": [
+        "float"
+      ],
+      "values.97.day": [
+        "int"
+      ],
+      "values.97.demand_index": [
+        "float"
+      ],
+      "values.97.quality_expectation_index": [
+        "float"
+      ],
+      "values.98.day": [
+        "int"
+      ],
+      "values.98.demand_index": [
+        "float"
+      ],
+      "values.98.quality_expectation_index": [
+        "float"
+      ],
+      "values.99.day": [
+        "int"
+      ],
+      "values.99.demand_index": [
+        "float"
+      ],
+      "values.99.quality_expectation_index": [
+        "float"
+      ],
+      "values.100.day": [
+        "int"
+      ],
+      "values.100.demand_index": [
+        "float"
+      ],
+      "values.100.quality_expectation_index": [
+        "float"
+      ],
+      "values.101.day": [
+        "int"
+      ],
+      "values.101.demand_index": [
+        "float"
+      ],
+      "values.101.quality_expectation_index": [
+        "float"
+      ],
+      "values.102.day": [
+        "int"
+      ],
+      "values.102.demand_index": [
+        "float"
+      ],
+      "values.102.quality_expectation_index": [
+        "float"
+      ],
+      "values.103.day": [
+        "int"
+      ],
+      "values.103.demand_index": [
+        "float"
+      ],
+      "values.103.quality_expectation_index": [
+        "float"
+      ],
+      "values.104.day": [
+        "int"
+      ],
+      "values.104.demand_index": [
+        "float"
+      ],
+      "values.104.quality_expectation_index": [
+        "float"
+      ],
+      "values.105.day": [
+        "int"
+      ],
+      "values.105.demand_index": [
+        "float"
+      ],
+      "values.105.quality_expectation_index": [
+        "float"
+      ],
+      "values.106.day": [
+        "int"
+      ],
+      "values.106.demand_index": [
+        "float"
+      ],
+      "values.106.quality_expectation_index": [
+        "float"
+      ],
+      "values.107.day": [
+        "int"
+      ],
+      "values.107.demand_index": [
+        "float"
+      ],
+      "values.107.quality_expectation_index": [
+        "float"
+      ],
+      "values.108.day": [
+        "int"
+      ],
+      "values.108.demand_index": [
+        "float"
+      ],
+      "values.108.quality_expectation_index": [
+        "float"
+      ],
+      "values.109.day": [
+        "int"
+      ],
+      "values.109.demand_index": [
+        "float"
+      ],
+      "values.109.quality_expectation_index": [
+        "float"
+      ],
+      "values.110.day": [
+        "int"
+      ],
+      "values.110.demand_index": [
+        "float"
+      ],
+      "values.110.quality_expectation_index": [
+        "float"
+      ],
+      "values.111.day": [
+        "int"
+      ],
+      "values.111.demand_index": [
+        "float"
+      ],
+      "values.111.quality_expectation_index": [
+        "float"
+      ],
+      "values.112.day": [
+        "int"
+      ],
+      "values.112.demand_index": [
+        "float"
+      ],
+      "values.112.quality_expectation_index": [
+        "float"
+      ],
+      "values.113.day": [
+        "int"
+      ],
+      "values.113.demand_index": [
+        "float"
+      ],
+      "values.113.quality_expectation_index": [
+        "float"
+      ],
+      "values.114.day": [
+        "int"
+      ],
+      "values.114.demand_index": [
+        "float"
+      ],
+      "values.114.quality_expectation_index": [
+        "float"
+      ],
+      "values.115.day": [
+        "int"
+      ],
+      "values.115.demand_index": [
+        "float"
+      ],
+      "values.115.quality_expectation_index": [
+        "float"
+      ],
+      "values.116.day": [
+        "int"
+      ],
+      "values.116.demand_index": [
+        "float"
+      ],
+      "values.116.quality_expectation_index": [
+        "float"
+      ],
+      "values.117.day": [
+        "int"
+      ],
+      "values.117.demand_index": [
+        "float"
+      ],
+      "values.117.quality_expectation_index": [
+        "float"
+      ],
+      "values.118.day": [
+        "int"
+      ],
+      "values.118.demand_index": [
+        "float"
+      ],
+      "values.118.quality_expectation_index": [
+        "float"
+      ],
+      "values.119.day": [
+        "int"
+      ],
+      "values.119.demand_index": [
+        "float"
+      ],
+      "values.119.quality_expectation_index": [
+        "float"
+      ],
+      "values.120.day": [
+        "int"
+      ],
+      "values.120.demand_index": [
+        "float"
+      ],
+      "values.120.quality_expectation_index": [
+        "float"
+      ],
+      "values.121.day": [
+        "int"
+      ],
+      "values.121.demand_index": [
+        "float"
+      ],
+      "values.121.quality_expectation_index": [
+        "float"
+      ],
+      "values.122.day": [
+        "int"
+      ],
+      "values.122.demand_index": [
+        "float"
+      ],
+      "values.122.quality_expectation_index": [
+        "float"
+      ],
+      "values.123.day": [
+        "int"
+      ],
+      "values.123.demand_index": [
+        "float"
+      ],
+      "values.123.quality_expectation_index": [
+        "float"
+      ],
+      "values.124.day": [
+        "int"
+      ],
+      "values.124.demand_index": [
+        "float"
+      ],
+      "values.124.quality_expectation_index": [
+        "float"
+      ],
+      "values.125.day": [
+        "int"
+      ],
+      "values.125.demand_index": [
+        "float"
+      ],
+      "values.125.quality_expectation_index": [
+        "float"
+      ],
+      "values.126.day": [
+        "int"
+      ],
+      "values.126.demand_index": [
+        "float"
+      ],
+      "values.126.quality_expectation_index": [
+        "float"
+      ],
+      "values.127.day": [
+        "int"
+      ],
+      "values.127.demand_index": [
+        "float"
+      ],
+      "values.127.quality_expectation_index": [
+        "float"
+      ],
+      "values.128.day": [
+        "int"
+      ],
+      "values.128.demand_index": [
+        "float"
+      ],
+      "values.128.quality_expectation_index": [
+        "float"
+      ],
+      "values.129.day": [
+        "int"
+      ],
+      "values.129.demand_index": [
+        "float"
+      ],
+      "values.129.quality_expectation_index": [
+        "float"
+      ],
+      "values.130.day": [
+        "int"
+      ],
+      "values.130.demand_index": [
+        "float"
+      ],
+      "values.130.quality_expectation_index": [
+        "float"
+      ],
+      "values.131.day": [
+        "int"
+      ],
+      "values.131.demand_index": [
+        "float"
+      ],
+      "values.131.quality_expectation_index": [
+        "float"
+      ],
+      "values.132.day": [
+        "int"
+      ],
+      "values.132.demand_index": [
+        "float"
+      ],
+      "values.132.quality_expectation_index": [
+        "float"
+      ],
+      "values.133.day": [
+        "int"
+      ],
+      "values.133.demand_index": [
+        "float"
+      ],
+      "values.133.quality_expectation_index": [
+        "float"
+      ],
+      "values.134.day": [
+        "int"
+      ],
+      "values.134.demand_index": [
+        "float"
+      ],
+      "values.134.quality_expectation_index": [
+        "float"
+      ],
+      "values.135.day": [
+        "int"
+      ],
+      "values.135.demand_index": [
+        "float"
+      ],
+      "values.135.quality_expectation_index": [
+        "float"
+      ],
+      "values.136.day": [
+        "int"
+      ],
+      "values.136.demand_index": [
+        "float"
+      ],
+      "values.136.quality_expectation_index": [
+        "float"
+      ],
+      "values.137.day": [
+        "int"
+      ],
+      "values.137.demand_index": [
+        "float"
+      ],
+      "values.137.quality_expectation_index": [
+        "float"
+      ],
+      "values.138.day": [
+        "int"
+      ],
+      "values.138.demand_index": [
+        "float"
+      ],
+      "values.138.quality_expectation_index": [
+        "float"
+      ],
+      "values.139.day": [
+        "int"
+      ],
+      "values.139.demand_index": [
+        "float"
+      ],
+      "values.139.quality_expectation_index": [
+        "float"
+      ],
+      "values.140.day": [
+        "int"
+      ],
+      "values.140.demand_index": [
+        "float"
+      ],
+      "values.140.quality_expectation_index": [
+        "float"
+      ],
+      "values.141.day": [
+        "int"
+      ],
+      "values.141.demand_index": [
+        "float"
+      ],
+      "values.141.quality_expectation_index": [
+        "float"
+      ],
+      "values.142.day": [
+        "int"
+      ],
+      "values.142.demand_index": [
+        "float"
+      ],
+      "values.142.quality_expectation_index": [
+        "float"
+      ],
+      "values.143.day": [
+        "int"
+      ],
+      "values.143.demand_index": [
+        "float"
+      ],
+      "values.143.quality_expectation_index": [
+        "float"
+      ],
+      "values.144.day": [
+        "int"
+      ],
+      "values.144.demand_index": [
+        "float"
+      ],
+      "values.144.quality_expectation_index": [
+        "float"
+      ],
+      "values.145.day": [
+        "int"
+      ],
+      "values.145.demand_index": [
+        "float"
+      ],
+      "values.145.quality_expectation_index": [
+        "float"
+      ],
+      "values.146.day": [
+        "int"
+      ],
+      "values.146.demand_index": [
+        "float"
+      ],
+      "values.146.quality_expectation_index": [
+        "float"
+      ],
+      "values.147.day": [
+        "int"
+      ],
+      "values.147.demand_index": [
+        "float"
+      ],
+      "values.147.quality_expectation_index": [
+        "float"
+      ],
+      "values.148.day": [
+        "int"
+      ],
+      "values.148.demand_index": [
+        "float"
+      ],
+      "values.148.quality_expectation_index": [
+        "float"
+      ],
+      "values.149.day": [
+        "int"
+      ],
+      "values.149.demand_index": [
+        "float"
+      ],
+      "values.149.quality_expectation_index": [
+        "float"
+      ],
+      "values.150.day": [
+        "int"
+      ],
+      "values.150.demand_index": [
+        "float"
+      ],
+      "values.150.quality_expectation_index": [
+        "float"
+      ],
+      "values.151.day": [
+        "int"
+      ],
+      "values.151.demand_index": [
+        "float"
+      ],
+      "values.151.quality_expectation_index": [
+        "float"
+      ],
+      "values.152.day": [
+        "int"
+      ],
+      "values.152.demand_index": [
+        "float"
+      ],
+      "values.152.quality_expectation_index": [
+        "float"
+      ],
+      "values.153.day": [
+        "int"
+      ],
+      "values.153.demand_index": [
+        "float"
+      ],
+      "values.153.quality_expectation_index": [
+        "float"
+      ],
+      "values.154.day": [
+        "int"
+      ],
+      "values.154.demand_index": [
+        "float"
+      ],
+      "values.154.quality_expectation_index": [
+        "float"
+      ],
+      "values.155.day": [
+        "int"
+      ],
+      "values.155.demand_index": [
+        "float"
+      ],
+      "values.155.quality_expectation_index": [
+        "float"
+      ],
+      "values.156.day": [
+        "int"
+      ],
+      "values.156.demand_index": [
+        "float"
+      ],
+      "values.156.quality_expectation_index": [
+        "float"
+      ],
+      "values.157.day": [
+        "int"
+      ],
+      "values.157.demand_index": [
+        "float"
+      ],
+      "values.157.quality_expectation_index": [
+        "float"
+      ],
+      "values.158.day": [
+        "int"
+      ],
+      "values.158.demand_index": [
+        "float"
+      ],
+      "values.158.quality_expectation_index": [
+        "float"
+      ],
+      "values.159.day": [
+        "int"
+      ],
+      "values.159.demand_index": [
+        "float"
+      ],
+      "values.159.quality_expectation_index": [
+        "float"
+      ],
+      "values.160.day": [
+        "int"
+      ],
+      "values.160.demand_index": [
+        "float"
+      ],
+      "values.160.quality_expectation_index": [
+        "float"
+      ],
+      "values.161.day": [
+        "int"
+      ],
+      "values.161.demand_index": [
+        "float"
+      ],
+      "values.161.quality_expectation_index": [
+        "float"
+      ],
+      "values.162.day": [
+        "int"
+      ],
+      "values.162.demand_index": [
+        "float"
+      ],
+      "values.162.quality_expectation_index": [
+        "float"
+      ],
+      "values.163.day": [
+        "int"
+      ],
+      "values.163.demand_index": [
+        "float"
+      ],
+      "values.163.quality_expectation_index": [
+        "float"
+      ],
+      "values.164.day": [
+        "int"
+      ],
+      "values.164.demand_index": [
+        "float"
+      ],
+      "values.164.quality_expectation_index": [
+        "float"
+      ],
+      "values.165.day": [
+        "int"
+      ],
+      "values.165.demand_index": [
+        "float"
+      ],
+      "values.165.quality_expectation_index": [
+        "float"
+      ],
+      "values.166.day": [
+        "int"
+      ],
+      "values.166.demand_index": [
+        "float"
+      ],
+      "values.166.quality_expectation_index": [
+        "float"
+      ],
+      "values.167.day": [
+        "int"
+      ],
+      "values.167.demand_index": [
+        "float"
+      ],
+      "values.167.quality_expectation_index": [
+        "float"
+      ],
+      "values.168.day": [
+        "int"
+      ],
+      "values.168.demand_index": [
+        "float"
+      ],
+      "values.168.quality_expectation_index": [
+        "float"
+      ],
+      "values.169.day": [
+        "int"
+      ],
+      "values.169.demand_index": [
+        "float"
+      ],
+      "values.169.quality_expectation_index": [
+        "float"
+      ],
+      "values.170.day": [
+        "int"
+      ],
+      "values.170.demand_index": [
+        "float"
+      ],
+      "values.170.quality_expectation_index": [
+        "float"
+      ],
+      "values.171.day": [
+        "int"
+      ],
+      "values.171.demand_index": [
+        "float"
+      ],
+      "values.171.quality_expectation_index": [
+        "float"
+      ],
+      "values.172.day": [
+        "int"
+      ],
+      "values.172.demand_index": [
+        "float"
+      ],
+      "values.172.quality_expectation_index": [
+        "float"
+      ],
+      "values.173.day": [
+        "int"
+      ],
+      "values.173.demand_index": [
+        "float"
+      ],
+      "values.173.quality_expectation_index": [
+        "float"
+      ],
+      "values.174.day": [
+        "int"
+      ],
+      "values.174.demand_index": [
+        "float"
+      ],
+      "values.174.quality_expectation_index": [
+        "float"
+      ],
+      "values.175.day": [
+        "int"
+      ],
+      "values.175.demand_index": [
+        "float"
+      ],
+      "values.175.quality_expectation_index": [
+        "float"
+      ],
+      "values.176.day": [
+        "int"
+      ],
+      "values.176.demand_index": [
+        "float"
+      ],
+      "values.176.quality_expectation_index": [
+        "float"
+      ],
+      "values.177.day": [
+        "int"
+      ],
+      "values.177.demand_index": [
+        "float"
+      ],
+      "values.177.quality_expectation_index": [
+        "float"
+      ],
+      "values.178.day": [
+        "int"
+      ],
+      "values.178.demand_index": [
+        "float"
+      ],
+      "values.178.quality_expectation_index": [
+        "float"
+      ],
+      "values.179.day": [
+        "int"
+      ],
+      "values.179.demand_index": [
+        "float"
+      ],
+      "values.179.quality_expectation_index": [
+        "float"
+      ],
+      "values.180.day": [
+        "int"
+      ],
+      "values.180.demand_index": [
+        "float"
+      ],
+      "values.180.quality_expectation_index": [
+        "float"
+      ],
+      "values.181.day": [
+        "int"
+      ],
+      "values.181.demand_index": [
+        "float"
+      ],
+      "values.181.quality_expectation_index": [
+        "float"
+      ],
+      "values.182.day": [
+        "int"
+      ],
+      "values.182.demand_index": [
+        "float"
+      ],
+      "values.182.quality_expectation_index": [
+        "float"
+      ],
+      "values.183.day": [
+        "int"
+      ],
+      "values.183.demand_index": [
+        "float"
+      ],
+      "values.183.quality_expectation_index": [
+        "float"
+      ],
+      "values.184.day": [
+        "int"
+      ],
+      "values.184.demand_index": [
+        "float"
+      ],
+      "values.184.quality_expectation_index": [
+        "float"
+      ],
+      "values.185.day": [
+        "int"
+      ],
+      "values.185.demand_index": [
+        "float"
+      ],
+      "values.185.quality_expectation_index": [
+        "float"
+      ],
+      "values.186.day": [
+        "int"
+      ],
+      "values.186.demand_index": [
+        "float"
+      ],
+      "values.186.quality_expectation_index": [
+        "float"
+      ],
+      "values.187.day": [
+        "int"
+      ],
+      "values.187.demand_index": [
+        "float"
+      ],
+      "values.187.quality_expectation_index": [
+        "float"
+      ],
+      "values.188.day": [
+        "int"
+      ],
+      "values.188.demand_index": [
+        "float"
+      ],
+      "values.188.quality_expectation_index": [
+        "float"
+      ],
+      "values.189.day": [
+        "int"
+      ],
+      "values.189.demand_index": [
+        "float"
+      ],
+      "values.189.quality_expectation_index": [
+        "float"
+      ],
+      "values.190.day": [
+        "int"
+      ],
+      "values.190.demand_index": [
+        "float"
+      ],
+      "values.190.quality_expectation_index": [
+        "float"
+      ],
+      "values.191.day": [
+        "int"
+      ],
+      "values.191.demand_index": [
+        "float"
+      ],
+      "values.191.quality_expectation_index": [
+        "float"
+      ],
+      "values.192.day": [
+        "int"
+      ],
+      "values.192.demand_index": [
+        "float"
+      ],
+      "values.192.quality_expectation_index": [
+        "float"
+      ],
+      "values.193.day": [
+        "int"
+      ],
+      "values.193.demand_index": [
+        "float"
+      ],
+      "values.193.quality_expectation_index": [
+        "float"
+      ],
+      "values.194.day": [
+        "int"
+      ],
+      "values.194.demand_index": [
+        "float"
+      ],
+      "values.194.quality_expectation_index": [
+        "float"
+      ],
+      "values.195.day": [
+        "int"
+      ],
+      "values.195.demand_index": [
+        "float"
+      ],
+      "values.195.quality_expectation_index": [
+        "float"
+      ],
+      "values.196.day": [
+        "int"
+      ],
+      "values.196.demand_index": [
+        "float"
+      ],
+      "values.196.quality_expectation_index": [
+        "float"
+      ],
+      "values.197.day": [
+        "int"
+      ],
+      "values.197.demand_index": [
+        "float"
+      ],
+      "values.197.quality_expectation_index": [
+        "float"
+      ],
+      "values.198.day": [
+        "int"
+      ],
+      "values.198.demand_index": [
+        "float"
+      ],
+      "values.198.quality_expectation_index": [
+        "float"
+      ],
+      "values.199.day": [
+        "int"
+      ],
+      "values.199.demand_index": [
+        "float"
+      ],
+      "values.199.quality_expectation_index": [
+        "float"
+      ],
+      "values.200.day": [
+        "int"
+      ],
+      "values.200.demand_index": [
+        "float"
+      ],
+      "values.200.quality_expectation_index": [
+        "float"
+      ],
+      "values.201.day": [
+        "int"
+      ],
+      "values.201.demand_index": [
+        "float"
+      ],
+      "values.201.quality_expectation_index": [
+        "float"
+      ],
+      "values.202.day": [
+        "int"
+      ],
+      "values.202.demand_index": [
+        "float"
+      ],
+      "values.202.quality_expectation_index": [
+        "float"
+      ],
+      "values.203.day": [
+        "int"
+      ],
+      "values.203.demand_index": [
+        "float"
+      ],
+      "values.203.quality_expectation_index": [
+        "float"
+      ],
+      "values.204.day": [
+        "int"
+      ],
+      "values.204.demand_index": [
+        "float"
+      ],
+      "values.204.quality_expectation_index": [
+        "float"
+      ],
+      "values.205.day": [
+        "int"
+      ],
+      "values.205.demand_index": [
+        "float"
+      ],
+      "values.205.quality_expectation_index": [
+        "float"
+      ],
+      "values.206.day": [
+        "int"
+      ],
+      "values.206.demand_index": [
+        "float"
+      ],
+      "values.206.quality_expectation_index": [
+        "float"
+      ],
+      "values.207.day": [
+        "int"
+      ],
+      "values.207.demand_index": [
+        "float"
+      ],
+      "values.207.quality_expectation_index": [
+        "float"
+      ],
+      "values.208.day": [
+        "int"
+      ],
+      "values.208.demand_index": [
+        "float"
+      ],
+      "values.208.quality_expectation_index": [
+        "float"
+      ],
+      "values.209.day": [
+        "int"
+      ],
+      "values.209.demand_index": [
+        "float"
+      ],
+      "values.209.quality_expectation_index": [
+        "float"
+      ],
+      "values.210.day": [
+        "int"
+      ],
+      "values.210.demand_index": [
+        "float"
+      ],
+      "values.210.quality_expectation_index": [
+        "float"
+      ],
+      "values.211.day": [
+        "int"
+      ],
+      "values.211.demand_index": [
+        "float"
+      ],
+      "values.211.quality_expectation_index": [
+        "float"
+      ],
+      "values.212.day": [
+        "int"
+      ],
+      "values.212.demand_index": [
+        "float"
+      ],
+      "values.212.quality_expectation_index": [
+        "float"
+      ],
+      "values.213.day": [
+        "int"
+      ],
+      "values.213.demand_index": [
+        "float"
+      ],
+      "values.213.quality_expectation_index": [
+        "float"
+      ],
+      "values.214.day": [
+        "int"
+      ],
+      "values.214.demand_index": [
+        "float"
+      ],
+      "values.214.quality_expectation_index": [
+        "float"
+      ],
+      "values.215.day": [
+        "int"
+      ],
+      "values.215.demand_index": [
+        "float"
+      ],
+      "values.215.quality_expectation_index": [
+        "float"
+      ],
+      "values.216.day": [
+        "int"
+      ],
+      "values.216.demand_index": [
+        "float"
+      ],
+      "values.216.quality_expectation_index": [
+        "float"
+      ],
+      "values.217.day": [
+        "int"
+      ],
+      "values.217.demand_index": [
+        "float"
+      ],
+      "values.217.quality_expectation_index": [
+        "float"
+      ],
+      "values.218.day": [
+        "int"
+      ],
+      "values.218.demand_index": [
+        "float"
+      ],
+      "values.218.quality_expectation_index": [
+        "float"
+      ],
+      "values.219.day": [
+        "int"
+      ],
+      "values.219.demand_index": [
+        "float"
+      ],
+      "values.219.quality_expectation_index": [
+        "float"
+      ],
+      "values.220.day": [
+        "int"
+      ],
+      "values.220.demand_index": [
+        "float"
+      ],
+      "values.220.quality_expectation_index": [
+        "float"
+      ],
+      "values.221.day": [
+        "int"
+      ],
+      "values.221.demand_index": [
+        "float"
+      ],
+      "values.221.quality_expectation_index": [
+        "float"
+      ],
+      "values.222.day": [
+        "int"
+      ],
+      "values.222.demand_index": [
+        "float"
+      ],
+      "values.222.quality_expectation_index": [
+        "float"
+      ],
+      "values.223.day": [
+        "int"
+      ],
+      "values.223.demand_index": [
+        "float"
+      ],
+      "values.223.quality_expectation_index": [
+        "float"
+      ],
+      "values.224.day": [
+        "int"
+      ],
+      "values.224.demand_index": [
+        "float"
+      ],
+      "values.224.quality_expectation_index": [
+        "float"
+      ],
+      "values.225.day": [
+        "int"
+      ],
+      "values.225.demand_index": [
+        "float"
+      ],
+      "values.225.quality_expectation_index": [
+        "float"
+      ],
+      "values.226.day": [
+        "int"
+      ],
+      "values.226.demand_index": [
+        "float"
+      ],
+      "values.226.quality_expectation_index": [
+        "float"
+      ],
+      "values.227.day": [
+        "int"
+      ],
+      "values.227.demand_index": [
+        "float"
+      ],
+      "values.227.quality_expectation_index": [
+        "float"
+      ],
+      "values.228.day": [
+        "int"
+      ],
+      "values.228.demand_index": [
+        "float"
+      ],
+      "values.228.quality_expectation_index": [
+        "float"
+      ],
+      "values.229.day": [
+        "int"
+      ],
+      "values.229.demand_index": [
+        "float"
+      ],
+      "values.229.quality_expectation_index": [
+        "float"
+      ],
+      "values.230.day": [
+        "int"
+      ],
+      "values.230.demand_index": [
+        "float"
+      ],
+      "values.230.quality_expectation_index": [
+        "float"
+      ],
+      "values.231.day": [
+        "int"
+      ],
+      "values.231.demand_index": [
+        "float"
+      ],
+      "values.231.quality_expectation_index": [
+        "float"
+      ],
+      "values.232.day": [
+        "int"
+      ],
+      "values.232.demand_index": [
+        "float"
+      ],
+      "values.232.quality_expectation_index": [
+        "float"
+      ],
+      "values.233.day": [
+        "int"
+      ],
+      "values.233.demand_index": [
+        "float"
+      ],
+      "values.233.quality_expectation_index": [
+        "float"
+      ],
+      "values.234.day": [
+        "int"
+      ],
+      "values.234.demand_index": [
+        "float"
+      ],
+      "values.234.quality_expectation_index": [
+        "float"
+      ],
+      "values.235.day": [
+        "int"
+      ],
+      "values.235.demand_index": [
+        "float"
+      ],
+      "values.235.quality_expectation_index": [
+        "float"
+      ],
+      "values.236.day": [
+        "int"
+      ],
+      "values.236.demand_index": [
+        "float"
+      ],
+      "values.236.quality_expectation_index": [
+        "float"
+      ],
+      "values.237.day": [
+        "int"
+      ],
+      "values.237.demand_index": [
+        "float"
+      ],
+      "values.237.quality_expectation_index": [
+        "float"
+      ],
+      "values.238.day": [
+        "int"
+      ],
+      "values.238.demand_index": [
+        "float"
+      ],
+      "values.238.quality_expectation_index": [
+        "float"
+      ],
+      "values.239.day": [
+        "int"
+      ],
+      "values.239.demand_index": [
+        "float"
+      ],
+      "values.239.quality_expectation_index": [
+        "float"
+      ],
+      "values.240.day": [
+        "int"
+      ],
+      "values.240.demand_index": [
+        "float"
+      ],
+      "values.240.quality_expectation_index": [
+        "float"
+      ],
+      "values.241.day": [
+        "int"
+      ],
+      "values.241.demand_index": [
+        "float"
+      ],
+      "values.241.quality_expectation_index": [
+        "float"
+      ],
+      "values.242.day": [
+        "int"
+      ],
+      "values.242.demand_index": [
+        "float"
+      ],
+      "values.242.quality_expectation_index": [
+        "float"
+      ],
+      "values.243.day": [
+        "int"
+      ],
+      "values.243.demand_index": [
+        "float"
+      ],
+      "values.243.quality_expectation_index": [
+        "float"
+      ],
+      "values.244.day": [
+        "int"
+      ],
+      "values.244.demand_index": [
+        "float"
+      ],
+      "values.244.quality_expectation_index": [
+        "float"
+      ],
+      "values.245.day": [
+        "int"
+      ],
+      "values.245.demand_index": [
+        "float"
+      ],
+      "values.245.quality_expectation_index": [
+        "float"
+      ],
+      "values.246.day": [
+        "int"
+      ],
+      "values.246.demand_index": [
+        "float"
+      ],
+      "values.246.quality_expectation_index": [
+        "float"
+      ],
+      "values.247.day": [
+        "int"
+      ],
+      "values.247.demand_index": [
+        "float"
+      ],
+      "values.247.quality_expectation_index": [
+        "float"
+      ],
+      "values.248.day": [
+        "int"
+      ],
+      "values.248.demand_index": [
+        "float"
+      ],
+      "values.248.quality_expectation_index": [
+        "float"
+      ],
+      "values.249.day": [
+        "int"
+      ],
+      "values.249.demand_index": [
+        "float"
+      ],
+      "values.249.quality_expectation_index": [
+        "float"
+      ],
+      "values.250.day": [
+        "int"
+      ],
+      "values.250.demand_index": [
+        "float"
+      ],
+      "values.250.quality_expectation_index": [
+        "float"
+      ],
+      "values.251.day": [
+        "int"
+      ],
+      "values.251.demand_index": [
+        "float"
+      ],
+      "values.251.quality_expectation_index": [
+        "float"
+      ],
+      "values.252.day": [
+        "int"
+      ],
+      "values.252.demand_index": [
+        "float"
+      ],
+      "values.252.quality_expectation_index": [
+        "float"
+      ],
+      "values.253.day": [
+        "int"
+      ],
+      "values.253.demand_index": [
+        "float"
+      ],
+      "values.253.quality_expectation_index": [
+        "float"
+      ],
+      "values.254.day": [
+        "int"
+      ],
+      "values.254.demand_index": [
+        "float"
+      ],
+      "values.254.quality_expectation_index": [
+        "float"
+      ],
+      "values.255.day": [
+        "int"
+      ],
+      "values.255.demand_index": [
+        "float"
+      ],
+      "values.255.quality_expectation_index": [
+        "float"
+      ],
+      "values.256.day": [
+        "int"
+      ],
+      "values.256.demand_index": [
+        "float"
+      ],
+      "values.256.quality_expectation_index": [
+        "float"
+      ],
+      "values.257.day": [
+        "int"
+      ],
+      "values.257.demand_index": [
+        "float"
+      ],
+      "values.257.quality_expectation_index": [
+        "float"
+      ],
+      "values.258.day": [
+        "int"
+      ],
+      "values.258.demand_index": [
+        "float"
+      ],
+      "values.258.quality_expectation_index": [
+        "float"
+      ],
+      "values.259.day": [
+        "int"
+      ],
+      "values.259.demand_index": [
+        "float"
+      ],
+      "values.259.quality_expectation_index": [
+        "float"
+      ],
+      "values.260.day": [
+        "int"
+      ],
+      "values.260.demand_index": [
+        "float"
+      ],
+      "values.260.quality_expectation_index": [
+        "float"
+      ],
+      "values.261.day": [
+        "int"
+      ],
+      "values.261.demand_index": [
+        "float"
+      ],
+      "values.261.quality_expectation_index": [
+        "float"
+      ],
+      "values.262.day": [
+        "int"
+      ],
+      "values.262.demand_index": [
+        "float"
+      ],
+      "values.262.quality_expectation_index": [
+        "float"
+      ],
+      "values.263.day": [
+        "int"
+      ],
+      "values.263.demand_index": [
+        "float"
+      ],
+      "values.263.quality_expectation_index": [
+        "float"
+      ],
+      "values.264.day": [
+        "int"
+      ],
+      "values.264.demand_index": [
+        "float"
+      ],
+      "values.264.quality_expectation_index": [
+        "float"
+      ],
+      "values.265.day": [
+        "int"
+      ],
+      "values.265.demand_index": [
+        "float"
+      ],
+      "values.265.quality_expectation_index": [
+        "float"
+      ],
+      "values.266.day": [
+        "int"
+      ],
+      "values.266.demand_index": [
+        "float"
+      ],
+      "values.266.quality_expectation_index": [
+        "float"
+      ],
+      "values.267.day": [
+        "int"
+      ],
+      "values.267.demand_index": [
+        "float"
+      ],
+      "values.267.quality_expectation_index": [
+        "float"
+      ],
+      "values.268.day": [
+        "int"
+      ],
+      "values.268.demand_index": [
+        "float"
+      ],
+      "values.268.quality_expectation_index": [
+        "float"
+      ],
+      "values.269.day": [
+        "int"
+      ],
+      "values.269.demand_index": [
+        "float"
+      ],
+      "values.269.quality_expectation_index": [
+        "float"
+      ],
+      "values.270.day": [
+        "int"
+      ],
+      "values.270.demand_index": [
+        "float"
+      ],
+      "values.270.quality_expectation_index": [
+        "float"
+      ],
+      "values.271.day": [
+        "int"
+      ],
+      "values.271.demand_index": [
+        "float"
+      ],
+      "values.271.quality_expectation_index": [
+        "float"
+      ],
+      "values.272.day": [
+        "int"
+      ],
+      "values.272.demand_index": [
+        "float"
+      ],
+      "values.272.quality_expectation_index": [
+        "float"
+      ],
+      "values.273.day": [
+        "int"
+      ],
+      "values.273.demand_index": [
+        "float"
+      ],
+      "values.273.quality_expectation_index": [
+        "float"
+      ],
+      "values.274.day": [
+        "int"
+      ],
+      "values.274.demand_index": [
+        "float"
+      ],
+      "values.274.quality_expectation_index": [
+        "float"
+      ],
+      "values.275.day": [
+        "int"
+      ],
+      "values.275.demand_index": [
+        "float"
+      ],
+      "values.275.quality_expectation_index": [
+        "float"
+      ],
+      "values.276.day": [
+        "int"
+      ],
+      "values.276.demand_index": [
+        "float"
+      ],
+      "values.276.quality_expectation_index": [
+        "float"
+      ],
+      "values.277.day": [
+        "int"
+      ],
+      "values.277.demand_index": [
+        "float"
+      ],
+      "values.277.quality_expectation_index": [
+        "float"
+      ],
+      "values.278.day": [
+        "int"
+      ],
+      "values.278.demand_index": [
+        "float"
+      ],
+      "values.278.quality_expectation_index": [
+        "float"
+      ],
+      "values.279.day": [
+        "int"
+      ],
+      "values.279.demand_index": [
+        "float"
+      ],
+      "values.279.quality_expectation_index": [
+        "float"
+      ],
+      "values.280.day": [
+        "int"
+      ],
+      "values.280.demand_index": [
+        "float"
+      ],
+      "values.280.quality_expectation_index": [
+        "float"
+      ],
+      "values.281.day": [
+        "int"
+      ],
+      "values.281.demand_index": [
+        "float"
+      ],
+      "values.281.quality_expectation_index": [
+        "float"
+      ],
+      "values.282.day": [
+        "int"
+      ],
+      "values.282.demand_index": [
+        "float"
+      ],
+      "values.282.quality_expectation_index": [
+        "float"
+      ],
+      "values.283.day": [
+        "int"
+      ],
+      "values.283.demand_index": [
+        "float"
+      ],
+      "values.283.quality_expectation_index": [
+        "float"
+      ],
+      "values.284.day": [
+        "int"
+      ],
+      "values.284.demand_index": [
+        "float"
+      ],
+      "values.284.quality_expectation_index": [
+        "float"
+      ],
+      "values.285.day": [
+        "int"
+      ],
+      "values.285.demand_index": [
+        "float"
+      ],
+      "values.285.quality_expectation_index": [
+        "float"
+      ],
+      "values.286.day": [
+        "int"
+      ],
+      "values.286.demand_index": [
+        "float"
+      ],
+      "values.286.quality_expectation_index": [
+        "float"
+      ],
+      "values.287.day": [
+        "int"
+      ],
+      "values.287.demand_index": [
+        "float"
+      ],
+      "values.287.quality_expectation_index": [
+        "float"
+      ],
+      "values.288.day": [
+        "int"
+      ],
+      "values.288.demand_index": [
+        "float"
+      ],
+      "values.288.quality_expectation_index": [
+        "float"
+      ],
+      "values.289.day": [
+        "int"
+      ],
+      "values.289.demand_index": [
+        "float"
+      ],
+      "values.289.quality_expectation_index": [
+        "float"
+      ],
+      "values.290.day": [
+        "int"
+      ],
+      "values.290.demand_index": [
+        "float"
+      ],
+      "values.290.quality_expectation_index": [
+        "float"
+      ],
+      "values.291.day": [
+        "int"
+      ],
+      "values.291.demand_index": [
+        "float"
+      ],
+      "values.291.quality_expectation_index": [
+        "float"
+      ],
+      "values.292.day": [
+        "int"
+      ],
+      "values.292.demand_index": [
+        "float"
+      ],
+      "values.292.quality_expectation_index": [
+        "float"
+      ],
+      "values.293.day": [
+        "int"
+      ],
+      "values.293.demand_index": [
+        "float"
+      ],
+      "values.293.quality_expectation_index": [
+        "float"
+      ],
+      "values.294.day": [
+        "int"
+      ],
+      "values.294.demand_index": [
+        "float"
+      ],
+      "values.294.quality_expectation_index": [
+        "float"
+      ],
+      "values.295.day": [
+        "int"
+      ],
+      "values.295.demand_index": [
+        "float"
+      ],
+      "values.295.quality_expectation_index": [
+        "float"
+      ],
+      "values.296.day": [
+        "int"
+      ],
+      "values.296.demand_index": [
+        "float"
+      ],
+      "values.296.quality_expectation_index": [
+        "float"
+      ],
+      "values.297.day": [
+        "int"
+      ],
+      "values.297.demand_index": [
+        "float"
+      ],
+      "values.297.quality_expectation_index": [
+        "float"
+      ],
+      "values.298.day": [
+        "int"
+      ],
+      "values.298.demand_index": [
+        "float"
+      ],
+      "values.298.quality_expectation_index": [
+        "float"
+      ],
+      "values.299.day": [
+        "int"
+      ],
+      "values.299.demand_index": [
+        "float"
+      ],
+      "values.299.quality_expectation_index": [
+        "float"
+      ],
+      "values.300.day": [
+        "int"
+      ],
+      "values.300.demand_index": [
+        "float"
+      ],
+      "values.300.quality_expectation_index": [
+        "float"
+      ],
+      "values.301.day": [
+        "int"
+      ],
+      "values.301.demand_index": [
+        "float"
+      ],
+      "values.301.quality_expectation_index": [
+        "float"
+      ],
+      "values.302.day": [
+        "int"
+      ],
+      "values.302.demand_index": [
+        "float"
+      ],
+      "values.302.quality_expectation_index": [
+        "float"
+      ],
+      "values.303.day": [
+        "int"
+      ],
+      "values.303.demand_index": [
+        "float"
+      ],
+      "values.303.quality_expectation_index": [
+        "float"
+      ],
+      "values.304.day": [
+        "int"
+      ],
+      "values.304.demand_index": [
+        "float"
+      ],
+      "values.304.quality_expectation_index": [
+        "float"
+      ],
+      "values.305.day": [
+        "int"
+      ],
+      "values.305.demand_index": [
+        "float"
+      ],
+      "values.305.quality_expectation_index": [
+        "float"
+      ],
+      "values.306.day": [
+        "int"
+      ],
+      "values.306.demand_index": [
+        "float"
+      ],
+      "values.306.quality_expectation_index": [
+        "float"
+      ],
+      "values.307.day": [
+        "int"
+      ],
+      "values.307.demand_index": [
+        "float"
+      ],
+      "values.307.quality_expectation_index": [
+        "float"
+      ],
+      "values.308.day": [
+        "int"
+      ],
+      "values.308.demand_index": [
+        "float"
+      ],
+      "values.308.quality_expectation_index": [
+        "float"
+      ],
+      "values.309.day": [
+        "int"
+      ],
+      "values.309.demand_index": [
+        "float"
+      ],
+      "values.309.quality_expectation_index": [
+        "float"
+      ],
+      "values.310.day": [
+        "int"
+      ],
+      "values.310.demand_index": [
+        "float"
+      ],
+      "values.310.quality_expectation_index": [
+        "float"
+      ],
+      "values.311.day": [
+        "int"
+      ],
+      "values.311.demand_index": [
+        "float"
+      ],
+      "values.311.quality_expectation_index": [
+        "float"
+      ],
+      "values.312.day": [
+        "int"
+      ],
+      "values.312.demand_index": [
+        "float"
+      ],
+      "values.312.quality_expectation_index": [
+        "float"
+      ],
+      "values.313.day": [
+        "int"
+      ],
+      "values.313.demand_index": [
+        "float"
+      ],
+      "values.313.quality_expectation_index": [
+        "float"
+      ],
+      "values.314.day": [
+        "int"
+      ],
+      "values.314.demand_index": [
+        "float"
+      ],
+      "values.314.quality_expectation_index": [
+        "float"
+      ],
+      "values.315.day": [
+        "int"
+      ],
+      "values.315.demand_index": [
+        "float"
+      ],
+      "values.315.quality_expectation_index": [
+        "float"
+      ],
+      "values.316.day": [
+        "int"
+      ],
+      "values.316.demand_index": [
+        "float"
+      ],
+      "values.316.quality_expectation_index": [
+        "float"
+      ],
+      "values.317.day": [
+        "int"
+      ],
+      "values.317.demand_index": [
+        "float"
+      ],
+      "values.317.quality_expectation_index": [
+        "float"
+      ],
+      "values.318.day": [
+        "int"
+      ],
+      "values.318.demand_index": [
+        "float"
+      ],
+      "values.318.quality_expectation_index": [
+        "float"
+      ],
+      "values.319.day": [
+        "int"
+      ],
+      "values.319.demand_index": [
+        "float"
+      ],
+      "values.319.quality_expectation_index": [
+        "float"
+      ],
+      "values.320.day": [
+        "int"
+      ],
+      "values.320.demand_index": [
+        "float"
+      ],
+      "values.320.quality_expectation_index": [
+        "float"
+      ],
+      "values.321.day": [
+        "int"
+      ],
+      "values.321.demand_index": [
+        "float"
+      ],
+      "values.321.quality_expectation_index": [
+        "float"
+      ],
+      "values.322.day": [
+        "int"
+      ],
+      "values.322.demand_index": [
+        "float"
+      ],
+      "values.322.quality_expectation_index": [
+        "float"
+      ],
+      "values.323.day": [
+        "int"
+      ],
+      "values.323.demand_index": [
+        "float"
+      ],
+      "values.323.quality_expectation_index": [
+        "float"
+      ],
+      "values.324.day": [
+        "int"
+      ],
+      "values.324.demand_index": [
+        "float"
+      ],
+      "values.324.quality_expectation_index": [
+        "float"
+      ],
+      "values.325.day": [
+        "int"
+      ],
+      "values.325.demand_index": [
+        "float"
+      ],
+      "values.325.quality_expectation_index": [
+        "float"
+      ],
+      "values.326.day": [
+        "int"
+      ],
+      "values.326.demand_index": [
+        "float"
+      ],
+      "values.326.quality_expectation_index": [
+        "float"
+      ],
+      "values.327.day": [
+        "int"
+      ],
+      "values.327.demand_index": [
+        "float"
+      ],
+      "values.327.quality_expectation_index": [
+        "float"
+      ],
+      "values.328.day": [
+        "int"
+      ],
+      "values.328.demand_index": [
+        "float"
+      ],
+      "values.328.quality_expectation_index": [
+        "float"
+      ],
+      "values.329.day": [
+        "int"
+      ],
+      "values.329.demand_index": [
+        "float"
+      ],
+      "values.329.quality_expectation_index": [
+        "float"
+      ],
+      "values.330.day": [
+        "int"
+      ],
+      "values.330.demand_index": [
+        "float"
+      ],
+      "values.330.quality_expectation_index": [
+        "float"
+      ],
+      "values.331.day": [
+        "int"
+      ],
+      "values.331.demand_index": [
+        "float"
+      ],
+      "values.331.quality_expectation_index": [
+        "float"
+      ],
+      "values.332.day": [
+        "int"
+      ],
+      "values.332.demand_index": [
+        "float"
+      ],
+      "values.332.quality_expectation_index": [
+        "float"
+      ],
+      "values.333.day": [
+        "int"
+      ],
+      "values.333.demand_index": [
+        "float"
+      ],
+      "values.333.quality_expectation_index": [
+        "float"
+      ],
+      "values.334.day": [
+        "int"
+      ],
+      "values.334.demand_index": [
+        "float"
+      ],
+      "values.334.quality_expectation_index": [
+        "float"
+      ],
+      "values.335.day": [
+        "int"
+      ],
+      "values.335.demand_index": [
+        "float"
+      ],
+      "values.335.quality_expectation_index": [
+        "float"
+      ],
+      "values.336.day": [
+        "int"
+      ],
+      "values.336.demand_index": [
+        "float"
+      ],
+      "values.336.quality_expectation_index": [
+        "float"
+      ],
+      "values.337.day": [
+        "int"
+      ],
+      "values.337.demand_index": [
+        "float"
+      ],
+      "values.337.quality_expectation_index": [
+        "float"
+      ],
+      "values.338.day": [
+        "int"
+      ],
+      "values.338.demand_index": [
+        "float"
+      ],
+      "values.338.quality_expectation_index": [
+        "float"
+      ],
+      "values.339.day": [
+        "int"
+      ],
+      "values.339.demand_index": [
+        "float"
+      ],
+      "values.339.quality_expectation_index": [
+        "float"
+      ],
+      "values.340.day": [
+        "int"
+      ],
+      "values.340.demand_index": [
+        "float"
+      ],
+      "values.340.quality_expectation_index": [
+        "float"
+      ],
+      "values.341.day": [
+        "int"
+      ],
+      "values.341.demand_index": [
+        "float"
+      ],
+      "values.341.quality_expectation_index": [
+        "float"
+      ],
+      "values.342.day": [
+        "int"
+      ],
+      "values.342.demand_index": [
+        "float"
+      ],
+      "values.342.quality_expectation_index": [
+        "float"
+      ],
+      "values.343.day": [
+        "int"
+      ],
+      "values.343.demand_index": [
+        "float"
+      ],
+      "values.343.quality_expectation_index": [
+        "float"
+      ],
+      "values.344.day": [
+        "int"
+      ],
+      "values.344.demand_index": [
+        "float"
+      ],
+      "values.344.quality_expectation_index": [
+        "float"
+      ],
+      "values.345.day": [
+        "int"
+      ],
+      "values.345.demand_index": [
+        "float"
+      ],
+      "values.345.quality_expectation_index": [
+        "float"
+      ],
+      "values.346.day": [
+        "int"
+      ],
+      "values.346.demand_index": [
+        "float"
+      ],
+      "values.346.quality_expectation_index": [
+        "float"
+      ],
+      "values.347.day": [
+        "int"
+      ],
+      "values.347.demand_index": [
+        "float"
+      ],
+      "values.347.quality_expectation_index": [
+        "float"
+      ],
+      "values.348.day": [
+        "int"
+      ],
+      "values.348.demand_index": [
+        "float"
+      ],
+      "values.348.quality_expectation_index": [
+        "float"
+      ],
+      "values.349.day": [
+        "int"
+      ],
+      "values.349.demand_index": [
+        "float"
+      ],
+      "values.349.quality_expectation_index": [
+        "float"
+      ],
+      "values.350.day": [
+        "int"
+      ],
+      "values.350.demand_index": [
+        "float"
+      ],
+      "values.350.quality_expectation_index": [
+        "float"
+      ],
+      "values.351.day": [
+        "int"
+      ],
+      "values.351.demand_index": [
+        "float"
+      ],
+      "values.351.quality_expectation_index": [
+        "float"
+      ],
+      "values.352.day": [
+        "int"
+      ],
+      "values.352.demand_index": [
+        "float"
+      ],
+      "values.352.quality_expectation_index": [
+        "float"
+      ],
+      "values.353.day": [
+        "int"
+      ],
+      "values.353.demand_index": [
+        "float"
+      ],
+      "values.353.quality_expectation_index": [
+        "float"
+      ],
+      "values.354.day": [
+        "int"
+      ],
+      "values.354.demand_index": [
+        "float"
+      ],
+      "values.354.quality_expectation_index": [
+        "float"
+      ],
+      "values.355.day": [
+        "int"
+      ],
+      "values.355.demand_index": [
+        "float"
+      ],
+      "values.355.quality_expectation_index": [
+        "float"
+      ],
+      "values.356.day": [
+        "int"
+      ],
+      "values.356.demand_index": [
+        "float"
+      ],
+      "values.356.quality_expectation_index": [
+        "float"
+      ],
+      "values.357.day": [
+        "int"
+      ],
+      "values.357.demand_index": [
+        "float"
+      ],
+      "values.357.quality_expectation_index": [
+        "float"
+      ],
+      "values.358.day": [
+        "int"
+      ],
+      "values.358.demand_index": [
+        "float"
+      ],
+      "values.358.quality_expectation_index": [
+        "float"
+      ],
+      "values.359.day": [
+        "int"
+      ],
+      "values.359.demand_index": [
+        "float"
+      ],
+      "values.359.quality_expectation_index": [
+        "float"
+      ],
+      "values.360.day": [
+        "int"
+      ],
+      "values.360.demand_index": [
+        "float"
+      ],
+      "values.360.quality_expectation_index": [
+        "float"
+      ],
+      "values.361.day": [
+        "int"
+      ],
+      "values.361.demand_index": [
+        "float"
+      ],
+      "values.361.quality_expectation_index": [
+        "float"
+      ],
+      "values.362.day": [
+        "int"
+      ],
+      "values.362.demand_index": [
+        "float"
+      ],
+      "values.362.quality_expectation_index": [
+        "float"
+      ],
+      "values.363.day": [
+        "int"
+      ],
+      "values.363.demand_index": [
+        "float"
+      ],
+      "values.363.quality_expectation_index": [
+        "float"
+      ],
+      "values.364.day": [
+        "int"
+      ],
+      "values.364.demand_index": [
+        "float"
+      ],
+      "values.364.quality_expectation_index": [
+        "float"
+      ],
+      "values.365.day": [
+        "int"
+      ],
+      "values.365.demand_index": [
+        "float"
+      ],
+      "values.365.quality_expectation_index": [
+        "float"
+      ],
+      "values.366.day": [
+        "int"
+      ],
+      "values.366.demand_index": [
+        "float"
+      ],
+      "values.366.quality_expectation_index": [
+        "float"
+      ],
+      "values.367.day": [
+        "int"
+      ],
+      "values.367.demand_index": [
+        "float"
+      ],
+      "values.367.quality_expectation_index": [
+        "float"
+      ],
+      "values.368.day": [
+        "int"
+      ],
+      "values.368.demand_index": [
+        "float"
+      ],
+      "values.368.quality_expectation_index": [
+        "float"
+      ],
+      "values.369.day": [
+        "int"
+      ],
+      "values.369.demand_index": [
+        "float"
+      ],
+      "values.369.quality_expectation_index": [
+        "float"
+      ],
+      "values.370.day": [
+        "int"
+      ],
+      "values.370.demand_index": [
+        "float"
+      ],
+      "values.370.quality_expectation_index": [
+        "float"
+      ],
+      "values.371.day": [
+        "int"
+      ],
+      "values.371.demand_index": [
+        "float"
+      ],
+      "values.371.quality_expectation_index": [
+        "float"
+      ],
+      "values.372.day": [
+        "int"
+      ],
+      "values.372.demand_index": [
+        "float"
+      ],
+      "values.372.quality_expectation_index": [
+        "float"
+      ],
+      "values.373.day": [
+        "int"
+      ],
+      "values.373.demand_index": [
+        "float"
+      ],
+      "values.373.quality_expectation_index": [
+        "float"
+      ],
+      "values.374.day": [
+        "int"
+      ],
+      "values.374.demand_index": [
+        "float"
+      ],
+      "values.374.quality_expectation_index": [
+        "float"
+      ],
+      "values.375.day": [
+        "int"
+      ],
+      "values.375.demand_index": [
+        "float"
+      ],
+      "values.375.quality_expectation_index": [
+        "float"
+      ],
+      "values.376.day": [
+        "int"
+      ],
+      "values.376.demand_index": [
+        "float"
+      ],
+      "values.376.quality_expectation_index": [
+        "float"
+      ],
+      "values.377.day": [
+        "int"
+      ],
+      "values.377.demand_index": [
+        "float"
+      ],
+      "values.377.quality_expectation_index": [
+        "float"
+      ],
+      "values.378.day": [
+        "int"
+      ],
+      "values.378.demand_index": [
+        "float"
+      ],
+      "values.378.quality_expectation_index": [
+        "float"
+      ],
+      "values.379.day": [
+        "int"
+      ],
+      "values.379.demand_index": [
+        "float"
+      ],
+      "values.379.quality_expectation_index": [
+        "float"
+      ],
+      "values.380.day": [
+        "int"
+      ],
+      "values.380.demand_index": [
+        "float"
+      ],
+      "values.380.quality_expectation_index": [
+        "float"
+      ],
+      "values.381.day": [
+        "int"
+      ],
+      "values.381.demand_index": [
+        "float"
+      ],
+      "values.381.quality_expectation_index": [
+        "float"
+      ],
+      "values.382.day": [
+        "int"
+      ],
+      "values.382.demand_index": [
+        "float"
+      ],
+      "values.382.quality_expectation_index": [
+        "float"
+      ],
+      "values.383.day": [
+        "int"
+      ],
+      "values.383.demand_index": [
+        "float"
+      ],
+      "values.383.quality_expectation_index": [
+        "float"
+      ],
+      "values.384.day": [
+        "int"
+      ],
+      "values.384.demand_index": [
+        "float"
+      ],
+      "values.384.quality_expectation_index": [
+        "float"
+      ],
+      "values.385.day": [
+        "int"
+      ],
+      "values.385.demand_index": [
+        "float"
+      ],
+      "values.385.quality_expectation_index": [
+        "float"
+      ],
+      "values.386.day": [
+        "int"
+      ],
+      "values.386.demand_index": [
+        "float"
+      ],
+      "values.386.quality_expectation_index": [
+        "float"
+      ],
+      "values.387.day": [
+        "int"
+      ],
+      "values.387.demand_index": [
+        "float"
+      ],
+      "values.387.quality_expectation_index": [
+        "float"
+      ],
+      "values.388.day": [
+        "int"
+      ],
+      "values.388.demand_index": [
+        "float"
+      ],
+      "values.388.quality_expectation_index": [
+        "float"
+      ],
+      "values.389.day": [
+        "int"
+      ],
+      "values.389.demand_index": [
+        "float"
+      ],
+      "values.389.quality_expectation_index": [
+        "float"
+      ],
+      "values.390.day": [
+        "int"
+      ],
+      "values.390.demand_index": [
+        "float"
+      ],
+      "values.390.quality_expectation_index": [
+        "float"
+      ],
+      "values.391.day": [
+        "int"
+      ],
+      "values.391.demand_index": [
+        "float"
+      ],
+      "values.391.quality_expectation_index": [
+        "float"
+      ],
+      "values.392.day": [
+        "int"
+      ],
+      "values.392.demand_index": [
+        "float"
+      ],
+      "values.392.quality_expectation_index": [
+        "float"
+      ],
+      "values.393.day": [
+        "int"
+      ],
+      "values.393.demand_index": [
+        "float"
+      ],
+      "values.393.quality_expectation_index": [
+        "float"
+      ],
+      "values.394.day": [
+        "int"
+      ],
+      "values.394.demand_index": [
+        "float"
+      ],
+      "values.394.quality_expectation_index": [
+        "float"
+      ],
+      "values.395.day": [
+        "int"
+      ],
+      "values.395.demand_index": [
+        "float"
+      ],
+      "values.395.quality_expectation_index": [
+        "float"
+      ],
+      "values.396.day": [
+        "int"
+      ],
+      "values.396.demand_index": [
+        "float"
+      ],
+      "values.396.quality_expectation_index": [
+        "float"
+      ],
+      "values.397.day": [
+        "int"
+      ],
+      "values.397.demand_index": [
+        "float"
+      ],
+      "values.397.quality_expectation_index": [
+        "float"
+      ],
+      "values.398.day": [
+        "int"
+      ],
+      "values.398.demand_index": [
+        "float"
+      ],
+      "values.398.quality_expectation_index": [
+        "float"
+      ],
+      "values.399.day": [
+        "int"
+      ],
+      "values.399.demand_index": [
+        "float"
+      ],
+      "values.399.quality_expectation_index": [
+        "float"
+      ],
+      "values.400.day": [
+        "int"
+      ],
+      "values.400.demand_index": [
+        "float"
+      ],
+      "values.400.quality_expectation_index": [
+        "float"
+      ],
+      "values.401.day": [
+        "int"
+      ],
+      "values.401.demand_index": [
+        "float"
+      ],
+      "values.401.quality_expectation_index": [
+        "float"
+      ],
+      "values.402.day": [
+        "int"
+      ],
+      "values.402.demand_index": [
+        "float"
+      ],
+      "values.402.quality_expectation_index": [
+        "float"
+      ],
+      "values.403.day": [
+        "int"
+      ],
+      "values.403.demand_index": [
+        "float"
+      ],
+      "values.403.quality_expectation_index": [
+        "float"
+      ],
+      "values.404.day": [
+        "int"
+      ],
+      "values.404.demand_index": [
+        "float"
+      ],
+      "values.404.quality_expectation_index": [
+        "float"
+      ],
+      "values.405.day": [
+        "int"
+      ],
+      "values.405.demand_index": [
+        "float"
+      ],
+      "values.405.quality_expectation_index": [
+        "float"
+      ],
+      "values.406.day": [
+        "int"
+      ],
+      "values.406.demand_index": [
+        "float"
+      ],
+      "values.406.quality_expectation_index": [
+        "float"
+      ],
+      "values.407.day": [
+        "int"
+      ],
+      "values.407.demand_index": [
+        "float"
+      ],
+      "values.407.quality_expectation_index": [
+        "float"
+      ],
+      "values.408.day": [
+        "int"
+      ],
+      "values.408.demand_index": [
+        "float"
+      ],
+      "values.408.quality_expectation_index": [
+        "float"
+      ],
+      "values.409.day": [
+        "int"
+      ],
+      "values.409.demand_index": [
+        "float"
+      ],
+      "values.409.quality_expectation_index": [
+        "float"
+      ],
+      "values.410.day": [
+        "int"
+      ],
+      "values.410.demand_index": [
+        "float"
+      ],
+      "values.410.quality_expectation_index": [
+        "float"
+      ],
+      "values.411.day": [
+        "int"
+      ],
+      "values.411.demand_index": [
+        "float"
+      ],
+      "values.411.quality_expectation_index": [
+        "float"
+      ],
+      "values.412.day": [
+        "int"
+      ],
+      "values.412.demand_index": [
+        "float"
+      ],
+      "values.412.quality_expectation_index": [
+        "float"
+      ],
+      "values.413.day": [
+        "int"
+      ],
+      "values.413.demand_index": [
+        "float"
+      ],
+      "values.413.quality_expectation_index": [
+        "float"
+      ],
+      "values.414.day": [
+        "int"
+      ],
+      "values.414.demand_index": [
+        "float"
+      ],
+      "values.414.quality_expectation_index": [
+        "float"
+      ],
+      "values.415.day": [
+        "int"
+      ],
+      "values.415.demand_index": [
+        "float"
+      ],
+      "values.415.quality_expectation_index": [
+        "float"
+      ],
+      "values.416.day": [
+        "int"
+      ],
+      "values.416.demand_index": [
+        "float"
+      ],
+      "values.416.quality_expectation_index": [
+        "float"
+      ],
+      "values.417.day": [
+        "int"
+      ],
+      "values.417.demand_index": [
+        "float"
+      ],
+      "values.417.quality_expectation_index": [
+        "float"
+      ],
+      "values.418.day": [
+        "int"
+      ],
+      "values.418.demand_index": [
+        "float"
+      ],
+      "values.418.quality_expectation_index": [
+        "float"
+      ],
+      "values.419.day": [
+        "int"
+      ],
+      "values.419.demand_index": [
+        "float"
+      ],
+      "values.419.quality_expectation_index": [
+        "float"
+      ],
+      "values.420.day": [
+        "int"
+      ],
+      "values.420.demand_index": [
+        "float"
+      ],
+      "values.420.quality_expectation_index": [
+        "float"
+      ],
+      "values.421.day": [
+        "int"
+      ],
+      "values.421.demand_index": [
+        "float"
+      ],
+      "values.421.quality_expectation_index": [
+        "float"
+      ],
+      "values.422.day": [
+        "int"
+      ],
+      "values.422.demand_index": [
+        "float"
+      ],
+      "values.422.quality_expectation_index": [
+        "float"
+      ],
+      "values.423.day": [
+        "int"
+      ],
+      "values.423.demand_index": [
+        "float"
+      ],
+      "values.423.quality_expectation_index": [
+        "float"
+      ],
+      "values.424.day": [
+        "int"
+      ],
+      "values.424.demand_index": [
+        "float"
+      ],
+      "values.424.quality_expectation_index": [
+        "float"
+      ],
+      "values.425.day": [
+        "int"
+      ],
+      "values.425.demand_index": [
+        "float"
+      ],
+      "values.425.quality_expectation_index": [
+        "float"
+      ],
+      "values.426.day": [
+        "int"
+      ],
+      "values.426.demand_index": [
+        "float"
+      ],
+      "values.426.quality_expectation_index": [
+        "float"
+      ],
+      "values.427.day": [
+        "int"
+      ],
+      "values.427.demand_index": [
+        "float"
+      ],
+      "values.427.quality_expectation_index": [
+        "float"
+      ],
+      "values.428.day": [
+        "int"
+      ],
+      "values.428.demand_index": [
+        "float"
+      ],
+      "values.428.quality_expectation_index": [
+        "float"
+      ],
+      "values.429.day": [
+        "int"
+      ],
+      "values.429.demand_index": [
+        "float"
+      ],
+      "values.429.quality_expectation_index": [
+        "float"
+      ],
+      "values.430.day": [
+        "int"
+      ],
+      "values.430.demand_index": [
+        "float"
+      ],
+      "values.430.quality_expectation_index": [
+        "float"
+      ],
+      "values.431.day": [
+        "int"
+      ],
+      "values.431.demand_index": [
+        "float"
+      ],
+      "values.431.quality_expectation_index": [
+        "float"
+      ],
+      "values.432.day": [
+        "int"
+      ],
+      "values.432.demand_index": [
+        "float"
+      ],
+      "values.432.quality_expectation_index": [
+        "float"
+      ],
+      "values.433.day": [
+        "int"
+      ],
+      "values.433.demand_index": [
+        "float"
+      ],
+      "values.433.quality_expectation_index": [
+        "float"
+      ],
+      "values.434.day": [
+        "int"
+      ],
+      "values.434.demand_index": [
+        "float"
+      ],
+      "values.434.quality_expectation_index": [
+        "float"
+      ],
+      "values.435.day": [
+        "int"
+      ],
+      "values.435.demand_index": [
+        "float"
+      ],
+      "values.435.quality_expectation_index": [
+        "float"
+      ],
+      "values.436.day": [
+        "int"
+      ],
+      "values.436.demand_index": [
+        "float"
+      ],
+      "values.436.quality_expectation_index": [
+        "float"
+      ],
+      "values.437.day": [
+        "int"
+      ],
+      "values.437.demand_index": [
+        "float"
+      ],
+      "values.437.quality_expectation_index": [
+        "float"
+      ],
+      "values.438.day": [
+        "int"
+      ],
+      "values.438.demand_index": [
+        "float"
+      ],
+      "values.438.quality_expectation_index": [
+        "float"
+      ],
+      "values.439.day": [
+        "int"
+      ],
+      "values.439.demand_index": [
+        "float"
+      ],
+      "values.439.quality_expectation_index": [
+        "float"
+      ],
+      "values.440.day": [
+        "int"
+      ],
+      "values.440.demand_index": [
+        "float"
+      ],
+      "values.440.quality_expectation_index": [
+        "float"
+      ],
+      "values.441.day": [
+        "int"
+      ],
+      "values.441.demand_index": [
+        "float"
+      ],
+      "values.441.quality_expectation_index": [
+        "float"
+      ],
+      "values.442.day": [
+        "int"
+      ],
+      "values.442.demand_index": [
+        "float"
+      ],
+      "values.442.quality_expectation_index": [
+        "float"
+      ],
+      "values.443.day": [
+        "int"
+      ],
+      "values.443.demand_index": [
+        "float"
+      ],
+      "values.443.quality_expectation_index": [
+        "float"
+      ],
+      "values.444.day": [
+        "int"
+      ],
+      "values.444.demand_index": [
+        "float"
+      ],
+      "values.444.quality_expectation_index": [
+        "float"
+      ],
+      "values.445.day": [
+        "int"
+      ],
+      "values.445.demand_index": [
+        "float"
+      ],
+      "values.445.quality_expectation_index": [
+        "float"
+      ],
+      "values.446.day": [
+        "int"
+      ],
+      "values.446.demand_index": [
+        "float"
+      ],
+      "values.446.quality_expectation_index": [
+        "float"
+      ],
+      "values.447.day": [
+        "int"
+      ],
+      "values.447.demand_index": [
+        "float"
+      ],
+      "values.447.quality_expectation_index": [
+        "float"
+      ],
+      "values.448.day": [
+        "int"
+      ],
+      "values.448.demand_index": [
+        "float"
+      ],
+      "values.448.quality_expectation_index": [
+        "float"
+      ],
+      "values.449.day": [
+        "int"
+      ],
+      "values.449.demand_index": [
+        "float"
+      ],
+      "values.449.quality_expectation_index": [
+        "float"
+      ],
+      "values.450.day": [
+        "int"
+      ],
+      "values.450.demand_index": [
+        "float"
+      ],
+      "values.450.quality_expectation_index": [
+        "float"
+      ],
+      "values.451.day": [
+        "int"
+      ],
+      "values.451.demand_index": [
+        "float"
+      ],
+      "values.451.quality_expectation_index": [
+        "float"
+      ],
+      "values.452.day": [
+        "int"
+      ],
+      "values.452.demand_index": [
+        "float"
+      ],
+      "values.452.quality_expectation_index": [
+        "float"
+      ],
+      "values.453.day": [
+        "int"
+      ],
+      "values.453.demand_index": [
+        "float"
+      ],
+      "values.453.quality_expectation_index": [
+        "float"
+      ],
+      "values.454.day": [
+        "int"
+      ],
+      "values.454.demand_index": [
+        "float"
+      ],
+      "values.454.quality_expectation_index": [
+        "float"
+      ],
+      "values.455.day": [
+        "int"
+      ],
+      "values.455.demand_index": [
+        "float"
+      ],
+      "values.455.quality_expectation_index": [
+        "float"
+      ],
+      "values.456.day": [
+        "int"
+      ],
+      "values.456.demand_index": [
+        "float"
+      ],
+      "values.456.quality_expectation_index": [
+        "float"
+      ],
+      "values.457.day": [
+        "int"
+      ],
+      "values.457.demand_index": [
+        "float"
+      ],
+      "values.457.quality_expectation_index": [
+        "float"
+      ],
+      "values.458.day": [
+        "int"
+      ],
+      "values.458.demand_index": [
+        "float"
+      ],
+      "values.458.quality_expectation_index": [
+        "float"
+      ],
+      "values.459.day": [
+        "int"
+      ],
+      "values.459.demand_index": [
+        "float"
+      ],
+      "values.459.quality_expectation_index": [
+        "float"
+      ],
+      "values.460.day": [
+        "int"
+      ],
+      "values.460.demand_index": [
+        "float"
+      ],
+      "values.460.quality_expectation_index": [
+        "float"
+      ],
+      "values.461.day": [
+        "int"
+      ],
+      "values.461.demand_index": [
+        "float"
+      ],
+      "values.461.quality_expectation_index": [
+        "float"
+      ],
+      "values.462.day": [
+        "int"
+      ],
+      "values.462.demand_index": [
+        "float"
+      ],
+      "values.462.quality_expectation_index": [
+        "float"
+      ],
+      "values.463.day": [
+        "int"
+      ],
+      "values.463.demand_index": [
+        "float"
+      ],
+      "values.463.quality_expectation_index": [
+        "float"
+      ],
+      "values.464.day": [
+        "int"
+      ],
+      "values.464.demand_index": [
+        "float"
+      ],
+      "values.464.quality_expectation_index": [
+        "float"
+      ],
+      "values.465.day": [
+        "int"
+      ],
+      "values.465.demand_index": [
+        "float"
+      ],
+      "values.465.quality_expectation_index": [
+        "float"
+      ],
+      "values.466.day": [
+        "int"
+      ],
+      "values.466.demand_index": [
+        "float"
+      ],
+      "values.466.quality_expectation_index": [
+        "float"
+      ],
+      "values.467.day": [
+        "int"
+      ],
+      "values.467.demand_index": [
+        "float"
+      ],
+      "values.467.quality_expectation_index": [
+        "float"
+      ],
+      "values.468.day": [
+        "int"
+      ],
+      "values.468.demand_index": [
+        "float"
+      ],
+      "values.468.quality_expectation_index": [
+        "float"
+      ],
+      "values.469.day": [
+        "int"
+      ],
+      "values.469.demand_index": [
+        "float"
+      ],
+      "values.469.quality_expectation_index": [
+        "float"
+      ],
+      "values.470.day": [
+        "int"
+      ],
+      "values.470.demand_index": [
+        "float"
+      ],
+      "values.470.quality_expectation_index": [
+        "float"
+      ],
+      "values.471.day": [
+        "int"
+      ],
+      "values.471.demand_index": [
+        "float"
+      ],
+      "values.471.quality_expectation_index": [
+        "float"
+      ],
+      "values.472.day": [
+        "int"
+      ],
+      "values.472.demand_index": [
+        "float"
+      ],
+      "values.472.quality_expectation_index": [
+        "float"
+      ],
+      "values.473.day": [
+        "int"
+      ],
+      "values.473.demand_index": [
+        "float"
+      ],
+      "values.473.quality_expectation_index": [
+        "float"
+      ],
+      "values.474.day": [
+        "int"
+      ],
+      "values.474.demand_index": [
+        "float"
+      ],
+      "values.474.quality_expectation_index": [
+        "float"
+      ],
+      "values.475.day": [
+        "int"
+      ],
+      "values.475.demand_index": [
+        "float"
+      ],
+      "values.475.quality_expectation_index": [
+        "float"
+      ],
+      "values.476.day": [
+        "int"
+      ],
+      "values.476.demand_index": [
+        "float"
+      ],
+      "values.476.quality_expectation_index": [
+        "float"
+      ],
+      "values.477.day": [
+        "int"
+      ],
+      "values.477.demand_index": [
+        "float"
+      ],
+      "values.477.quality_expectation_index": [
+        "float"
+      ],
+      "values.478.day": [
+        "int"
+      ],
+      "values.478.demand_index": [
+        "float"
+      ],
+      "values.478.quality_expectation_index": [
+        "float"
+      ],
+      "values.479.day": [
+        "int"
+      ],
+      "values.479.demand_index": [
+        "float"
+      ],
+      "values.479.quality_expectation_index": [
+        "float"
+      ],
+      "values.480.day": [
+        "int"
+      ],
+      "values.480.demand_index": [
+        "float"
+      ],
+      "values.480.quality_expectation_index": [
+        "float"
+      ],
+      "values.481.day": [
+        "int"
+      ],
+      "values.481.demand_index": [
+        "float"
+      ],
+      "values.481.quality_expectation_index": [
+        "float"
+      ],
+      "values.482.day": [
+        "int"
+      ],
+      "values.482.demand_index": [
+        "float"
+      ],
+      "values.482.quality_expectation_index": [
+        "float"
+      ],
+      "values.483.day": [
+        "int"
+      ],
+      "values.483.demand_index": [
+        "float"
+      ],
+      "values.483.quality_expectation_index": [
+        "float"
+      ],
+      "values.484.day": [
+        "int"
+      ],
+      "values.484.demand_index": [
+        "float"
+      ],
+      "values.484.quality_expectation_index": [
+        "float"
+      ],
+      "values.485.day": [
+        "int"
+      ],
+      "values.485.demand_index": [
+        "float"
+      ],
+      "values.485.quality_expectation_index": [
+        "float"
+      ],
+      "values.486.day": [
+        "int"
+      ],
+      "values.486.demand_index": [
+        "float"
+      ],
+      "values.486.quality_expectation_index": [
+        "float"
+      ],
+      "values.487.day": [
+        "int"
+      ],
+      "values.487.demand_index": [
+        "float"
+      ],
+      "values.487.quality_expectation_index": [
+        "float"
+      ],
+      "values.488.day": [
+        "int"
+      ],
+      "values.488.demand_index": [
+        "float"
+      ],
+      "values.488.quality_expectation_index": [
+        "float"
+      ],
+      "values.489.day": [
+        "int"
+      ],
+      "values.489.demand_index": [
+        "float"
+      ],
+      "values.489.quality_expectation_index": [
+        "float"
+      ],
+      "values.490.day": [
+        "int"
+      ],
+      "values.490.demand_index": [
+        "float"
+      ],
+      "values.490.quality_expectation_index": [
+        "float"
+      ],
+      "values.491.day": [
+        "int"
+      ],
+      "values.491.demand_index": [
+        "float"
+      ],
+      "values.491.quality_expectation_index": [
+        "float"
+      ],
+      "values.492.day": [
+        "int"
+      ],
+      "values.492.demand_index": [
+        "float"
+      ],
+      "values.492.quality_expectation_index": [
+        "float"
+      ],
+      "values.493.day": [
+        "int"
+      ],
+      "values.493.demand_index": [
+        "float"
+      ],
+      "values.493.quality_expectation_index": [
+        "float"
+      ],
+      "values.494.day": [
+        "int"
+      ],
+      "values.494.demand_index": [
+        "float"
+      ],
+      "values.494.quality_expectation_index": [
+        "float"
+      ],
+      "values.495.day": [
+        "int"
+      ],
+      "values.495.demand_index": [
+        "float"
+      ],
+      "values.495.quality_expectation_index": [
+        "float"
+      ],
+      "values.496.day": [
+        "int"
+      ],
+      "values.496.demand_index": [
+        "float"
+      ],
+      "values.496.quality_expectation_index": [
+        "float"
+      ],
+      "values.497.day": [
+        "int"
+      ],
+      "values.497.demand_index": [
+        "float"
+      ],
+      "values.497.quality_expectation_index": [
+        "float"
+      ],
+      "values.498.day": [
+        "int"
+      ],
+      "values.498.demand_index": [
+        "float"
+      ],
+      "values.498.quality_expectation_index": [
+        "float"
+      ],
+      "values.499.day": [
+        "int"
+      ],
+      "values.499.demand_index": [
+        "float"
+      ],
+      "values.499.quality_expectation_index": [
+        "float"
+      ],
+      "values.500.day": [
+        "int"
+      ],
+      "values.500.demand_index": [
+        "float"
+      ],
+      "values.500.quality_expectation_index": [
+        "float"
+      ]
+    }
+  },
+  "lineup_model_means": {
+    "rows": 72,
+    "columns": {
+      "model_id": [
+        "str"
+      ],
+      "lineup": [
+        "str"
+      ],
+      "omitted_model_id": [
+        "str"
+      ],
+      "mean_score_cents": [
+        "float"
+      ],
+      "background_model_ids_json": [
+        "str"
+      ],
+      "score_seed_11_cents": [
+        "int"
+      ],
+      "score_seed_29_cents": [
+        "int"
+      ],
+      "score_seed_47_cents": [
+        "int"
+      ]
+    }
+  },
+  "model_summary": {
+    "rows": 9,
+    "columns": {
+      "model_id": [
+        "str"
+      ],
+      "display_name": [
+        "str"
+      ],
+      "case_count": [
+        "int"
+      ],
+      "bankrupt_count": [
+        "int"
+      ],
+      "bankruptcy_rate": [
+        "float",
+        "int"
+      ],
+      "bankruptcy_days_json": [
+        "str"
+      ],
+      "negative_score_count": [
+        "int"
+      ],
+      "mean_score_cents": [
+        "float",
+        "int"
+      ],
+      "mean_terminal_cash_cents": [
+        "float",
+        "int"
+      ],
+      "mean_salvage_cents": [
+        "float",
+        "int"
+      ],
+      "mean_revenue_cents": [
+        "float"
+      ],
+      "mean_fulfilled_units": [
+        "float"
+      ],
+      "mean_abandoned_units": [
+        "float"
+      ],
+      "mean_expenses_cents.procurement": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.capacity_operations": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.marketing": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.development": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.reliability": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.support": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.innovation": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.capacity_investment": [
+        "int"
+      ],
+      "mean_expenses_cents.capacity_adjustment": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.market_research": [
+        "float",
+        "int"
+      ],
+      "mean_expenses_cents.holding": [
+        "float"
+      ],
+      "mean_expenses_cents.remediation": [
+        "int"
+      ],
+      "mean_expenses_cents.contract_penalties": [
+        "int"
+      ],
+      "decisions": [
+        "int"
+      ],
+      "usage_totals.provider_turns": [
+        "int"
+      ],
+      "usage_totals.finalization_turns": [
+        "int"
+      ],
+      "usage_totals.tool_calls": [
+        "int"
+      ],
+      "usage_totals.input_tokens": [
+        "int"
+      ],
+      "usage_totals.output_tokens": [
+        "int"
+      ],
+      "usage_totals.reasoning_tokens": [
+        "int"
+      ],
+      "usage_totals.cache_read_tokens": [
+        "int"
+      ],
+      "usage_totals.cache_write_tokens": [
+        "int"
+      ],
+      "usage_totals.latency_ms": [
+        "int"
+      ],
+      "action_counts.marketing": [
+        "int"
+      ],
+      "action_counts.reliability_budget_cents": [
+        "int"
+      ],
+      "action_counts.support_budget_cents": [
+        "int"
+      ],
+      "action_counts.research_project_tier": [
+        "int"
+      ],
+      "action_counts.market_research": [
+        "int"
+      ],
+      "action_counts.capacity_target_tier": [
+        "int"
+      ],
+      "action_counts.products": [
+        "int"
+      ],
+      "action_counts.product_reorder_target": [
+        "int"
+      ],
+      "action_counts.product_price_cents": [
+        "int"
+      ],
+      "action_counts.product_development_budget_cents": [
+        "int"
+      ],
+      "action_counts.enterprise_bids": [
+        "int"
+      ],
+      "action_counts.cancel_capacity_project_id": [
+        "int"
+      ],
+      "action_counts.capacity_downsize_tier": [
+        "int"
+      ],
+      "action_counts.product_promotion_cents": [
+        "int"
+      ],
+      "action_receipts.set_marketing:applied": [
+        "int"
+      ],
+      "action_receipts.set_operations:applied": [
+        "int"
+      ],
+      "action_receipts.start_research_project:applied": [
+        "int"
+      ],
+      "action_receipts.request_market_research:applied": [
+        "int"
+      ],
+      "action_receipts.seal_decision:no_op": [
+        "int"
+      ],
+      "action_receipts.expand_capacity:applied": [
+        "int"
+      ],
+      "action_receipts.set_product:applied": [
+        "int"
+      ],
+      "action_receipts.expand_capacity:completed": [
+        "int"
+      ],
+      "action_receipts.submit_enterprise_bid:applied": [
+        "int"
+      ],
+      "action_receipts.cancel_capacity_project:cancelled": [
+        "int"
+      ],
+      "action_receipts.downsize_capacity:applied": [
+        "int"
+      ],
+      "action_receipts.downsize_capacity:completed": [
+        "int"
+      ],
+      "mean_cash_by_day_cents_json": [
+        "str"
+      ],
+      "score_min_case": [
+        "str"
+      ],
+      "score_max_case": [
+        "str"
+      ],
+      "opponent_composition_sd_cents": [
+        "float"
+      ],
+      "within_lineup_seed_sd_cents": [
+        "float"
+      ],
+      "health.model_id": [
+        "str"
+      ],
+      "health.decision_count": [
+        "int"
+      ],
+      "health.failure_count": [
+        "int"
+      ],
+      "health.failure_rate": [
+        "float"
+      ],
+      "health.status_counts.budget_exhausted": [
+        "int"
+      ],
+      "health.status_counts.sealed": [
+        "int"
+      ],
+      "health.status_counts.timeout": [
+        "int"
+      ],
+      "health.recovery.protocol_errors": [
+        "int"
+      ],
+      "health.recovery.tool_errors": [
+        "int"
+      ],
+      "health.recovery.windows_with_errors": [
+        "int"
+      ],
+      "health.recovery.recovered_windows": [
+        "int"
+      ],
+      "health.recovery.infrastructure_timeout_count": [
+        "int"
+      ],
+      "health.recovery_rate": [
+        "NoneType",
+        "float"
+      ],
+      "health.status_counts.protocol_error": [
+        "int"
+      ],
+      "action_receipts.expand_capacity:no_op": [
+        "int"
+      ]
+    }
+  },
+  "model_mean_cash_daily": {
+    "rows": 4509,
+    "columns": {
+      "model_id": [
+        "str"
+      ],
+      "day": [
+        "int"
+      ],
+      "mean_cash_cents": [
+        "float",
+        "int"
+      ]
+    }
+  },
+  "track_c_model_summary": {
+    "rows": 8,
+    "columns": {
+      "model_id": [
+        "str"
+      ],
+      "baseline_model_id": [
+        "str"
+      ],
+      "pair_count": [
+        "int"
+      ],
+      "seed_comparisons_json": [
+        "str"
+      ],
+      "mean_private_difference_cents": [
+        "float"
+      ],
+      "mean_others_difference_cents": [
+        "float"
+      ],
+      "mean_system_difference_cents": [
+        "float"
+      ],
+      "mean_directed_effects_cents.deepseek-v4-flash": [
+        "float"
+      ],
+      "mean_directed_effects_cents.deepseek-v4-pro": [
+        "float"
+      ],
+      "mean_directed_effects_cents.doubao-seed-1.8": [
+        "float"
+      ],
+      "mean_directed_effects_cents.gemini-3.8-flash": [
+        "float"
+      ],
+      "mean_directed_effects_cents.gpt-5.6-sol": [
+        "float"
+      ],
+      "mean_directed_effects_cents.gpt-6-astra": [
+        "float"
+      ],
+      "mean_directed_effects_cents.qwen3.8-max": [
+        "float"
+      ],
+      "positive_system_seed_count": [
+        "int"
+      ],
+      "mean_directed_effects_cents.claude-sonnet-5": [
+        "float"
+      ]
+    }
+  },
+  "directed_effects_by_seed": {
+    "rows": 168,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "target_model_id": [
+        "str"
+      ],
+      "baseline_model_id": [
+        "str"
+      ],
+      "target_company_id": [
+        "str"
+      ],
+      "reference_run_id": [
+        "str"
+      ],
+      "counterfactual_run_id": [
+        "str"
+      ],
+      "affected_model_id": [
+        "str"
+      ],
+      "reference_score_cents": [
+        "int"
+      ],
+      "counterfactual_score_cents": [
+        "int"
+      ],
+      "directed_difference_cents": [
+        "int"
+      ]
+    }
+  },
+  "paired_effects_by_seed": {
+    "rows": 24,
+    "columns": {
+      "campaign_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "target_model_id": [
+        "str"
+      ],
+      "baseline_model_id": [
+        "str"
+      ],
+      "target_company_id": [
+        "str"
+      ],
+      "reference_run_id": [
+        "str"
+      ],
+      "counterfactual_run_id": [
+        "str"
+      ],
+      "background_model_ids_json": [
+        "str"
+      ],
+      "private_difference_cents": [
+        "int"
+      ],
+      "others_difference_cents": [
+        "int"
+      ],
+      "system_difference_cents": [
+        "int"
+      ],
+      "directed_effects_cents.deepseek-v4-flash": [
+        "int"
+      ],
+      "directed_effects_cents.deepseek-v4-pro": [
+        "int"
+      ],
+      "directed_effects_cents.doubao-seed-1.8": [
+        "int"
+      ],
+      "directed_effects_cents.gemini-3.8-flash": [
+        "int"
+      ],
+      "directed_effects_cents.gpt-5.6-sol": [
+        "int"
+      ],
+      "directed_effects_cents.gpt-6-astra": [
+        "int"
+      ],
+      "directed_effects_cents.qwen3.8-max": [
+        "int"
+      ],
+      "mean_difference_per_other_firm_cents": [
+        "float"
+      ],
+      "directed_effects_cents.claude-sonnet-5": [
+        "int"
+      ]
+    }
+  },
+  "directed_effects_mean": {
+    "rows": 56,
+    "columns": {
+      "target_model_id": [
+        "str"
+      ],
+      "affected_model_id": [
+        "str"
+      ],
+      "mean_directed_difference_cents": [
+        "float"
+      ],
+      "positive_seed_count": [
+        "int"
+      ],
+      "negative_seed_count": [
+        "int"
+      ],
+      "seed_count": [
+        "int"
+      ]
+    }
+  },
+  "selected_case_evidence": {
+    "rows": 3,
+    "columns": {
+      "evidence_id": [
+        "str"
+      ],
+      "run_id": [
+        "str"
+      ],
+      "seed": [
+        "int"
+      ],
+      "company_id": [
+        "str"
+      ],
+      "model_id": [
+        "str"
+      ],
+      "selection": [
+        "str"
+      ],
+      "bankruptcy_day": [
+        "NoneType",
+        "int"
+      ],
+      "decision_records_json": [
+        "str"
+      ],
+      "daily_accounting_json": [
+        "str"
+      ],
+      "terminal_accounting.start_day": [
+        "int"
+      ],
+      "terminal_accounting.end_day": [
+        "int"
+      ],
+      "terminal_accounting.procurement_cents": [
+        "int"
+      ],
+      "terminal_accounting.revenue_cents": [
+        "int"
+      ],
+      "terminal_accounting.costs_cents": [
+        "int"
+      ],
+      "terminal_accounting.cash_day490_cents": [
+        "int"
+      ],
+      "terminal_accounting.cash_day500_cents": [
+        "int"
+      ],
+      "terminal_accounting.inventory_day490.A": [
+        "int"
+      ],
+      "terminal_accounting.inventory_day490.B": [
+        "int"
+      ],
+      "terminal_accounting.inventory_day490.C": [
+        "int"
+      ],
+      "terminal_accounting.inventory_day500.A": [
+        "int"
+      ],
+      "terminal_accounting.inventory_day500.B": [
+        "int"
+      ],
+      "terminal_accounting.inventory_day500.C": [
+        "int"
+      ],
+      "terminal_accounting.final_inbound_shipments_json": [
+        "str"
+      ],
+      "terminal_accounting.terminal_salvage_cents": [
+        "int"
+      ],
+      "terminal_accounting.official_score_cents": [
+        "int"
+      ]
+    }
+  }
+}

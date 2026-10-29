@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ceo-arena"
+version = "0.15.2"
+description = "A symmetric multi-company long-horizon CEO benchmark."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+  "fastapi>=0.115",
+  "httpx>=0.28",
+  "numpy>=2.2",
+  "pydantic>=2.11",
+  "uvicorn>=0.34",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "pytest-asyncio>=0.25",
+  "ruff>=0.11",
+]
+
+[project.scripts]
+ceo-arena = "ceo_arena.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ceo_arena"]
+
+[tool.uv]
+link-mode = "copy"
+
+[tool.pytest.ini_options]
+addopts = "-q --basetemp=.tmp/pytest"
+cache_dir = ".tmp/pytest-cache"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+cache-dir = ".tmp/ruff"
+extend-exclude = ["archive", ".ceo-arena", ".ceosbench", "OpenCode", "Hermes Agent", "paper/research", "runs"]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]

@@ -1,0 +1,29 @@
+# Credentials and local experiment state
+.env
+.env.*
+!.env.example
+*.local.toml
+.ceo-arena/
+.ceosbench/
+runs/
+archive/
+
+# Environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.tmp/
+.pytest-tmp/
+node_modules/
+.tools/
+dist/
+build/
+.DS_Store
+.coverage
+htmlcov/
+paper/data/**/recomputed/
+paper/figures/

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "memory-audit-seed-11-qwen-positive.jsonl",
+    "traces": 72,
+    "loaded": 72,
+    "successful_full_writes": 68
+  },
+  {
+    "file": "memory-audit-seed-11.jsonl",
+    "traces": 688,
+    "loaded": 688,
+    "successful_full_writes": 621
+  },
+  {
+    "file": "memory-audit-seed-29-qwen-positive.jsonl",
+    "traces": 72,
+    "loaded": 72,
+    "successful_full_writes": 72
+  },
+  {
+    "file": "memory-audit-seed-29.jsonl",
+    "traces": 789,
+    "loaded": 789,
+    "successful_full_writes": 655
+  },
+  {
+    "file": "memory-audit-seed-47-qwen-positive.jsonl",
+    "traces": 72,
+    "loaded": 72,
+    "successful_full_writes": 58
+  },
+  {
+    "file": "memory-audit-seed-47.jsonl",
+    "traces": 784,
+    "loaded": 784,
+    "successful_full_writes": 658
+  }
+]

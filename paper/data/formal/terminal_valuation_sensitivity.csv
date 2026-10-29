@@ -1,0 +1,10 @@
+rank_official,rank_cash_only,model_id,outcomes,mean_score_usd_k,mean_terminal_salvage_usd_k,mean_cash_only_score_usd_k
+1,1,gpt-6-astra,24,116.942040,1.090250,115.851790
+2,2,gpt-5.6-sol,24,98.441889,1.363750,97.078139
+3,3,qwen3.8-max,24,8.041364,2.634625,5.406739
+4,4,deterministic-rule-ceo,24,-47.298680,4.000000,-51.298680
+5,5,deepseek-v4-flash,24,-114.504531,9.702917,-124.207448
+6,6,gemini-3.8-flash,24,-119.787807,5.026292,-124.814099
+7,7,deepseek-v4-pro,24,-159.331744,5.422458,-164.754202
+8,8,claude-sonnet-5,24,-314.357308,15.860125,-330.217433
+9,9,doubao-seed-1.8,24,-434.876610,12.024042,-446.900652

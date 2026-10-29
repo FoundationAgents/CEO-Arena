@@ -1,0 +1,3944 @@
+{
+  "note": "All values cents unless explicitly USDk. Replicate index pairing is descriptive only. Supplement has updated harness protocol and is not pooled with formal runs. Cartesian contrasts are dependent, not independent observations.",
+  "counts": {
+    "selected": 12,
+    "selected_new_rep1_matching": 6,
+    "selected_new_rep2_matching": 8,
+    "selected_both_new_paired_matching": 4,
+    "selected_new_mean_matching": 8,
+    "selected_all_4_cartesian_matching": 2,
+    "selected_noop_vs_new_fixed_mean_same_sign": 7,
+    "all56_noop_vs_new_fixed_mean_same_sign": 31,
+    "all56_noop_both_controls_match_new_fixed_mean": 26,
+    "entrant_mean_sign_agreement": {
+      "private": 6,
+      "others": 6,
+      "market": 8
+    },
+    "entrant_strict_sign_agreement_all_cross_control": {
+      "private": 4,
+      "others": 3,
+      "market": 3
+    }
+  },
+  "all_llm_controls": [
+    {
+      "run_id": "run-f02faf33cc3d0a25855a962dac31b878ab5b33d7ae0923b5a6e2a51ca5ca3fb1",
+      "lineup_id": "lineup-9912a0ca18c8cb0a5c504ad82b33ddd73c32e3c6b929fd0679e9308ad478d7b1",
+      "seed": 11,
+      "replicate": 1,
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ],
+      "scores_cents": {
+        "gpt-6-astra": 4146611,
+        "deepseek-v4-pro": -12789930,
+        "claude-sonnet-5": -17106809,
+        "qwen3.8-max": -1392045,
+        "gpt-5.6-sol": 11792178,
+        "gemini-3.8-flash": -16277280,
+        "deepseek-v4-flash": -12843078,
+        "doubao-seed-1.8": -50779680
+      }
+    },
+    {
+      "run_id": "run-823f59c7b78bde208ac4e576126bb02b78ec2b6c8a11ad6ffdce44258b25b4c8",
+      "lineup_id": "lineup-9912a0ca18c8cb0a5c504ad82b33ddd73c32e3c6b929fd0679e9308ad478d7b1",
+      "seed": 11,
+      "replicate": 2,
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ],
+      "scores_cents": {
+        "gpt-6-astra": 2669850,
+        "deepseek-v4-pro": -18090842,
+        "claude-sonnet-5": -25074092,
+        "qwen3.8-max": -3816070,
+        "gpt-5.6-sol": 5685003,
+        "gemini-3.8-flash": -22259779,
+        "deepseek-v4-flash": -17658483,
+        "doubao-seed-1.8": -48598081
+      }
+    }
+  ],
+  "selected_edges": [
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        5889511,
+        1175081,
+        6765748
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -2704168,
+        6228634
+      ],
+      "fixed_mean_cents": 1762233,
+      "fixed_cartesian_cents": [
+        -2704168,
+        11044039,
+        -7519573,
+        6228634
+      ],
+      "noop_controlwise_cents": [
+        4314556,
+        -500849
+      ],
+      "noop_mean_cents": 1906853.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -3396008,
+        -21696160,
+        -17920258
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        17916910,
+        7590965
+      ],
+      "fixed_mean_cents": 12753937.5,
+      "fixed_cartesian_cents": [
+        17916910,
+        13698140,
+        11809735,
+        7590965
+      ],
+      "noop_controlwise_cents": [
+        -3993146,
+        -10100321
+      ],
+      "noop_mean_cents": -7046733.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -15118581,
+        -5505203,
+        -6461976
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        628842,
+        -19005391
+      ],
+      "fixed_mean_cents": -9188274.5,
+      "fixed_cartesian_cents": [
+        628842,
+        -21186990,
+        2810441,
+        -19005391
+      ],
+      "noop_controlwise_cents": [
+        -21245642,
+        -19064043
+      ],
+      "noop_mean_cents": -20154842.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -27938115,
+        -7668828,
+        -5124574
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -11079914,
+        6880819
+      ],
+      "fixed_mean_cents": -2099547.5,
+      "fixed_cartesian_cents": [
+        -11079914,
+        9304844,
+        -13503939,
+        6880819
+      ],
+      "noop_controlwise_cents": [
+        -8058568,
+        -10482593
+      ],
+      "noop_mean_cents": -9270580.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -967862,
+        -29403714,
+        -2176027
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -2000294,
+        -12845554
+      ],
+      "fixed_mean_cents": -7422924,
+      "fixed_cartesian_cents": [
+        -2000294,
+        -11368793,
+        -3477055,
+        -12845554
+      ],
+      "noop_controlwise_cents": [
+        897965,
+        -578796
+      ],
+      "noop_mean_cents": 159584.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -34015892,
+        -7301933,
+        -17380453
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -3859769,
+        -4790108
+      ],
+      "fixed_mean_cents": -4324938.5,
+      "fixed_cartesian_cents": [
+        -3859769,
+        3177175,
+        -11827052,
+        -4790108
+      ],
+      "noop_controlwise_cents": [
+        -3409902,
+        -11377185
+      ],
+      "noop_mean_cents": -7393543.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -1185102,
+        -4359549,
+        -8195410
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -256338,
+        2255170
+      ],
+      "fixed_mean_cents": 999416,
+      "fixed_cartesian_cents": [
+        -256338,
+        7556082,
+        -5557250,
+        2255170
+      ],
+      "noop_controlwise_cents": [
+        -6147986,
+        -11448898
+      ],
+      "noop_mean_cents": -8798442,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        7500531,
+        29335001,
+        29029236
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        642770,
+        18275148
+      ],
+      "fixed_mean_cents": 9458959,
+      "fixed_cartesian_cents": [
+        642770,
+        23090553,
+        -4172635,
+        18275148
+      ],
+      "noop_controlwise_cents": [
+        -14904882,
+        -19720287
+      ],
+      "noop_mean_cents": -17312584.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        23333457,
+        14953188,
+        2960632
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        5990319,
+        4548011
+      ],
+      "fixed_mean_cents": 5269165,
+      "fixed_cartesian_cents": [
+        5990319,
+        9848923,
+        689407,
+        4548011
+      ],
+      "noop_controlwise_cents": [
+        17184834,
+        11883922
+      ],
+      "noop_mean_cents": 14534378,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -5023959,
+        -9047936,
+        -4160188
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        4759134,
+        -6760498
+      ],
+      "fixed_mean_cents": -1000682,
+      "fixed_cartesian_cents": [
+        4759134,
+        -4336473,
+        2335109,
+        -6760498
+      ],
+      "noop_controlwise_cents": [
+        -3037647,
+        -5461672
+      ],
+      "noop_mean_cents": -4249659.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        11244296,
+        59048119,
+        33594753
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -9962560,
+        7873074
+      ],
+      "fixed_mean_cents": -1044743,
+      "fixed_cartesian_cents": [
+        -9962560,
+        13173986,
+        -15263472,
+        7873074
+      ],
+      "noop_controlwise_cents": [
+        -11205814,
+        -16506726
+      ],
+      "noop_mean_cents": -13856270,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -9072234,
+        -12496168,
+        -21405186
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        396199,
+        2893561
+      ],
+      "fixed_mean_cents": 1644880,
+      "fixed_cartesian_cents": [
+        396199,
+        711962,
+        2577798,
+        2893561
+      ],
+      "noop_controlwise_cents": [
+        -8541965,
+        -6360366
+      ],
+      "noop_mean_cents": -7451165.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    }
+  ],
+  "all56_edges": [
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        5889511,
+        1175081,
+        6765748
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -2704168,
+        6228634
+      ],
+      "fixed_mean_cents": 1762233,
+      "fixed_cartesian_cents": [
+        -2704168,
+        11044039,
+        -7519573,
+        6228634
+      ],
+      "noop_controlwise_cents": [
+        4314556,
+        -500849
+      ],
+      "noop_mean_cents": 1906853.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -2669789,
+        9391750,
+        -12247750
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        5050067,
+        -12930079
+      ],
+      "fixed_mean_cents": -3940006,
+      "fixed_cartesian_cents": [
+        5050067,
+        -7629167,
+        -250845,
+        -12930079
+      ],
+      "noop_controlwise_cents": [
+        2385114,
+        -2915798
+      ],
+      "noop_mean_cents": -265342,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -2518599,
+        7899201,
+        -16938371
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -2642086,
+        -7325793
+      ],
+      "fixed_mean_cents": -4983939.5,
+      "fixed_cartesian_cents": [
+        -2642086,
+        -9507392,
+        -460487,
+        -7325793
+      ],
+      "noop_controlwise_cents": [
+        -15410742,
+        -13229143
+      ],
+      "noop_mean_cents": -14319942.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        28647174,
+        -3414690,
+        -3351280
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -3937731,
+        -19167282
+      ],
+      "fixed_mean_cents": -11552506.5,
+      "fixed_cartesian_cents": [
+        -3937731,
+        -13184783,
+        -9920230,
+        -19167282
+      ],
+      "noop_controlwise_cents": [
+        -14843216,
+        -20825715
+      ],
+      "noop_mean_cents": -17834465.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -3396008,
+        -21696160,
+        -17920258
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        17916910,
+        7590965
+      ],
+      "fixed_mean_cents": 12753937.5,
+      "fixed_cartesian_cents": [
+        17916910,
+        13698140,
+        11809735,
+        7590965
+      ],
+      "noop_controlwise_cents": [
+        -3993146,
+        -10100321
+      ],
+      "noop_mean_cents": -7046733.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        2882488,
+        -22878164,
+        1074694
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -6721763,
+        -17106282
+      ],
+      "fixed_mean_cents": -11914022.5,
+      "fixed_cartesian_cents": [
+        -6721763,
+        -15629521,
+        -8198524,
+        -17106282
+      ],
+      "noop_controlwise_cents": [
+        -461977,
+        -1938738
+      ],
+      "noop_mean_cents": -1200357.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "claude-sonnet-5",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        8789480,
+        8689348,
+        -13488977
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -11382530,
+        -1484323
+      ],
+      "fixed_mean_cents": -6433426.5,
+      "fixed_cartesian_cents": [
+        -11382530,
+        939702,
+        -13806555,
+        -1484323
+      ],
+      "noop_controlwise_cents": [
+        3200390,
+        776365
+      ],
+      "noop_mean_cents": 1988377.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -17069741,
+        7695889,
+        -29461125
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -1264113,
+        -19068032
+      ],
+      "fixed_mean_cents": -10166072.5,
+      "fixed_cartesian_cents": [
+        -1264113,
+        -11100749,
+        -9231396,
+        -19068032
+      ],
+      "noop_controlwise_cents": [
+        4025316,
+        -3941967
+      ],
+      "noop_mean_cents": 41674.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        14736875,
+        -4171317,
+        -5029667
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        35854626,
+        -23134566
+      ],
+      "fixed_mean_cents": 6360030,
+      "fixed_cartesian_cents": [
+        35854626,
+        -17833654,
+        30553714,
+        -23134566
+      ],
+      "noop_controlwise_cents": [
+        12914129,
+        7613217
+      ],
+      "noop_mean_cents": 10263673,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -11910743,
+        8743698,
+        -437650
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -17947913,
+        2927201
+      ],
+      "fixed_mean_cents": -7510356,
+      "fixed_cartesian_cents": [
+        -17947913,
+        745602,
+        -15766314,
+        2927201
+      ],
+      "noop_controlwise_cents": [
+        -20618458,
+        -18436859
+      ],
+      "noop_mean_cents": -19527658.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        27354868,
+        3361624,
+        -23181020
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -24345489,
+        -4907303
+      ],
+      "fixed_mean_cents": -14626396,
+      "fixed_cartesian_cents": [
+        -24345489,
+        1075196,
+        -30327988,
+        -4907303
+      ],
+      "noop_controlwise_cents": [
+        -3127873,
+        -9110372
+      ],
+      "noop_mean_cents": -6119122.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        5405266,
+        12037266,
+        -4811591
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        3385470,
+        -12937672
+      ],
+      "fixed_mean_cents": -4776101,
+      "fixed_cartesian_cents": [
+        3385470,
+        -6830497,
+        -2721705,
+        -12937672
+      ],
+      "noop_controlwise_cents": [
+        13353633,
+        7246458
+      ],
+      "noop_mean_cents": 10300045.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        8505434,
+        1859985,
+        -15499716
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -9649474,
+        -18314048
+      ],
+      "fixed_mean_cents": -13981761,
+      "fixed_cartesian_cents": [
+        -9649474,
+        -16837287,
+        -11126235,
+        -18314048
+      ],
+      "noop_controlwise_cents": [
+        -5518540,
+        -6995301
+      ],
+      "noop_mean_cents": -6256920.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-flash",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -4973796,
+        4691407,
+        -7193104
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -7992239,
+        4601353
+      ],
+      "fixed_mean_cents": -1695443,
+      "fixed_cartesian_cents": [
+        -7992239,
+        7025378,
+        -10416264,
+        4601353
+      ],
+      "noop_controlwise_cents": [
+        -286935,
+        -2710960
+      ],
+      "noop_mean_cents": -1498947.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -21645566,
+        10311508,
+        -6088575
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -6708486,
+        -17089323
+      ],
+      "fixed_mean_cents": -11898904.5,
+      "fixed_cartesian_cents": [
+        -6708486,
+        -9122040,
+        -14675769,
+        -17089323
+      ],
+      "noop_controlwise_cents": [
+        -19463930,
+        -27431213
+      ],
+      "noop_mean_cents": -23447571.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -10363047,
+        12794940,
+        -8916034
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -17273684,
+        -55051
+      ],
+      "fixed_mean_cents": -8664367.5,
+      "fixed_cartesian_cents": [
+        -17273684,
+        4760354,
+        -22089089,
+        -55051
+      ],
+      "noop_controlwise_cents": [
+        -9791751,
+        -14607156
+      ],
+      "noop_mean_cents": -12199453.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -15118581,
+        -5505203,
+        -6461976
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        628842,
+        -19005391
+      ],
+      "fixed_mean_cents": -9188274.5,
+      "fixed_cartesian_cents": [
+        628842,
+        -21186990,
+        2810441,
+        -19005391
+      ],
+      "noop_controlwise_cents": [
+        -21245642,
+        -19064043
+      ],
+      "noop_mean_cents": -20154842.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        15959749,
+        -10368177,
+        -20889263
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -19285082,
+        6962218
+      ],
+      "fixed_mean_cents": -6161432,
+      "fixed_cartesian_cents": [
+        -19285082,
+        12944717,
+        -25267581,
+        6962218
+      ],
+      "noop_controlwise_cents": [
+        -757408,
+        -6739907
+      ],
+      "noop_mean_cents": -3748657.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -25067866,
+        -2429878,
+        4675992
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        9761560,
+        -12033496
+      ],
+      "fixed_mean_cents": -1135968,
+      "fixed_cartesian_cents": [
+        9761560,
+        -5926321,
+        3654385,
+        -12033496
+      ],
+      "noop_controlwise_cents": [
+        276028,
+        -5831147
+      ],
+      "noop_mean_cents": -2777559.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -17615699,
+        -8389368,
+        360817
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -1578919,
+        -5525598
+      ],
+      "fixed_mean_cents": -3552258.5,
+      "fixed_cartesian_cents": [
+        -1578919,
+        -4048837,
+        -3055680,
+        -5525598
+      ],
+      "noop_controlwise_cents": [
+        9637478,
+        8160717
+      ],
+      "noop_mean_cents": 8899097.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "deepseek-v4-pro",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -27938115,
+        -7668828,
+        -5124574
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -11079914,
+        6880819
+      ],
+      "fixed_mean_cents": -2099547.5,
+      "fixed_cartesian_cents": [
+        -11079914,
+        9304844,
+        -13503939,
+        6880819
+      ],
+      "noop_controlwise_cents": [
+        -8058568,
+        -10482593
+      ],
+      "noop_mean_cents": -9270580.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -32814068,
+        9310775,
+        2975886
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        13291964,
+        -4333205
+      ],
+      "fixed_mean_cents": 4479379.5,
+      "fixed_cartesian_cents": [
+        13291964,
+        3634078,
+        5324681,
+        -4333205
+      ],
+      "noop_controlwise_cents": [
+        369052,
+        -7598231
+      ],
+      "noop_mean_cents": -3614589.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        5149271,
+        -3706926,
+        -2377217
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        2247391,
+        -10169438
+      ],
+      "fixed_mean_cents": -3961023.5,
+      "fixed_cartesian_cents": [
+        2247391,
+        -5354033,
+        -2568014,
+        -10169438
+      ],
+      "noop_controlwise_cents": [
+        -13650696,
+        -18466101
+      ],
+      "noop_mean_cents": -16058398.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -6186811,
+        34893132,
+        -20212141
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -17575364,
+        3917699
+      ],
+      "fixed_mean_cents": -6828832.5,
+      "fixed_cartesian_cents": [
+        -17575364,
+        9218611,
+        -22876276,
+        3917699
+      ],
+      "noop_controlwise_cents": [
+        40097629,
+        34796717
+      ],
+      "noop_mean_cents": 37447173,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        19031232,
+        -31654641,
+        7926088
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        11279353,
+        -15436952
+      ],
+      "fixed_mean_cents": -2078799.5,
+      "fixed_cartesian_cents": [
+        11279353,
+        -9454453,
+        5296854,
+        -15436952
+      ],
+      "noop_controlwise_cents": [
+        6499570,
+        517071
+      ],
+      "noop_mean_cents": 3508320.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -7416330,
+        6046765,
+        -1509063
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -2653417,
+        -3129551
+      ],
+      "fixed_mean_cents": -2891484,
+      "fixed_cartesian_cents": [
+        -2653417,
+        2977624,
+        -8760592,
+        -3129551
+      ],
+      "noop_controlwise_cents": [
+        8092973,
+        1985798
+      ],
+      "noop_mean_cents": 5039385.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -967862,
+        -29403714,
+        -2176027
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -2000294,
+        -12845554
+      ],
+      "fixed_mean_cents": -7422924,
+      "fixed_cartesian_cents": [
+        -2000294,
+        -11368793,
+        -3477055,
+        -12845554
+      ],
+      "noop_controlwise_cents": [
+        897965,
+        -578796
+      ],
+      "noop_mean_cents": 159584.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "doubao-seed-1.8",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -3195804,
+        887996,
+        1499186
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        843605,
+        3223909
+      ],
+      "fixed_mean_cents": 2033757,
+      "fixed_cartesian_cents": [
+        843605,
+        5647934,
+        -1580420,
+        3223909
+      ],
+      "noop_controlwise_cents": [
+        -18764432,
+        -21188457
+      ],
+      "noop_mean_cents": -19976444.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -12954279,
+        27403752,
+        -6958462
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        3115144,
+        -557517
+      ],
+      "fixed_mean_cents": 1278813.5,
+      "fixed_cartesian_cents": [
+        3115144,
+        7409766,
+        -4852139,
+        -557517
+      ],
+      "noop_controlwise_cents": [
+        -16682468,
+        -24649751
+      ],
+      "noop_mean_cents": -20666109.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -6153547,
+        13008765,
+        10893190
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        1140774,
+        -8016612
+      ],
+      "fixed_mean_cents": -3437919,
+      "fixed_cartesian_cents": [
+        1140774,
+        -3201207,
+        -3674631,
+        -8016612
+      ],
+      "noop_controlwise_cents": [
+        -12988439,
+        -17803844
+      ],
+      "noop_mean_cents": -15396141.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        538725,
+        56729700,
+        -15669481
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -1871321,
+        -15500279
+      ],
+      "fixed_mean_cents": -8685800,
+      "fixed_cartesian_cents": [
+        -1871321,
+        -10199367,
+        -7172233,
+        -15500279
+      ],
+      "noop_controlwise_cents": [
+        5590757,
+        289845
+      ],
+      "noop_mean_cents": 2940301,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -902665,
+        7560718,
+        -237441
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -7694158,
+        -6225822
+      ],
+      "fixed_mean_cents": -6959990,
+      "fixed_cartesian_cents": [
+        -7694158,
+        -8407421,
+        -5512559,
+        -6225822
+      ],
+      "noop_controlwise_cents": [
+        515403,
+        2697002
+      ],
+      "noop_mean_cents": 1606202.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        3969758,
+        -751736,
+        -4504283
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        45227361,
+        -462505
+      ],
+      "fixed_mean_cents": 22382428,
+      "fixed_cartesian_cents": [
+        45227361,
+        5644670,
+        39120186,
+        -462505
+      ],
+      "noop_controlwise_cents": [
+        6813584,
+        706409
+      ],
+      "noop_mean_cents": 3759996.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        6540296,
+        -33383279,
+        -1621391
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        1152572,
+        -4363327
+      ],
+      "fixed_mean_cents": -1605377.5,
+      "fixed_cartesian_cents": [
+        1152572,
+        -2886566,
+        -324189,
+        -4363327
+      ],
+      "noop_controlwise_cents": [
+        3507343,
+        2030582
+      ],
+      "noop_mean_cents": 2768962.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gemini-3.8-flash",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        2297375,
+        -11187279,
+        -1957618
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -4844605,
+        -10982639
+      ],
+      "fixed_mean_cents": -7913622,
+      "fixed_cartesian_cents": [
+        -4844605,
+        -8558614,
+        -7268630,
+        -10982639
+      ],
+      "noop_controlwise_cents": [
+        4345605,
+        1921580
+      ],
+      "noop_mean_cents": 3133592.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -34015892,
+        -7301933,
+        -17380453
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -3859769,
+        -4790108
+      ],
+      "fixed_mean_cents": -4324938.5,
+      "fixed_cartesian_cents": [
+        -3859769,
+        3177175,
+        -11827052,
+        -4790108
+      ],
+      "noop_controlwise_cents": [
+        -3409902,
+        -11377185
+      ],
+      "noop_mean_cents": -7393543.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        11197183,
+        42458748,
+        -40364
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -12500798,
+        -20729452
+      ],
+      "fixed_mean_cents": -16615125,
+      "fixed_cartesian_cents": [
+        -12500798,
+        -15914047,
+        -17316203,
+        -20729452
+      ],
+      "noop_controlwise_cents": [
+        10644702,
+        5829297
+      ],
+      "noop_mean_cents": 8236999.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -1185102,
+        -4359549,
+        -8195410
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -256338,
+        2255170
+      ],
+      "fixed_mean_cents": 999416,
+      "fixed_cartesian_cents": [
+        -256338,
+        7556082,
+        -5557250,
+        2255170
+      ],
+      "noop_controlwise_cents": [
+        -6147986,
+        -11448898
+      ],
+      "noop_mean_cents": -8798442,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -27914333,
+        3436964,
+        -6893727
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -6948013,
+        2865447
+      ],
+      "fixed_mean_cents": -2041283,
+      "fixed_cartesian_cents": [
+        -6948013,
+        683848,
+        -4766414,
+        2865447
+      ],
+      "noop_controlwise_cents": [
+        455611,
+        2637210
+      ],
+      "noop_mean_cents": 1546410.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        8924781,
+        -10040301,
+        4720287
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -16389076,
+        -20258353
+      ],
+      "fixed_mean_cents": -18323714.5,
+      "fixed_cartesian_cents": [
+        -16389076,
+        -14275854,
+        -22371575,
+        -20258353
+      ],
+      "noop_controlwise_cents": [
+        -7014452,
+        -12996951
+      ],
+      "noop_mean_cents": -10005701.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        6246183,
+        5810772,
+        -9980055
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        7538288,
+        -6561474
+      ],
+      "fixed_mean_cents": 488407,
+      "fixed_cartesian_cents": [
+        7538288,
+        -5084713,
+        6061527,
+        -6561474
+      ],
+      "noop_controlwise_cents": [
+        -6895709,
+        -8372470
+      ],
+      "noop_mean_cents": -7634089.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-5.6-sol",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        3490325,
+        -10329573,
+        -15013943
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -2282128,
+        15247258
+      ],
+      "fixed_mean_cents": 6482565,
+      "fixed_cartesian_cents": [
+        -2282128,
+        17671283,
+        -4706153,
+        15247258
+      ],
+      "noop_controlwise_cents": [
+        -14042976,
+        -16467001
+      ],
+      "noop_mean_cents": -15254988.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -8182510,
+        22463515,
+        4363582
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -2844885,
+        -4794619
+      ],
+      "fixed_mean_cents": -3819752,
+      "fixed_cartesian_cents": [
+        -2844885,
+        3172664,
+        -10812168,
+        -4794619
+      ],
+      "noop_controlwise_cents": [
+        2236646,
+        -5730637
+      ],
+      "noop_mean_cents": -1746995.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        7500531,
+        29335001,
+        29029236
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        642770,
+        18275148
+      ],
+      "fixed_mean_cents": 9458959,
+      "fixed_cartesian_cents": [
+        642770,
+        23090553,
+        -4172635,
+        18275148
+      ],
+      "noop_controlwise_cents": [
+        -14904882,
+        -19720287
+      ],
+      "noop_mean_cents": -17312584.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        23333457,
+        14953188,
+        2960632
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        5990319,
+        4548011
+      ],
+      "fixed_mean_cents": 5269165,
+      "fixed_cartesian_cents": [
+        5990319,
+        9848923,
+        689407,
+        4548011
+      ],
+      "noop_controlwise_cents": [
+        17184834,
+        11883922
+      ],
+      "noop_mean_cents": 14534378,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": true,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -29432,
+        469051,
+        -10807178
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -24217194,
+        2895335
+      ],
+      "fixed_mean_cents": -10660929.5,
+      "fixed_cartesian_cents": [
+        -24217194,
+        713736,
+        -22035595,
+        2895335
+      ],
+      "noop_controlwise_cents": [
+        -7013326,
+        -4831727
+      ],
+      "noop_mean_cents": -5922526.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        13103919,
+        1931883,
+        -3945015
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -1386082,
+        -896666
+      ],
+      "fixed_mean_cents": -1141374,
+      "fixed_cartesian_cents": [
+        -1386082,
+        5085833,
+        -7368581,
+        -896666
+      ],
+      "noop_controlwise_cents": [
+        -1780456,
+        -7762955
+      ],
+      "noop_mean_cents": -4771705.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        5884624,
+        -8249187,
+        -785684
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        298553,
+        18005947
+      ],
+      "fixed_mean_cents": 9152250,
+      "fixed_cartesian_cents": [
+        298553,
+        24113122,
+        -5808622,
+        18005947
+      ],
+      "noop_controlwise_cents": [
+        6490651,
+        383476
+      ],
+      "noop_mean_cents": 3437063.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "gpt-6-astra",
+      "recipient": "qwen3.8-max",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -5023959,
+        -9047936,
+        -4160188
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        4759134,
+        -6760498
+      ],
+      "fixed_mean_cents": -1000682,
+      "fixed_cartesian_cents": [
+        4759134,
+        -4336473,
+        2335109,
+        -6760498
+      ],
+      "noop_controlwise_cents": [
+        -3037647,
+        -5461672
+      ],
+      "noop_mean_cents": -4249659.5,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "claude-sonnet-5",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -8874388,
+        11003585,
+        3600464
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        2471524,
+        6286582
+      ],
+      "fixed_mean_cents": 4379053,
+      "fixed_cartesian_cents": [
+        2471524,
+        14253865,
+        -5495759,
+        6286582
+      ],
+      "noop_controlwise_cents": [
+        -7568569,
+        -15535852
+      ],
+      "noop_mean_cents": -11552210.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "deepseek-v4-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        15106755,
+        -6030873,
+        -10950565
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        -10723719,
+        -8003637
+      ],
+      "fixed_mean_cents": -9363678,
+      "fixed_cartesian_cents": [
+        -10723719,
+        -3188232,
+        -15539124,
+        -8003637
+      ],
+      "noop_controlwise_cents": [
+        -1486266,
+        -6301671
+      ],
+      "noop_mean_cents": -3893968.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "deepseek-v4-pro",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        11244296,
+        59048119,
+        33594753
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        -9962560,
+        7873074
+      ],
+      "fixed_mean_cents": -1044743,
+      "fixed_cartesian_cents": [
+        -9962560,
+        13173986,
+        -15263472,
+        7873074
+      ],
+      "noop_controlwise_cents": [
+        -11205814,
+        -16506726
+      ],
+      "noop_mean_cents": -13856270,
+      "new_paired_matches_formal": [
+        false,
+        true
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "doubao-seed-1.8",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        -9072234,
+        -12496168,
+        -21405186
+      ],
+      "selected_3seed_same_sign": true,
+      "fixed_paired_cents": [
+        396199,
+        2893561
+      ],
+      "fixed_mean_cents": 1644880,
+      "fixed_cartesian_cents": [
+        396199,
+        711962,
+        2577798,
+        2893561
+      ],
+      "noop_controlwise_cents": [
+        -8541965,
+        -6360366
+      ],
+      "noop_mean_cents": -7451165.5,
+      "new_paired_matches_formal": [
+        false,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "gemini-3.8-flash",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        25840024,
+        -12735433,
+        -12223183
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        1502615,
+        -15508928
+      ],
+      "fixed_mean_cents": -7003156.5,
+      "fixed_cartesian_cents": [
+        1502615,
+        -9526429,
+        -4479884,
+        -15508928
+      ],
+      "noop_controlwise_cents": [
+        -1791336,
+        -7773835
+      ],
+      "noop_mean_cents": -4782585.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": false,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": true
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "gpt-5.6-sol",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        1140938,
+        6492433,
+        -13556700
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        6804750,
+        -5139397
+      ],
+      "fixed_mean_cents": 832676.5,
+      "fixed_cartesian_cents": [
+        6804750,
+        967778,
+        697575,
+        -5139397
+      ],
+      "noop_controlwise_cents": [
+        5150084,
+        -957091
+      ],
+      "noop_mean_cents": 2096496.5,
+      "new_paired_matches_formal": [
+        true,
+        false
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": true,
+      "noop_all_controls_match_fixed_mean": false
+    },
+    {
+      "entrant": "qwen3.8-max",
+      "recipient": "gpt-6-astra",
+      "formal_seed_order": [
+        11,
+        29,
+        47
+      ],
+      "formal_cents": [
+        4013736,
+        -6734047,
+        -16914171
+      ],
+      "selected_3seed_same_sign": false,
+      "fixed_paired_cents": [
+        457375,
+        1725737
+      ],
+      "fixed_mean_cents": 1091556,
+      "fixed_cartesian_cents": [
+        457375,
+        3202498,
+        -1019386,
+        1725737
+      ],
+      "noop_controlwise_cents": [
+        -13854132,
+        -15330893
+      ],
+      "noop_mean_cents": -14592512.5,
+      "new_paired_matches_formal": [
+        true,
+        true
+      ],
+      "new_mean_matches_formal": true,
+      "all_cartesian_matches_formal": false,
+      "noop_mean_matches_fixed_mean": false,
+      "noop_all_controls_match_fixed_mean": false
+    }
+  ],
+  "entrants": [
+    {
+      "model": "claude-sonnet-5",
+      "formal_seed11_cents": {
+        "private": -42329729,
+        "others": 37624257,
+        "market": -4705472
+      },
+      "formal_three_seed_mean_cents": {
+        "private": -32700145.666666668,
+        "others": -13105190.333333334,
+        "market": -45805336.0
+      },
+      "fixed_mean_cents": {
+        "private": -15596795,
+        "others": -24307730.5,
+        "market": -39904525.5
+      },
+      "noop_mean_cents": {
+        "private": -3940428.5,
+        "others": -36771610,
+        "market": -40712038.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": -11522916,
+          "others": -4421301,
+          "market": -15944217,
+          "directed": {
+            "gpt-6-astra": -6721763,
+            "deepseek-v4-pro": 5050067,
+            "qwen3.8-max": -11382530,
+            "gpt-5.6-sol": 17916910,
+            "gemini-3.8-flash": -3937731,
+            "deepseek-v4-flash": -2704168,
+            "doubao-seed-1.8": -2642086
+          }
+        },
+        {
+          "private": -19670674,
+          "others": -44194160,
+          "market": -63864834,
+          "directed": {
+            "gpt-6-astra": -17106282,
+            "deepseek-v4-pro": -12930079,
+            "qwen3.8-max": -1484323,
+            "gpt-5.6-sol": 7590965,
+            "gemini-3.8-flash": -19167282,
+            "deepseek-v4-flash": 6228634,
+            "doubao-seed-1.8": -7325793
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": -11522916,
+          "others": -4421301,
+          "market": -15944217,
+          "directed": {
+            "gpt-6-astra": -6721763,
+            "deepseek-v4-pro": 5050067,
+            "qwen3.8-max": -11382530,
+            "gpt-5.6-sol": 17916910,
+            "gemini-3.8-flash": -3937731,
+            "deepseek-v4-flash": -2704168,
+            "doubao-seed-1.8": -2642086
+          }
+        },
+        {
+          "private": -11703391,
+          "others": -20268982,
+          "market": -31972373,
+          "directed": {
+            "gpt-6-astra": -15629521,
+            "deepseek-v4-pro": -7629167,
+            "qwen3.8-max": 939702,
+            "gpt-5.6-sol": 13698140,
+            "gemini-3.8-flash": -13184783,
+            "deepseek-v4-flash": 11044039,
+            "doubao-seed-1.8": -9507392
+          }
+        },
+        {
+          "private": -19490199,
+          "others": -28346479,
+          "market": -47836678,
+          "directed": {
+            "gpt-6-astra": -8198524,
+            "deepseek-v4-pro": -250845,
+            "qwen3.8-max": -13806555,
+            "gpt-5.6-sol": 11809735,
+            "gemini-3.8-flash": -9920230,
+            "deepseek-v4-flash": -7519573,
+            "doubao-seed-1.8": -460487
+          }
+        },
+        {
+          "private": -19670674,
+          "others": -44194160,
+          "market": -63864834,
+          "directed": {
+            "gpt-6-astra": -17106282,
+            "deepseek-v4-pro": -12930079,
+            "qwen3.8-max": -1484323,
+            "gpt-5.6-sol": 7590965,
+            "gemini-3.8-flash": -19167282,
+            "deepseek-v4-flash": 6228634,
+            "doubao-seed-1.8": -7325793
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 43213,
+          "others": -24809021,
+          "market": -24765808,
+          "directed": {
+            "gpt-6-astra": -461977,
+            "deepseek-v4-pro": 2385114,
+            "qwen3.8-max": 3200390,
+            "gpt-5.6-sol": -3993146,
+            "gemini-3.8-flash": -14843216,
+            "deepseek-v4-flash": 4314556,
+            "doubao-seed-1.8": -15410742
+          }
+        },
+        {
+          "private": -7924070,
+          "others": -48734199,
+          "market": -56658269,
+          "directed": {
+            "gpt-6-astra": -1938738,
+            "deepseek-v4-pro": -2915798,
+            "qwen3.8-max": 776365,
+            "gpt-5.6-sol": -10100321,
+            "gemini-3.8-flash": -20825715,
+            "deepseek-v4-flash": -500849,
+            "doubao-seed-1.8": -13229143
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": true,
+        "others": true,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": false,
+        "others": true,
+        "market": true
+      }
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "formal_seed11_cents": {
+        "private": 1133331,
+        "others": 22048163,
+        "market": 23181494
+      },
+      "formal_three_seed_mean_cents": {
+        "private": 1362270.6666666667,
+        "others": -9782386.0,
+        "market": -8420115.333333334
+      },
+      "fixed_mean_cents": {
+        "private": -12406248.5,
+        "others": -46396099.5,
+        "market": -58802348
+      },
+      "noop_mean_cents": {
+        "private": 2067774.5,
+        "others": -12797256,
+        "market": -10729481.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": -6903368,
+          "others": -21959132,
+          "market": -28862500,
+          "directed": {
+            "gpt-6-astra": -9649474,
+            "deepseek-v4-pro": 35854626,
+            "claude-sonnet-5": -1264113,
+            "qwen3.8-max": -7992239,
+            "gpt-5.6-sol": 3385470,
+            "gemini-3.8-flash": -24345489,
+            "doubao-seed-1.8": -17947913
+          }
+        },
+        {
+          "private": -17909129,
+          "others": -70833067,
+          "market": -88742196,
+          "directed": {
+            "gpt-6-astra": -18314048,
+            "deepseek-v4-pro": -23134566,
+            "claude-sonnet-5": -19068032,
+            "qwen3.8-max": 4601353,
+            "gpt-5.6-sol": -12937672,
+            "gemini-3.8-flash": -4907303,
+            "doubao-seed-1.8": 2927201
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": -6903368,
+          "others": -21959132,
+          "market": -28862500,
+          "directed": {
+            "gpt-6-astra": -9649474,
+            "deepseek-v4-pro": 35854626,
+            "claude-sonnet-5": -1264113,
+            "qwen3.8-max": -7992239,
+            "gpt-5.6-sol": 3385470,
+            "gemini-3.8-flash": -24345489,
+            "doubao-seed-1.8": -17947913
+          }
+        },
+        {
+          "private": -13093724,
+          "others": -43756011,
+          "market": -56849735,
+          "directed": {
+            "gpt-6-astra": -16837287,
+            "deepseek-v4-pro": -17833654,
+            "claude-sonnet-5": -11100749,
+            "qwen3.8-max": 7025378,
+            "gpt-5.6-sol": -6830497,
+            "gemini-3.8-flash": 1075196,
+            "doubao-seed-1.8": 745602
+          }
+        },
+        {
+          "private": -11718773,
+          "others": -49036188,
+          "market": -60754961,
+          "directed": {
+            "gpt-6-astra": -11126235,
+            "deepseek-v4-pro": 30553714,
+            "claude-sonnet-5": -9231396,
+            "qwen3.8-max": -10416264,
+            "gpt-5.6-sol": -2721705,
+            "gemini-3.8-flash": -30327988,
+            "doubao-seed-1.8": -15766314
+          }
+        },
+        {
+          "private": -17909129,
+          "others": -70833067,
+          "market": -88742196,
+          "directed": {
+            "gpt-6-astra": -18314048,
+            "deepseek-v4-pro": -23134566,
+            "claude-sonnet-5": -19068032,
+            "qwen3.8-max": 4601353,
+            "gpt-5.6-sol": -12937672,
+            "gemini-3.8-flash": -4907303,
+            "doubao-seed-1.8": 2927201
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 4475477,
+          "others": 741272,
+          "market": 5216749,
+          "directed": {
+            "gpt-6-astra": -5518540,
+            "deepseek-v4-pro": 12914129,
+            "claude-sonnet-5": 4025316,
+            "qwen3.8-max": -286935,
+            "gpt-5.6-sol": 13353633,
+            "gemini-3.8-flash": -3127873,
+            "doubao-seed-1.8": -20618458
+          }
+        },
+        {
+          "private": -339928,
+          "others": -26335784,
+          "market": -26675712,
+          "directed": {
+            "gpt-6-astra": -6995301,
+            "deepseek-v4-pro": 7613217,
+            "claude-sonnet-5": -3941967,
+            "qwen3.8-max": -2710960,
+            "gpt-5.6-sol": 7246458,
+            "gemini-3.8-flash": -9110372,
+            "doubao-seed-1.8": -18436859
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": false,
+        "others": true,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": false,
+        "others": false,
+        "market": false
+      }
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "formal_seed11_cents": {
+        "private": -6890695,
+        "others": -101789125,
+        "market": -108679820
+      },
+      "formal_three_seed_mean_cents": {
+        "private": -5496091.333333333,
+        "others": -51829248.0,
+        "market": -57325339.333333336
+      },
+      "fixed_mean_cents": {
+        "private": -12418476.5,
+        "others": -42700752.5,
+        "market": -55119229
+      },
+      "noop_mean_cents": {
+        "private": 1347126,
+        "others": -62699567.5,
+        "market": -61352441.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": -8491669,
+          "others": -45535683,
+          "market": -54027352,
+          "directed": {
+            "gpt-6-astra": -1578919,
+            "claude-sonnet-5": -6708486,
+            "qwen3.8-max": -11079914,
+            "gpt-5.6-sol": 9761560,
+            "gemini-3.8-flash": -19285082,
+            "deepseek-v4-flash": -17273684,
+            "doubao-seed-1.8": 628842
+          }
+        },
+        {
+          "private": -16345284,
+          "others": -39865822,
+          "market": -56211106,
+          "directed": {
+            "gpt-6-astra": -5525598,
+            "claude-sonnet-5": -17089323,
+            "qwen3.8-max": 6880819,
+            "gpt-5.6-sol": -12033496,
+            "gemini-3.8-flash": 6962218,
+            "deepseek-v4-flash": -55051,
+            "doubao-seed-1.8": -19005391
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": -8491669,
+          "others": -45535683,
+          "market": -54027352,
+          "directed": {
+            "gpt-6-astra": -1578919,
+            "claude-sonnet-5": -6708486,
+            "qwen3.8-max": -11079914,
+            "gpt-5.6-sol": 9761560,
+            "gemini-3.8-flash": -19285082,
+            "deepseek-v4-flash": -17273684,
+            "doubao-seed-1.8": 628842
+          }
+        },
+        {
+          "private": -11044372,
+          "others": -13274273,
+          "market": -24318645,
+          "directed": {
+            "gpt-6-astra": -4048837,
+            "claude-sonnet-5": -9122040,
+            "qwen3.8-max": 9304844,
+            "gpt-5.6-sol": -5926321,
+            "gemini-3.8-flash": 12944717,
+            "deepseek-v4-flash": 4760354,
+            "doubao-seed-1.8": -21186990
+          }
+        },
+        {
+          "private": -13792581,
+          "others": -72127232,
+          "market": -85919813,
+          "directed": {
+            "gpt-6-astra": -3055680,
+            "claude-sonnet-5": -14675769,
+            "qwen3.8-max": -13503939,
+            "gpt-5.6-sol": 3654385,
+            "gemini-3.8-flash": -25267581,
+            "deepseek-v4-flash": -22089089,
+            "doubao-seed-1.8": 2810441
+          }
+        },
+        {
+          "private": -16345284,
+          "others": -39865822,
+          "market": -56211106,
+          "directed": {
+            "gpt-6-astra": -5525598,
+            "claude-sonnet-5": -17089323,
+            "qwen3.8-max": 6880819,
+            "gpt-5.6-sol": -12033496,
+            "gemini-3.8-flash": 6962218,
+            "deepseek-v4-flash": -55051,
+            "doubao-seed-1.8": -19005391
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 3997582,
+          "others": -49403793,
+          "market": -45406211,
+          "directed": {
+            "gpt-6-astra": 9637478,
+            "claude-sonnet-5": -19463930,
+            "qwen3.8-max": -8058568,
+            "gpt-5.6-sol": 276028,
+            "gemini-3.8-flash": -757408,
+            "deepseek-v4-flash": -9791751,
+            "doubao-seed-1.8": -21245642
+          }
+        },
+        {
+          "private": -1303330,
+          "others": -75995342,
+          "market": -77298672,
+          "directed": {
+            "gpt-6-astra": 8160717,
+            "claude-sonnet-5": -27431213,
+            "qwen3.8-max": -10482593,
+            "gpt-5.6-sol": -5831147,
+            "gemini-3.8-flash": -6739907,
+            "deepseek-v4-flash": -14607156,
+            "doubao-seed-1.8": -19064043
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": false,
+        "others": true,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": false,
+        "others": true,
+        "market": true
+      }
+    },
+    {
+      "model": "doubao-seed-1.8",
+      "formal_seed11_cents": {
+        "private": -50016569,
+        "others": -26400372,
+        "market": -76416941
+      },
+      "formal_three_seed_mean_cents": {
+        "private": -46021658.666666664,
+        "others": -17966757.666666668,
+        "market": -63988416.333333336
+      },
+      "fixed_mean_cents": {
+        "private": -43972271,
+        "others": -16669927,
+        "market": -60642198
+      },
+      "noop_mean_cents": {
+        "private": -33199355.5,
+        "others": 6505031,
+        "market": -26694324.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": -46444630,
+          "others": 5433238,
+          "market": -41011392,
+          "directed": {
+            "gpt-6-astra": -2000294,
+            "deepseek-v4-pro": -17575364,
+            "claude-sonnet-5": 13291964,
+            "qwen3.8-max": 843605,
+            "gpt-5.6-sol": -2653417,
+            "gemini-3.8-flash": 11279353,
+            "deepseek-v4-flash": 2247391
+          }
+        },
+        {
+          "private": -41499912,
+          "others": -38773092,
+          "market": -80273004,
+          "directed": {
+            "gpt-6-astra": -12845554,
+            "deepseek-v4-pro": 3917699,
+            "claude-sonnet-5": -4333205,
+            "qwen3.8-max": 3223909,
+            "gpt-5.6-sol": -3129551,
+            "gemini-3.8-flash": -15436952,
+            "deepseek-v4-flash": -10169438
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": -46444630,
+          "others": 5433238,
+          "market": -41011392,
+          "directed": {
+            "gpt-6-astra": -2000294,
+            "deepseek-v4-pro": -17575364,
+            "claude-sonnet-5": 13291964,
+            "qwen3.8-max": 843605,
+            "gpt-5.6-sol": -2653417,
+            "gemini-3.8-flash": 11279353,
+            "deepseek-v4-flash": 2247391
+          }
+        },
+        {
+          "private": -43681511,
+          "others": -4699032,
+          "market": -48380543,
+          "directed": {
+            "gpt-6-astra": -11368793,
+            "deepseek-v4-pro": 9218611,
+            "claude-sonnet-5": 3634078,
+            "qwen3.8-max": 5647934,
+            "gpt-5.6-sol": 2977624,
+            "gemini-3.8-flash": -9454453,
+            "deepseek-v4-flash": -5354033
+          }
+        },
+        {
+          "private": -44263031,
+          "others": -28640822,
+          "market": -72903853,
+          "directed": {
+            "gpt-6-astra": -3477055,
+            "deepseek-v4-pro": -22876276,
+            "claude-sonnet-5": 5324681,
+            "qwen3.8-max": -1580420,
+            "gpt-5.6-sol": -8760592,
+            "gemini-3.8-flash": 5296854,
+            "deepseek-v4-flash": -2568014
+          }
+        },
+        {
+          "private": -41499912,
+          "others": -38773092,
+          "market": -80273004,
+          "directed": {
+            "gpt-6-astra": -12845554,
+            "deepseek-v4-pro": 3917699,
+            "claude-sonnet-5": -4333205,
+            "qwen3.8-max": 3223909,
+            "gpt-5.6-sol": -3129551,
+            "gemini-3.8-flash": -15436952,
+            "deepseek-v4-flash": -10169438
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": -34290155,
+          "others": 23542061,
+          "market": -10748094,
+          "directed": {
+            "gpt-6-astra": 897965,
+            "deepseek-v4-pro": 40097629,
+            "claude-sonnet-5": 369052,
+            "qwen3.8-max": -18764432,
+            "gpt-5.6-sol": 8092973,
+            "gemini-3.8-flash": 6499570,
+            "deepseek-v4-flash": -13650696
+          }
+        },
+        {
+          "private": -32108556,
+          "others": -10531999,
+          "market": -42640555,
+          "directed": {
+            "gpt-6-astra": -578796,
+            "deepseek-v4-pro": 34796717,
+            "claude-sonnet-5": -7598231,
+            "qwen3.8-max": -21188457,
+            "gpt-5.6-sol": 1985798,
+            "gemini-3.8-flash": 517071,
+            "deepseek-v4-flash": -18466101
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": true,
+        "others": false,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": true,
+        "others": false,
+        "market": true
+      }
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "formal_seed11_cents": {
+        "private": 10251025,
+        "others": -6664337,
+        "market": 3586688
+      },
+      "formal_three_seed_mean_cents": {
+        "private": -5308504.0,
+        "others": 10886939.333333334,
+        "market": 5578435.333333333
+      },
+      "fixed_mean_cents": {
+        "private": -13377449,
+        "others": -4941467,
+        "market": -18318916
+      },
+      "noop_mean_cents": {
+        "private": -2246257.5,
+        "others": -21853196,
+        "market": -24099453.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": -8572408,
+          "others": 36225767,
+          "market": 27653359,
+          "directed": {
+            "gpt-6-astra": 1152572,
+            "deepseek-v4-pro": -1871321,
+            "claude-sonnet-5": 3115144,
+            "qwen3.8-max": -4844605,
+            "gpt-5.6-sol": 45227361,
+            "deepseek-v4-flash": 1140774,
+            "doubao-seed-1.8": -7694158
+          }
+        },
+        {
+          "private": -18182490,
+          "others": -46108701,
+          "market": -64291191,
+          "directed": {
+            "gpt-6-astra": -4363327,
+            "deepseek-v4-pro": -15500279,
+            "claude-sonnet-5": -557517,
+            "qwen3.8-max": -10982639,
+            "gpt-5.6-sol": -462505,
+            "deepseek-v4-flash": -8016612,
+            "doubao-seed-1.8": -6225822
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": -8572408,
+          "others": 36225767,
+          "market": 27653359,
+          "directed": {
+            "gpt-6-astra": 1152572,
+            "deepseek-v4-pro": -1871321,
+            "claude-sonnet-5": 3115144,
+            "qwen3.8-max": -4844605,
+            "gpt-5.6-sol": 45227361,
+            "deepseek-v4-flash": 1140774,
+            "doubao-seed-1.8": -7694158
+          }
+        },
+        {
+          "private": -12199991,
+          "others": -20198739,
+          "market": -32398730,
+          "directed": {
+            "gpt-6-astra": -2886566,
+            "deepseek-v4-pro": -10199367,
+            "claude-sonnet-5": 7409766,
+            "qwen3.8-max": -8558614,
+            "gpt-5.6-sol": 5644670,
+            "deepseek-v4-flash": -3201207,
+            "doubao-seed-1.8": -8407421
+          }
+        },
+        {
+          "private": -14554907,
+          "others": 10315805,
+          "market": -4239102,
+          "directed": {
+            "gpt-6-astra": -324189,
+            "deepseek-v4-pro": -7172233,
+            "claude-sonnet-5": -4852139,
+            "qwen3.8-max": -7268630,
+            "gpt-5.6-sol": 39120186,
+            "deepseek-v4-flash": -3674631,
+            "doubao-seed-1.8": -5512559
+          }
+        },
+        {
+          "private": -18182490,
+          "others": -46108701,
+          "market": -64291191,
+          "directed": {
+            "gpt-6-astra": -4363327,
+            "deepseek-v4-pro": -15500279,
+            "claude-sonnet-5": -557517,
+            "qwen3.8-max": -10982639,
+            "gpt-5.6-sol": -462505,
+            "deepseek-v4-flash": -8016612,
+            "doubao-seed-1.8": -6225822
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 744992,
+          "others": -8898215,
+          "market": -8153223,
+          "directed": {
+            "gpt-6-astra": 3507343,
+            "deepseek-v4-pro": 5590757,
+            "claude-sonnet-5": -16682468,
+            "qwen3.8-max": 4345605,
+            "gpt-5.6-sol": 6813584,
+            "deepseek-v4-flash": -12988439,
+            "doubao-seed-1.8": 515403
+          }
+        },
+        {
+          "private": -5237507,
+          "others": -34808177,
+          "market": -40045684,
+          "directed": {
+            "gpt-6-astra": 2030582,
+            "deepseek-v4-pro": 289845,
+            "claude-sonnet-5": -24649751,
+            "qwen3.8-max": 1921580,
+            "gpt-5.6-sol": 706409,
+            "deepseek-v4-flash": -17803844,
+            "doubao-seed-1.8": 2697002
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": true,
+        "others": true,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": false,
+        "others": false,
+        "market": false
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "formal_seed11_cents": {
+        "private": 13877540,
+        "others": -33256855,
+        "market": -19379315
+      },
+      "formal_three_seed_mean_cents": {
+        "private": 13155432.666666666,
+        "others": -22121797.333333332,
+        "market": -8966364.666666666
+      },
+      "fixed_mean_cents": {
+        "private": 14867687.5,
+        "others": -33334673,
+        "market": -18466985.5
+      },
+      "noop_mean_cents": {
+        "private": 25381387.5,
+        "others": -39303355,
+        "market": -13921967.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": 17830636,
+          "others": -34697834,
+          "market": -16867198,
+          "directed": {
+            "gpt-6-astra": 7538288,
+            "deepseek-v4-pro": -256338,
+            "claude-sonnet-5": -3859769,
+            "qwen3.8-max": -2282128,
+            "gemini-3.8-flash": -16389076,
+            "deepseek-v4-flash": -12500798,
+            "doubao-seed-1.8": -6948013
+          }
+        },
+        {
+          "private": 11904739,
+          "others": -31971512,
+          "market": -20066773,
+          "directed": {
+            "gpt-6-astra": -6561474,
+            "deepseek-v4-pro": 2255170,
+            "claude-sonnet-5": -4790108,
+            "qwen3.8-max": 15247258,
+            "gemini-3.8-flash": -20258353,
+            "deepseek-v4-flash": -20729452,
+            "doubao-seed-1.8": 2865447
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": 17830636,
+          "others": -34697834,
+          "market": -16867198,
+          "directed": {
+            "gpt-6-astra": 7538288,
+            "deepseek-v4-pro": -256338,
+            "claude-sonnet-5": -3859769,
+            "qwen3.8-max": -2282128,
+            "gemini-3.8-flash": -16389076,
+            "deepseek-v4-flash": -12500798,
+            "doubao-seed-1.8": -6948013
+          }
+        },
+        {
+          "private": 18011914,
+          "others": -6186226,
+          "market": 11825688,
+          "directed": {
+            "gpt-6-astra": -5084713,
+            "deepseek-v4-pro": 7556082,
+            "claude-sonnet-5": 3177175,
+            "qwen3.8-max": 17671283,
+            "gemini-3.8-flash": -14275854,
+            "deepseek-v4-flash": -15914047,
+            "doubao-seed-1.8": 683848
+          }
+        },
+        {
+          "private": 11723461,
+          "others": -60483120,
+          "market": -48759659,
+          "directed": {
+            "gpt-6-astra": 6061527,
+            "deepseek-v4-pro": -5557250,
+            "claude-sonnet-5": -11827052,
+            "qwen3.8-max": -4706153,
+            "gemini-3.8-flash": -22371575,
+            "deepseek-v4-flash": -17316203,
+            "doubao-seed-1.8": -4766414
+          }
+        },
+        {
+          "private": 11904739,
+          "others": -31971512,
+          "market": -20066773,
+          "directed": {
+            "gpt-6-astra": -6561474,
+            "deepseek-v4-pro": 2255170,
+            "claude-sonnet-5": -4790108,
+            "qwen3.8-max": 15247258,
+            "gemini-3.8-flash": -20258353,
+            "deepseek-v4-flash": -20729452,
+            "doubao-seed-1.8": 2865447
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 28434975,
+          "others": -26410712,
+          "market": 2024263,
+          "directed": {
+            "gpt-6-astra": -6895709,
+            "deepseek-v4-pro": -6147986,
+            "claude-sonnet-5": -3409902,
+            "qwen3.8-max": -14042976,
+            "gemini-3.8-flash": -7014452,
+            "deepseek-v4-flash": 10644702,
+            "doubao-seed-1.8": 455611
+          }
+        },
+        {
+          "private": 22327800,
+          "others": -52195998,
+          "market": -29868198,
+          "directed": {
+            "gpt-6-astra": -8372470,
+            "deepseek-v4-pro": -11448898,
+            "claude-sonnet-5": -11377185,
+            "qwen3.8-max": -16467001,
+            "gemini-3.8-flash": -12996951,
+            "deepseek-v4-flash": 5829297,
+            "doubao-seed-1.8": 2637210
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": true,
+        "others": true,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": true,
+        "others": true,
+        "market": false
+      }
+    },
+    {
+      "model": "gpt-6-astra",
+      "formal_seed11_cents": {
+        "private": 18223722,
+        "others": 36586630,
+        "market": 54810352
+      },
+      "formal_three_seed_mean_cents": {
+        "private": 11635858.666666666,
+        "others": 35032510.0,
+        "market": 46668368.666666664
+      },
+      "fixed_mean_cents": {
+        "private": 10257746.5,
+        "others": 7257636.5,
+        "market": 17515383
+      },
+      "noop_mean_cents": {
+        "private": 20688601.5,
+        "others": -16032030,
+        "market": 4656571.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": 9538498,
+          "others": -16757385,
+          "market": -7218887,
+          "directed": {
+            "deepseek-v4-pro": 5990319,
+            "claude-sonnet-5": -2844885,
+            "qwen3.8-max": 4759134,
+            "gpt-5.6-sol": 298553,
+            "gemini-3.8-flash": -1386082,
+            "deepseek-v4-flash": 642770,
+            "doubao-seed-1.8": -24217194
+          }
+        },
+        {
+          "private": 10976995,
+          "others": 31272658,
+          "market": 42249653,
+          "directed": {
+            "deepseek-v4-pro": 4548011,
+            "claude-sonnet-5": -4794619,
+            "qwen3.8-max": -6760498,
+            "gpt-5.6-sol": 18005947,
+            "gemini-3.8-flash": -896666,
+            "deepseek-v4-flash": 18275148,
+            "doubao-seed-1.8": 2895335
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": 9538498,
+          "others": -16757385,
+          "market": -7218887,
+          "directed": {
+            "deepseek-v4-pro": 5990319,
+            "claude-sonnet-5": -2844885,
+            "qwen3.8-max": 4759134,
+            "gpt-5.6-sol": 298553,
+            "gemini-3.8-flash": -1386082,
+            "deepseek-v4-flash": 642770,
+            "doubao-seed-1.8": -24217194
+          }
+        },
+        {
+          "private": 12453756,
+          "others": 61688358,
+          "market": 74142114,
+          "directed": {
+            "deepseek-v4-pro": 9848923,
+            "claude-sonnet-5": 3172664,
+            "qwen3.8-max": -4336473,
+            "gpt-5.6-sol": 24113122,
+            "gemini-3.8-flash": 5085833,
+            "deepseek-v4-flash": 23090553,
+            "doubao-seed-1.8": 713736
+          }
+        },
+        {
+          "private": 8061737,
+          "others": -47173085,
+          "market": -39111348,
+          "directed": {
+            "deepseek-v4-pro": 689407,
+            "claude-sonnet-5": -10812168,
+            "qwen3.8-max": 2335109,
+            "gpt-5.6-sol": -5808622,
+            "gemini-3.8-flash": -7368581,
+            "deepseek-v4-flash": -4172635,
+            "doubao-seed-1.8": -22035595
+          }
+        },
+        {
+          "private": 10976995,
+          "others": 31272658,
+          "market": 42249653,
+          "directed": {
+            "deepseek-v4-pro": 4548011,
+            "claude-sonnet-5": -4794619,
+            "qwen3.8-max": -6760498,
+            "gpt-5.6-sol": 18005947,
+            "gemini-3.8-flash": -896666,
+            "deepseek-v4-flash": 18275148,
+            "doubao-seed-1.8": 2895335
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 21426982,
+          "others": -824180,
+          "market": 20602802,
+          "directed": {
+            "deepseek-v4-pro": 17184834,
+            "claude-sonnet-5": 2236646,
+            "qwen3.8-max": -3037647,
+            "gpt-5.6-sol": 6490651,
+            "gemini-3.8-flash": -1780456,
+            "deepseek-v4-flash": -14904882,
+            "doubao-seed-1.8": -7013326
+          }
+        },
+        {
+          "private": 19950221,
+          "others": -31239880,
+          "market": -11289659,
+          "directed": {
+            "deepseek-v4-pro": 11883922,
+            "claude-sonnet-5": -5730637,
+            "qwen3.8-max": -5461672,
+            "gpt-5.6-sol": 383476,
+            "gemini-3.8-flash": -7762955,
+            "deepseek-v4-flash": -19720287,
+            "doubao-seed-1.8": -4831727
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": true,
+        "others": false,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": true,
+        "others": false,
+        "market": false
+      }
+    },
+    {
+      "model": "qwen3.8-max",
+      "formal_seed11_cents": {
+        "private": 3168958,
+        "others": 39399127,
+        "market": 42568085
+      },
+      "formal_three_seed_mean_cents": {
+        "private": 2328276.3333333335,
+        "others": 13364051.666666666,
+        "market": 15692328.0
+      },
+      "fixed_mean_cents": {
+        "private": 3411110,
+        "others": -9463412,
+        "market": -6052302
+      },
+      "noop_mean_cents": {
+        "private": 14180619.5,
+        "others": -54032216,
+        "market": -39851596.5
+      },
+      "fixed_paired_cents": [
+        {
+          "private": 3158408,
+          "others": -9053816,
+          "market": -5895408,
+          "directed": {
+            "gpt-6-astra": 457375,
+            "deepseek-v4-pro": -9962560,
+            "claude-sonnet-5": 2471524,
+            "gpt-5.6-sol": 6804750,
+            "gemini-3.8-flash": 1502615,
+            "deepseek-v4-flash": -10723719,
+            "doubao-seed-1.8": 396199
+          }
+        },
+        {
+          "private": 3663812,
+          "others": -9873008,
+          "market": -6209196,
+          "directed": {
+            "gpt-6-astra": 1725737,
+            "deepseek-v4-pro": 7873074,
+            "claude-sonnet-5": 6286582,
+            "gpt-5.6-sol": -5139397,
+            "gemini-3.8-flash": -15508928,
+            "deepseek-v4-flash": -8003637,
+            "doubao-seed-1.8": 2893561
+          }
+        }
+      ],
+      "fixed_cartesian_cents": [
+        {
+          "private": 3158408,
+          "others": -9053816,
+          "market": -5895408,
+          "directed": {
+            "gpt-6-astra": 457375,
+            "deepseek-v4-pro": -9962560,
+            "claude-sonnet-5": 2471524,
+            "gpt-5.6-sol": 6804750,
+            "gemini-3.8-flash": 1502615,
+            "deepseek-v4-flash": -10723719,
+            "doubao-seed-1.8": 396199
+          }
+        },
+        {
+          "private": 6087837,
+          "others": 19595428,
+          "market": 25683265,
+          "directed": {
+            "gpt-6-astra": 3202498,
+            "deepseek-v4-pro": 13173986,
+            "claude-sonnet-5": 14253865,
+            "gpt-5.6-sol": 967778,
+            "gemini-3.8-flash": -9526429,
+            "deepseek-v4-flash": -3188232,
+            "doubao-seed-1.8": 711962
+          }
+        },
+        {
+          "private": 734383,
+          "others": -38522252,
+          "market": -37787869,
+          "directed": {
+            "gpt-6-astra": -1019386,
+            "deepseek-v4-pro": -15263472,
+            "claude-sonnet-5": -5495759,
+            "gpt-5.6-sol": 697575,
+            "gemini-3.8-flash": -4479884,
+            "deepseek-v4-flash": -15539124,
+            "doubao-seed-1.8": 2577798
+          }
+        },
+        {
+          "private": 3663812,
+          "others": -9873008,
+          "market": -6209196,
+          "directed": {
+            "gpt-6-astra": 1725737,
+            "deepseek-v4-pro": 7873074,
+            "claude-sonnet-5": 6286582,
+            "gpt-5.6-sol": -5139397,
+            "gemini-3.8-flash": -15508928,
+            "deepseek-v4-flash": -8003637,
+            "doubao-seed-1.8": 2893561
+          }
+        }
+      ],
+      "noop_controlwise_cents": [
+        {
+          "private": 15392632,
+          "others": -39297998,
+          "market": -23905366,
+          "directed": {
+            "gpt-6-astra": -13854132,
+            "deepseek-v4-pro": -11205814,
+            "claude-sonnet-5": -7568569,
+            "gpt-5.6-sol": 5150084,
+            "gemini-3.8-flash": -1791336,
+            "deepseek-v4-flash": -1486266,
+            "doubao-seed-1.8": -8541965
+          }
+        },
+        {
+          "private": 12968607,
+          "others": -68766434,
+          "market": -55797827,
+          "directed": {
+            "gpt-6-astra": -15330893,
+            "deepseek-v4-pro": -16506726,
+            "claude-sonnet-5": -15535852,
+            "gpt-5.6-sol": -957091,
+            "gemini-3.8-flash": -7773835,
+            "deepseek-v4-flash": -6301671,
+            "doubao-seed-1.8": -6360366
+          }
+        }
+      ],
+      "same_mean_sign": {
+        "private": true,
+        "others": true,
+        "market": true
+      },
+      "both_baselines_all_controls_same_sign": {
+        "private": true,
+        "others": false,
+        "market": false
+      }
+    }
+  ]
+}

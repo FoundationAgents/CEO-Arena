@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "campaign_id": "retail-eight-models-20260911",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "verified_at_utc": "2026-09-19T04:37:44.859531+00:00",
+  "table_rows": {
+    "runs": 27,
+    "assignments": 216,
+    "company_results": 216,
+    "company_initial": 216,
+    "company_terminal": 216,
+    "company_daily": 108000,
+    "action_receipts": 27496,
+    "company_100day_periods": 1080,
+    "company_cash_milestones": 2376,
+    "windows": 1944,
+    "company_decisions": 15078,
+    "decision_products": 19593,
+    "decision_market_research": 1510,
+    "decision_marketing": 24114,
+    "decision_enterprise_bids": 3608,
+    "market_daily": 13500,
+    "enterprise_tenders": 972,
+    "market_state": 54,
+    "lineup_model_means": 72,
+    "model_summary": 9,
+    "model_mean_cash_daily": 4509,
+    "track_c_model_summary": 8,
+    "directed_effects_by_seed": 168,
+    "paired_effects_by_seed": 24,
+    "directed_effects_mean": 56,
+    "discarded_fresh_attempt_usage": 3,
+    "selected_case_evidence": 3
+  },
+  "archive_files_hash_checked": 82,
+  "checks": [
+    "archived analysis equals paper analysis",
+    "27 checkpoint and trace hashes match paper evidence",
+    "all 108000 daily cash and expense identities",
+    "all 216 final cash/salvage/Score and bankruptcy days",
+    "all company cumulative accounts, decision statuses and usage",
+    "complete lineup/seed coverage",
+    "Track A and Track B recomputed",
+    "24 paired and 168 directed effects recomputed"
+  ],
+  "model_calls": 0,
+  "simulator_replay_performed": false,
+  "scope": "Frozen formal campaign only. No later supplements or baseline-development experiments."
+}

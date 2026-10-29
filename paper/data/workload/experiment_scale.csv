@@ -1,0 +1,6 @@
+﻿experiment_group,markets,firms_per_market,company_trajectories,simulation_days,ceo_decision_windows
+main,27,8,216,13500,15078
+repeated,18,8,144,9000,10133
+no_action,8,8,64,4000,4537
+evaluation_total,53,8,424,26500,29748
+rule_search,75,9,675,37500,48600

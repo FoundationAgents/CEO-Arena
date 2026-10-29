@@ -1,0 +1,4 @@
+[submodule "OpenCode"]
+	path = code/OpenCode
+	url = https://github.com/anomalyco/opencode.git
+	shallow = true

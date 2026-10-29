@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use CEO Arena, please cite the accompanying paper."
+title: "CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets"
+type: software
+authors:
+  - family-names: Yan
+    given-names: An
+  - family-names: Huo
+    given-names: Yu
+  - family-names: Shang
+    given-names: Zhiwei
+  - family-names: Peng
+    given-names: Yiran
+  - family-names: Wu
+    given-names: Chenglin
+version: 0.15.2
+date-released: 2026-10-29
+license: MIT
+repository-code: "https://github.com/FoundationAgents/CEO-Arena"
+url: "https://arxiv.org/abs/2609.34821"
+preferred-citation:
+  type: article
+  title: "CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets"
+  authors:
+    - family-names: Yan
+      given-names: An
+    - family-names: Huo
+      given-names: Yu
+    - family-names: Shang
+      given-names: Zhiwei
+    - family-names: Peng
+      given-names: Yiran
+    - family-names: Wu
+      given-names: Chenglin
+  journal: arXiv
+  year: 2026
+  doi: "10.48550/arXiv.2609.34821"
+  url: "https://arxiv.org/abs/2609.34821"

@@ -1,0 +1,258 @@
+{
+  "claude-sonnet-5": {
+    "market_cash_only_negative_seeds": 3,
+    "market_cash_only_positive_seeds": 0,
+    "mean_market_cash_only_usd_k": -457.64402666666666,
+    "mean_market_official_usd_k": -458.05336,
+    "mean_private_cash_only_usd_k": -343.3764566666666,
+    "mean_private_official_usd_k": -327.0014566666667,
+    "private_cash_only_positive_seeds": 0,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": -7095472,
+        "market_official_cents": -4705472,
+        "private_cash_only_cents": -44745229,
+        "private_official_cents": -42329729,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": -32745468,
+        "market_official_cents": -34370968,
+        "private_cash_only_cents": -14737334,
+        "private_official_cents": -13537334,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -97452268,
+        "market_official_cents": -98339568,
+        "private_cash_only_cents": -43530374,
+        "private_official_cents": -42233374,
+        "seed": 47
+      }
+    ]
+  },
+  "deepseek-v4-flash": {
+    "market_cash_only_negative_seeds": 1,
+    "market_cash_only_positive_seeds": 2,
+    "mean_market_cash_only_usd_k": -79.99048666666667,
+    "mean_market_official_usd_k": -84.20115333333334,
+    "mean_private_cash_only_usd_k": 13.85904,
+    "mean_private_official_usd_k": 13.622706666666668,
+    "private_cash_only_positive_seeds": 2,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": 23543694,
+        "market_official_cents": 23181494,
+        "private_cash_only_cents": 1302931,
+        "private_official_cents": 1133331,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": 42334024,
+        "market_official_cents": 40755424,
+        "private_cash_only_cents": 6291972,
+        "private_official_cents": 6536872,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -89874864,
+        "market_official_cents": -89197264,
+        "private_cash_only_cents": -3437191,
+        "private_official_cents": -3583391,
+        "seed": 47
+      }
+    ]
+  },
+  "deepseek-v4-pro": {
+    "market_cash_only_negative_seeds": 3,
+    "market_cash_only_positive_seeds": 0,
+    "mean_market_cash_only_usd_k": -528.2087266666666,
+    "mean_market_official_usd_k": -573.2533933333334,
+    "mean_private_cash_only_usd_k": -55.08991333333333,
+    "mean_private_official_usd_k": -54.96091333333333,
+    "private_cash_only_positive_seeds": 1,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": -93937220,
+        "market_official_cents": -108679820,
+        "private_cash_only_cents": -6752195,
+        "private_official_cents": -6890695,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": -6268171,
+        "market_official_cents": -6174371,
+        "private_cash_only_cents": 5480635,
+        "private_official_cents": 5080635,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -58257227,
+        "market_official_cents": -57121827,
+        "private_cash_only_cents": -15255414,
+        "private_official_cents": -14678214,
+        "seed": 47
+      }
+    ]
+  },
+  "doubao-seed-1.8": {
+    "market_cash_only_negative_seeds": 3,
+    "market_cash_only_positive_seeds": 0,
+    "mean_market_cash_only_usd_k": -642.8834966666666,
+    "mean_market_official_usd_k": -639.8841633333334,
+    "mean_private_cash_only_usd_k": -456.59092,
+    "mean_private_official_usd_k": -460.2165866666666,
+    "private_cash_only_positive_seeds": 0,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": -78054941,
+        "market_official_cents": -76416941,
+        "private_cash_only_cents": -49696869,
+        "private_official_cents": -50016569,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": -55705042,
+        "market_official_cents": -54933842,
+        "private_cash_only_cents": -40909629,
+        "private_official_cents": -41307229,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -59105066,
+        "market_official_cents": -60614466,
+        "private_cash_only_cents": -46370778,
+        "private_official_cents": -46741178,
+        "seed": 47
+      }
+    ]
+  },
+  "gemini-3.8-flash": {
+    "market_cash_only_negative_seeds": 1,
+    "market_cash_only_positive_seeds": 2,
+    "mean_market_cash_only_usd_k": 62.37268666666667,
+    "mean_market_official_usd_k": 55.78435333333333,
+    "mean_private_cash_only_usd_k": -53.53137333333333,
+    "mean_private_official_usd_k": -53.08504,
+    "private_cash_only_positive_seeds": 1,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": 2104588,
+        "market_official_cents": 3586688,
+        "private_cash_only_cents": 10136725,
+        "private_official_cents": 10251025,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": 50594846,
+        "market_official_cents": 46367146,
+        "private_cash_only_cents": -12613495,
+        "private_official_cents": -13013495,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -33987628,
+        "market_official_cents": -33218528,
+        "private_cash_only_cents": -13582642,
+        "private_official_cents": -13163042,
+        "seed": 47
+      }
+    ]
+  },
+  "gpt-5.6-sol": {
+    "market_cash_only_negative_seeds": 2,
+    "market_cash_only_positive_seeds": 1,
+    "mean_market_cash_only_usd_k": -48.99231333333333,
+    "mean_market_official_usd_k": -89.66364666666666,
+    "mean_private_cash_only_usd_k": 134.85966,
+    "mean_private_official_usd_k": 131.55432666666667,
+    "private_cash_only_positive_seeds": 3,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": -15974715,
+        "market_official_cents": -19379315,
+        "private_cash_only_cents": 14253840,
+        "private_official_cents": 13877540,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": 45558143,
+        "market_official_cents": 37236843,
+        "private_cash_only_cents": 17948215,
+        "private_official_cents": 17561715,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -44281122,
+        "market_official_cents": -44756622,
+        "private_cash_only_cents": 8255843,
+        "private_official_cents": 8027043,
+        "seed": 47
+      }
+    ]
+  },
+  "gpt-6-astra": {
+    "market_cash_only_negative_seeds": 0,
+    "market_cash_only_positive_seeds": 3,
+    "mean_market_cash_only_usd_k": 475.39735333333334,
+    "mean_market_official_usd_k": 466.68368666666663,
+    "mean_private_cash_only_usd_k": 119.45058666666667,
+    "mean_private_official_usd_k": 116.35858666666667,
+    "private_cash_only_positive_seeds": 3,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": 52681052,
+        "market_official_cents": 54810352,
+        "private_cash_only_cents": 18554422,
+        "private_official_cents": 18223722,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": 64101539,
+        "market_official_cents": 60704439,
+        "private_cash_only_cents": 9167224,
+        "private_official_cents": 8848924,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": 25836615,
+        "market_official_cents": 24490315,
+        "private_cash_only_cents": 8113530,
+        "private_official_cents": 7834930,
+        "seed": 47
+      }
+    ]
+  },
+  "qwen3.8-max": {
+    "market_cash_only_negative_seeds": 1,
+    "market_cash_only_positive_seeds": 2,
+    "mean_market_cash_only_usd_k": 183.76428,
+    "mean_market_official_usd_k": 156.92328,
+    "mean_private_cash_only_usd_k": 25.583096666666666,
+    "mean_private_official_usd_k": 23.282763333333335,
+    "private_cash_only_positive_seeds": 3,
+    "seed_effects_cents": [
+      {
+        "market_cash_only_cents": 43344185,
+        "market_official_cents": 42568085,
+        "private_cash_only_cents": 3534358,
+        "private_official_cents": 3168958,
+        "seed": 11
+      },
+      {
+        "market_cash_only_cents": 44588491,
+        "market_official_cents": 40697391,
+        "private_cash_only_cents": 2524375,
+        "private_official_cents": 2149775,
+        "seed": 29
+      },
+      {
+        "market_cash_only_cents": -32803392,
+        "market_official_cents": -36188492,
+        "private_cash_only_cents": 1616196,
+        "private_official_cents": 1666096,
+        "seed": 47
+      }
+    ]
+  }
+}

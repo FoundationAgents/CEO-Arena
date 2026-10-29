@@ -1,0 +1,26 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Explicit nonfunctional API-key placeholders in the public example"
+regexTarget = "secret"
+regexes = ['''^REPLACE_WITH_API_KEY_[123]$''']
+paths = ['''(^|/)code/examples/campaign\.example\.toml$''']
+condition = "AND"
+
+[[allowlists]]
+description = "Literal synthetic input used to test credential redaction"
+regexTarget = "secret"
+regexes = ['''^plainsecret123$''']
+paths = ['''(^|/)code/tests/runtime/test_redact\.py$''']
+condition = "AND"
+
+[[allowlists]]
+description = "SHA-256 source fingerprints in frozen scientific provenance"
+regexTarget = "secret"
+regexes = ['''^[a-f0-9]{64}$''']
+paths = [
+  '''(^|/)paper/data/formal/protocol\.json$''',
+  '''(^|/)code/docs/validation/fixed-rule-search-v3\.json$''',
+]
+condition = "AND"

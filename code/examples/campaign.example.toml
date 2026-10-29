@@ -1,0 +1,101 @@
+# Historical main-evaluation design; replace all placeholders before running.
+# Identity aliases are specific to the original gateway; review them for your provider.
+schema_version = 1
+campaign_id = "ceo-arena-main-reproduction"
+base_url = "https://api.example.com/v1"
+company_count = 8
+days = 500
+seeds = [11, 29, 47]
+model_order = ["gpt-6-astra", "deepseek-v4-pro", "claude-sonnet-5", "qwen3.8-max", "gpt-5.6-sol", "gemini-3.8-flash", "deepseek-v4-flash", "doubao-seed-1.8"]
+
+[[api]]
+api_key = "REPLACE_WITH_API_KEY_1"
+models = ["gpt-6-astra", "gpt-5.6-sol"]
+
+[[api]]
+api_key = "REPLACE_WITH_API_KEY_2"
+models = ["claude-sonnet-5"]
+
+[[api]]
+api_key = "REPLACE_WITH_API_KEY_3"
+models = ["deepseek-v4-pro", "qwen3.8-max", "gemini-3.8-flash", "deepseek-v4-flash", "doubao-seed-1.8"]
+
+[inference."claude-sonnet-5"]
+protocol = "anthropic-messages"
+effort = "max"
+thinking = "adaptive"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_tokens"
+max_output_tokens = 128000
+expected_model_ids = ["claude-sonnet-5"]
+
+[inference."deepseek-v4-flash"]
+protocol = "openai-compatible-chat"
+effort = "max"
+thinking = "enabled"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_tokens"
+max_output_tokens = 393216
+expected_model_ids = ["deepseek-v4-flash", "deepseek-flash"]
+
+[inference."deepseek-v4-pro"]
+protocol = "openai-compatible-chat"
+effort = "max"
+thinking = "enabled"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_tokens"
+max_output_tokens = 393216
+expected_model_ids = ["deepseek-v4-pro"]
+
+[inference."doubao-seed-1.8"]
+protocol = "openai-compatible-chat"
+effort = "high"
+thinking = "enabled"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_completion_tokens"
+max_output_tokens = 65536
+expected_model_ids = ["doubao-seed-1.8", "doubao-seed-1-8-251228"]
+
+[inference."gemini-3.8-flash"]
+protocol = "openai-compatible-chat"
+effort = "high"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_tokens"
+max_output_tokens = 65536
+expected_model_ids = ["gemini-3.8-flash"]
+
+[inference."gpt-5.6-sol"]
+protocol = "openai-responses"
+effort = "max"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_output_tokens"
+max_output_tokens = 128000
+expected_model_ids = ["gpt-5.6-sol", "gpt-6-sol"]
+
+[inference."gpt-6-astra"]
+protocol = "openai-responses"
+effort = "max"
+enable_thinking = false
+preserve_thinking = false
+output_token_field = "max_output_tokens"
+max_output_tokens = 128000
+expected_model_ids = ["gpt-6-astra"]
+
+[inference."qwen3.8-max"]
+protocol = "openai-compatible-chat"
+effort = "xhigh"
+enable_thinking = true
+preserve_thinking = true
+output_token_field = "max_completion_tokens"
+max_output_tokens = 65536
+expected_model_ids = ["qwen3.8-max"]
+
+[execution]
+max_concurrent_runs = 30
+schedule = "seed_priority"

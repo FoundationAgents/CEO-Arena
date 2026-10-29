@@ -1,0 +1,14 @@
+{
+  "private_identity_markers_found": 0,
+  "raw_provider_conversations_included": false,
+  "server_checkpoints_included": false,
+  "formal_markets": 27,
+  "repeated_seed11_markets": 18,
+  "no_action_markets": 8,
+  "source_exclusions": [
+    "author-path release metadata",
+    "manuscript sources",
+    "unneeded upstream repository automation and prebuilt artifacts",
+    "illustrative credential fixtures in four test/example files"
+  ]
+}

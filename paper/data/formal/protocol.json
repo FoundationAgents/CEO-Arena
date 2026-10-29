@@ -1,0 +1,707 @@
+{
+  "artifact_kind": "secret-free-scientific-protocol",
+  "campaign_id": "retail-eight-models-20260911",
+  "plan_hash": "3ee34a22e881b7be1cc5dc39368a9c1d113032b049b6912686ff5dd5cf672cb9",
+  "analysis_canonical_hash": "5523b65dc1275c457c7e23eaff55e490a48cbd7c0ba863c67dc4634244a13cd7",
+  "protocol_version": "ceos-campaign-plan-v6",
+  "company_count": 8,
+  "days": 500,
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "model_order": [
+    "gpt-6-astra",
+    "deepseek-v4-pro",
+    "claude-sonnet-5",
+    "qwen3.8-max",
+    "gpt-5.6-sol",
+    "gemini-3.8-flash",
+    "deepseek-v4-flash",
+    "doubao-seed-1.8"
+  ],
+  "scenario_template": {
+    "scenario_id": "ceos-market-v3",
+    "seed": 0,
+    "total_days": 500,
+    "days_per_decision_window": 7,
+    "initial_cash_cents": 50000000,
+    "initial_capacity_tier": 0,
+    "channels": [
+      "search",
+      "display",
+      "affiliate"
+    ],
+    "products": [
+      {
+        "product_id": "A",
+        "base_quality": 0.55,
+        "unit_cost_cents": 2600,
+        "salvage_value_cents": 800,
+        "holding_cost_cents": 2,
+        "procurement_lead_days": 5,
+        "initial_inventory": 600,
+        "initial_price_cents": 4000
+      },
+      {
+        "product_id": "B",
+        "base_quality": 0.68,
+        "unit_cost_cents": 4800,
+        "salvage_value_cents": 1500,
+        "holding_cost_cents": 3,
+        "procurement_lead_days": 7,
+        "initial_inventory": 400,
+        "initial_price_cents": 7500
+      },
+      {
+        "product_id": "C",
+        "base_quality": 0.82,
+        "unit_cost_cents": 8500,
+        "salvage_value_cents": 2600,
+        "holding_cost_cents": 6,
+        "procurement_lead_days": 10,
+        "initial_inventory": 200,
+        "initial_price_cents": 13500
+      }
+    ],
+    "segments": [
+      {
+        "segment_id": "value",
+        "base_daily_demand": 240,
+        "price_reference_cents": 4500,
+        "price_weight": 5.8,
+        "quality_weight": 1.7,
+        "service_weight": 0.7,
+        "awareness_weight": 0.3,
+        "loyalty_weight": 0.5,
+        "outside_utility": -2.145,
+        "macro_sensitivity": 1.2,
+        "seasonal_amplitude": 0.1,
+        "seasonal_period_days": 7,
+        "expected_quality": 0.5,
+        "service_level_target": 2,
+        "price_expectation_quality_slope": 0.12,
+        "product_match": {
+          "A": 0.45,
+          "B": 0.05,
+          "C": -0.35
+        },
+        "channel_effectiveness": {
+          "search": 1.25,
+          "display": 0.7,
+          "affiliate": 1.05
+        }
+      },
+      {
+        "segment_id": "mainstream",
+        "base_daily_demand": 300,
+        "price_reference_cents": 8000,
+        "price_weight": 4.4,
+        "quality_weight": 2.6,
+        "service_weight": 1,
+        "awareness_weight": 0.4,
+        "loyalty_weight": 0.8,
+        "outside_utility": -0.921,
+        "macro_sensitivity": 1,
+        "seasonal_amplitude": 0.08,
+        "seasonal_period_days": 30,
+        "expected_quality": 0.63,
+        "service_level_target": 1.5,
+        "price_expectation_quality_slope": 0.12,
+        "product_match": {
+          "A": 0,
+          "B": 0.4,
+          "C": 0
+        },
+        "channel_effectiveness": {
+          "search": 1,
+          "display": 1.1,
+          "affiliate": 0.9
+        }
+      },
+      {
+        "segment_id": "premium",
+        "base_daily_demand": 150,
+        "price_reference_cents": 14000,
+        "price_weight": 2.2,
+        "quality_weight": 2.7,
+        "service_weight": 1.6,
+        "awareness_weight": 0.3,
+        "loyalty_weight": 1.1,
+        "outside_utility": 0.086,
+        "macro_sensitivity": 0.7,
+        "seasonal_amplitude": 0.12,
+        "seasonal_period_days": 90,
+        "expected_quality": 0.78,
+        "service_level_target": 1,
+        "price_expectation_quality_slope": 0.12,
+        "product_match": {
+          "A": -0.45,
+          "B": 0,
+          "C": 0.55
+        },
+        "channel_effectiveness": {
+          "search": 0.85,
+          "display": 1.2,
+          "affiliate": 1.15
+        }
+      }
+    ],
+    "capacity_tiers": [
+      {
+        "tier": 0,
+        "units_per_day": 60,
+        "daily_cost_cents": 40000,
+        "expansion_cost_cents": 0,
+        "expansion_lead_days": 1
+      },
+      {
+        "tier": 1,
+        "units_per_day": 90,
+        "daily_cost_cents": 53000,
+        "expansion_cost_cents": 1200000,
+        "expansion_lead_days": 21
+      },
+      {
+        "tier": 2,
+        "units_per_day": 135,
+        "daily_cost_cents": 73000,
+        "expansion_cost_cents": 3000000,
+        "expansion_lead_days": 35
+      },
+      {
+        "tier": 3,
+        "units_per_day": 200,
+        "daily_cost_cents": 100000,
+        "expansion_cost_cents": 6000000,
+        "expansion_lead_days": 49
+      }
+    ],
+    "marketing": {
+      "attention_power": 0.45,
+      "outside_attention": 1,
+      "goodwill_decay": 0.025,
+      "awareness_gain": 0.08,
+      "spend_reference_cents": 10000
+    },
+    "innovation": {
+      "daily_depreciation": 0.00045,
+      "development_delay_days": 7,
+      "development_capital_multiplier": 2,
+      "quality_scale": 0.18,
+      "capital_reference_cents": 5000000,
+      "project_cost_cents": {
+        "1": 1000000,
+        "2": 3000000,
+        "3": 7500000
+      },
+      "project_median_days": {
+        "1": 45,
+        "2": 90,
+        "3": 150
+      },
+      "project_capital_gain_cents": {
+        "1": 2000000,
+        "2": 7000000,
+        "3": 20000000
+      },
+      "project_duration_log_std": 0.25,
+      "project_gain_log_std": 0.2
+    },
+    "operations": {
+      "base_failure_probability": 0.03,
+      "failure_probability_floor": 0.001,
+      "reliability_spend_scale_cents": 6000,
+      "support_agent_daily_cost_cents": 30000,
+      "tickets_per_agent_day": 12,
+      "base_ticket_rate": 0.015,
+      "failure_ticket_rate": 0.2,
+      "satisfaction_alpha": 0.04,
+      "negative_experience_weight": 1.8,
+      "abandonment_daily_rate": 0.05,
+      "stockout_switch_probability": 0.76,
+      "wait_satisfaction_weight": 0.15,
+      "failure_satisfaction_weight": 1,
+      "issue_satisfaction_weight": 1,
+      "remediation_cost_per_failure_cents": 1200
+    },
+    "research": {
+      "level_cost_cents": {
+        "1": 100000,
+        "2": 250000,
+        "3": 600000,
+        "4": 1250000,
+        "5": 2500000
+      },
+      "level_delay_days": {
+        "1": 2,
+        "2": 4,
+        "3": 7,
+        "4": 10,
+        "5": 14
+      },
+      "level_signal_std": {
+        "1": 0.65,
+        "2": 0.4,
+        "3": 0.25,
+        "4": 0.15,
+        "5": 0.08
+      },
+      "prior_std": 0.8,
+      "weekly_process_std": 0.03
+    },
+    "capacity_policy": {
+      "startup_cost_bps": 1000,
+      "cancellation_fee_bps": 500,
+      "downsize_fee_per_tier_cents": 100000,
+      "downsize_lead_days": 7
+    },
+    "market_dynamics": {
+      "phases": [
+        {
+          "phase_id": "balanced",
+          "demand_multiplier": 1,
+          "segment_weights": {},
+          "price_weight_multiplier": 1,
+          "quality_weight_multiplier": 1,
+          "service_weight_multiplier": 1,
+          "quality_expectation_shift": 0
+        },
+        {
+          "phase_id": "price_pressure",
+          "demand_multiplier": 0.9,
+          "segment_weights": {
+            "value": 1.5,
+            "mainstream": 1,
+            "premium": 0.7
+          },
+          "price_weight_multiplier": 1.08,
+          "quality_weight_multiplier": 0.9,
+          "service_weight_multiplier": 1,
+          "quality_expectation_shift": 0
+        },
+        {
+          "phase_id": "quality_growth",
+          "demand_multiplier": 1.1,
+          "segment_weights": {
+            "value": 0.8,
+            "mainstream": 1,
+            "premium": 1.4
+          },
+          "price_weight_multiplier": 0.95,
+          "quality_weight_multiplier": 1.25,
+          "service_weight_multiplier": 1,
+          "quality_expectation_shift": 0.035
+        },
+        {
+          "phase_id": "delivery_peak",
+          "demand_multiplier": 1.35,
+          "segment_weights": {},
+          "price_weight_multiplier": 0.97,
+          "quality_weight_multiplier": 1,
+          "service_weight_multiplier": 1.35,
+          "quality_expectation_shift": 0
+        }
+      ],
+      "transitions": [
+        [
+          0.9833333333333333,
+          0.005555555555555556,
+          0.005555555555555556,
+          0.005555555555555556
+        ],
+        [
+          0.005555555555555556,
+          0.9833333333333333,
+          0.005555555555555556,
+          0.005555555555555556
+        ],
+        [
+          0.005555555555555556,
+          0.005555555555555556,
+          0.9833333333333333,
+          0.005555555555555556
+        ],
+        [
+          0.005555555555555556,
+          0.005555555555555556,
+          0.005555555555555556,
+          0.9833333333333333
+        ]
+      ],
+      "initial_phase": 0,
+      "publication_delay_days": 7,
+      "daily_quality_drift": 0.00015,
+      "maximum_quality_drift": 0.075
+    },
+    "macro_mean": 1,
+    "macro_reversion": 0.02,
+    "macro_volatility": 0.0016,
+    "macro_publication_delay_days": 7,
+    "tender_interval_days": 14,
+    "tender_bid_window_days": 7,
+    "tender_delivery_days": 7,
+    "tender_default_penalty_bps": 1000
+  },
+  "scenario_hash": "893815172625d7d8dffb5bc021375001f123f565e204331b5b2b406c5fccb749",
+  "routes": [
+    {
+      "model_id": "claude-sonnet-5",
+      "inference": {
+        "protocol": "anthropic-messages",
+        "effort": "max",
+        "thinking": "adaptive",
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_tokens",
+        "max_output_tokens": 128000,
+        "expected_model_ids": [
+          "claude-sonnet-5"
+        ]
+      }
+    },
+    {
+      "model_id": "deepseek-v4-flash",
+      "inference": {
+        "protocol": "openai-compatible-chat",
+        "effort": "max",
+        "thinking": "enabled",
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_tokens",
+        "max_output_tokens": 393216,
+        "expected_model_ids": [
+          "deepseek-v4-flash",
+          "deepseek-flash"
+        ]
+      }
+    },
+    {
+      "model_id": "deepseek-v4-pro",
+      "inference": {
+        "protocol": "openai-compatible-chat",
+        "effort": "max",
+        "thinking": "enabled",
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_tokens",
+        "max_output_tokens": 393216,
+        "expected_model_ids": [
+          "deepseek-v4-pro"
+        ]
+      }
+    },
+    {
+      "model_id": "doubao-seed-1.8",
+      "inference": {
+        "protocol": "openai-compatible-chat",
+        "effort": "high",
+        "thinking": "enabled",
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_completion_tokens",
+        "max_output_tokens": 65536,
+        "expected_model_ids": [
+          "doubao-seed-1.8",
+          "doubao-seed-1-8-251228"
+        ]
+      }
+    },
+    {
+      "model_id": "gemini-3.8-flash",
+      "inference": {
+        "protocol": "openai-compatible-chat",
+        "effort": "high",
+        "thinking": null,
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_tokens",
+        "max_output_tokens": 65536,
+        "expected_model_ids": [
+          "gemini-3.8-flash"
+        ]
+      }
+    },
+    {
+      "model_id": "gpt-5.6-sol",
+      "inference": {
+        "protocol": "openai-responses",
+        "effort": "max",
+        "thinking": null,
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_output_tokens",
+        "max_output_tokens": 128000,
+        "expected_model_ids": [
+          "gpt-5.6-sol",
+          "gpt-6-sol"
+        ]
+      }
+    },
+    {
+      "model_id": "gpt-6-astra",
+      "inference": {
+        "protocol": "openai-responses",
+        "effort": "max",
+        "thinking": null,
+        "enable_thinking": false,
+        "preserve_thinking": false,
+        "output_token_field": "max_output_tokens",
+        "max_output_tokens": 128000,
+        "expected_model_ids": [
+          "gpt-6-astra"
+        ]
+      }
+    },
+    {
+      "model_id": "qwen3.8-max",
+      "inference": {
+        "protocol": "openai-compatible-chat",
+        "effort": "xhigh",
+        "thinking": null,
+        "enable_thinking": true,
+        "preserve_thinking": true,
+        "output_token_field": "max_completion_tokens",
+        "max_output_tokens": 65536,
+        "expected_model_ids": [
+          "qwen3.8-max"
+        ]
+      }
+    }
+  ],
+  "budget": {
+    "max_provider_turns": 32,
+    "max_tool_calls": null,
+    "max_output_tokens": 131072,
+    "timeout_seconds": 3600
+  },
+  "execution": {
+    "schedule": "seed_priority",
+    "max_concurrent_runs": 30
+  },
+  "lineups": [
+    {
+      "lineup_id": "lineup-9912a0ca18c8cb0a5c504ad82b33ddd73c32e3c6b929fd0679e9308ad478d7b1",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-4f07c5058b82f531a8ef28582fab34e1f307afdcad4ba906778e2b21a50a60ac",
+      "model_ids": [
+        "deterministic-rule-ceo",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-baac312b9d4def9ec93afc031e6fb65074c7e2c4ae539286630343dce89f455c",
+      "model_ids": [
+        "gpt-6-astra",
+        "deterministic-rule-ceo",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-0d7957812637b35ec2c8ff4089ec846f80b4302af3ba0ea065c7fceaaa9ac713",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "deterministic-rule-ceo",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-eeb0185327a2401adce0d8a41fe9863ac6de548d9bfe048a6b525019a8a41214",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "deterministic-rule-ceo",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-8fee0b32907c6c4a9ce96db8ab1857cb78b2943d251d9b13cad364029be56b82",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "deterministic-rule-ceo",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-9fb432634201cbffad84626884b70d4bb8097f46c9c1216955792e546759c210",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "deterministic-rule-ceo",
+        "deepseek-v4-flash",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-f22718fa254a9378da10528cb255cbcc1eb6939d1a0b348c94773faea89f9f4e",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deterministic-rule-ceo",
+        "doubao-seed-1.8"
+      ]
+    },
+    {
+      "lineup_id": "lineup-e565c38e8dcf40b4cf4170a2a940fc5ea8958cd4a463211f5fbeb855f5d37b9f",
+      "model_ids": [
+        "gpt-6-astra",
+        "deepseek-v4-pro",
+        "claude-sonnet-5",
+        "qwen3.8-max",
+        "gpt-5.6-sol",
+        "gemini-3.8-flash",
+        "deepseek-v4-flash",
+        "deterministic-rule-ceo"
+      ]
+    }
+  ],
+  "simulation_fingerprints": {
+    "decision_protocol_version": "ceos-decision-v9",
+    "opencode_commit": "1be9fd55a9326d5e7b09786195e5669e311e61b4",
+    "bun_version": "1.3.14",
+    "python_version": "3.13.15",
+    "dependency:httpx": "0.28.1",
+    "dependency:numpy": "2.5.2",
+    "dependency:pydantic": "2.13.4",
+    ".python-version": "02e735b3dfe1c32833eb550b7ff8ffa17f5f2bc3fa1e7bae61a8f5a3883ce398",
+    "OpenCode/bun.lock": "6dacd1ba4cb7ed7aff7cdf7ebfe589fb51763c646102feab7c9144c7f7d66b5b",
+    "agent_worker/package.json": "3d09ce8ae213bc2efd0f12fa0b8035b5d13569ca3567d421738b597e80022a06",
+    "agent_worker/src/bridge.ts": "a5755459f538b923a8498b3399ade3d1a2ff462b8fe72262583f16b5a6da6c74",
+    "agent_worker/src/briefing.ts": "b9fce788708bcca17b491e6df8943250357de81d1e0040ec56d3a7f37e77feb0",
+    "agent_worker/src/budget.test.ts": "8e4aeb3abc348366397627bd75145971c3e6767404f72435da7e04a00bfa2d6a",
+    "agent_worker/src/budget.ts": "84a2616f441be4a19b6b11d51c40f0fe12ed7d848bfa4a371a9fb07ea1769f5e",
+    "agent_worker/src/compatibility.test.ts": "d27414c8e7d59d2cc393d633e80e811a5adca2aa59f1be717faf54a85bbc6b8e",
+    "agent_worker/src/compatibility.ts": "6e191c7e1c14cf4c33fcb8773216ae3b286b76e6cf21c99bfae31468226302e8",
+    "agent_worker/src/continuation.test.ts": "40051908fdaf876a9a5fa2bb3bbb7ece3bd74a4d995e4f9c006ddb53aa09686f",
+    "agent_worker/src/continuation.ts": "9d57d200a8a834e7cef1114a3425e2b25f95ded2b40bb9752f0ec270b4f18a90",
+    "agent_worker/src/conversation.ts": "fc37e6fb1db1226ebca28e94bd343cda61d9d5c12d8f9c9505105e5804917964",
+    "agent_worker/src/deadline.test.ts": "b79bd24bce6bb9e369b57c8517e6b17c52473c3a545eb66ffb7390856bd369c1",
+    "agent_worker/src/draft.test.ts": "0dd389753d0c8479916e5337ec632889bec4e209d71a008b71bef12e39c0ef8a",
+    "agent_worker/src/draft.ts": "948725deb9a081e009f4b764e82116bec759d390af79591574aeacc761c88419",
+    "agent_worker/src/fable.ts": "14f8a4c22c0b1b9857cec68a107b7a67e63036e0adbb7a641d82a7b4f2661841",
+    "agent_worker/src/failure.test.ts": "5d8c10f02fcb05e78500548db4007a6a64ab36cce9774abc23be3c692b63478c",
+    "agent_worker/src/failure.ts": "45bf33c75a4590dc15916ebec98e6da798760ad4a0b34d11a6e93e1919e2b3c8",
+    "agent_worker/src/identity.test.ts": "97f4cf0ddc3977fe983f48124788538fc225d9725a0468ef65d862b8dc929ea1",
+    "agent_worker/src/identity.ts": "7148714715bf5db42ad3ca3705586fe9f3890651bacc054f3bfa66e6f28dfa52",
+    "agent_worker/src/index.ts": "5d0cfc221ed8e638337369aefaf4e3ac25a5b346ea6e43e8264bf5d7e97300e3",
+    "agent_worker/src/inference.ts": "8bad7f036fbc46c7d8feca429fca665805bace9cba844f2344fa4c5854a35b4d",
+    "agent_worker/src/memory-tools.ts": "241027008b36122fca4b58d050af0c833054bf25165f67128c0465ee0c06c0eb",
+    "agent_worker/src/memory.test.ts": "4704c20e18d9d7c7efa576bdd8573cc286016a1355939224d3ba717b0b4fceb2",
+    "agent_worker/src/memory.ts": "c890517bd64e74e2707da276b4ea39e8f59bfe9030bb098c8e61d52e5993418d",
+    "agent_worker/src/native-protocols.ts": "70258baa6d8ea086b8fc6d0faf1a0d070e28c82ea9d67e12c58d7a7cc7fdd2e3",
+    "agent_worker/src/protocol.ts": "10b7746decb82a87d303e368d572c90327810cfcf38531616c458731f55a657f",
+    "agent_worker/src/provenance.ts": "0bc6e327a98ca015ad7634a8f92108252d81f325af75c60c1c01f6056fc95d05",
+    "agent_worker/src/provider.test.ts": "f8c87bdd228dd5358c296a217a7c181152852bbd700fe2dbbe9521b1868589cf",
+    "agent_worker/src/provider.ts": "fedbf1263da20b625a5249e1e67aa8971ca527581b1a28f13d50b6fbb05a3549",
+    "agent_worker/src/recovery.ts": "28302184e46d2d2f8f0f0891291a7ca6df59a34001d7b007b34345bf19e4ab41",
+    "agent_worker/src/runner.test.ts": "c5e208dfc311b936c612ae15eb85c1015e1de8f90686c83887202d3da844d0f6",
+    "agent_worker/src/runner.ts": "7b601d377932d912501d99a5cc53187359a143cf9a1f659dcd43e9563744d03f",
+    "agent_worker/src/session.test.ts": "a42ed29562a492cc7b58d867d7518c96fbabe062719cbbbc537c1509abba6ec3",
+    "agent_worker/src/storage.ts": "3b0bb2172ffa4cdceaf9654d7f8e17297e1a93e048f8c85cbb003980359562b7",
+    "agent_worker/src/testing.ts": "251a4d5cc0e2df8fab00a3038cec189274c6bd2f0a92dcda71f238e49901b37f",
+    "agent_worker/src/tools.test.ts": "0a8b230b5a2f771de09bc9a8eab113ee065d27b4730a62df45219c8d6fbf5d19",
+    "agent_worker/src/tools.ts": "381b9f30b395a2cefe520c77c16c561d4a0184b3bceca3583eae259f23034acb",
+    "agent_worker/src/trace.test.ts": "47f799d33ea35c48d8356434f515ac943b7b43493d03574f79278345d76b44f5",
+    "agent_worker/src/trace.ts": "59e883b98ce903caec4fd77efdd48734b542d09747650afe1bba00257420fb7f",
+    "agent_worker/src/usage.ts": "380cacc7608b36f6cf9066b07b028eb8bc7bb7750e5e49086bc58b8f6f9fb1a7",
+    "agent_worker/tsconfig.json": "fa407508704ba35ce84a440d3bf3bf48013480d92bff94d43af7d91dee54b480",
+    "agent_worker/tsconfig.typecheck.json": "ac2d553ce1d889fa1f828cc06f2f6fc905f07b371bc361bb6f6239645560aefd",
+    "src/ceo_arena/campaign/models.py": "a43c2f1a2af92b577e043a2f44303bb82fba96fef87575c2577e2bcd750c1a1c",
+    "src/ceo_arena/campaign/records.py": "2f5586bbb6dc61d7fb5bd8836cadf680bfcc6e997fc4bfb28bb1df557094f1d9",
+    "src/ceo_arena/campaign/resources.py": "65d8d50eef541a8e2b87f17e9062186bd06b9ee8b9a484b21eea5fd066b7829c",
+    "src/ceo_arena/campaign/scheduler.py": "93fdd5f1ae6a24046b53421085b7b40531fff651fb65f4a602e9012e15bf47da",
+    "src/ceo_arena/config.py": "3cc831222dbbe37dc1d1ccadc498c7dd38eb7029a14fbeb0d756785527d810ab",
+    "src/ceo_arena/economy/__init__.py": "c914e308c643a7b5e178d1c35dc4c4cf2f22ced602281fb99cca02d153915363",
+    "src/ceo_arena/economy/capacity.py": "0dd8bcc6618f02fb65f72a39dde495959c48f3a88d3b97145678b7ef4c49df12",
+    "src/ceo_arena/economy/market.py": "a1be962935a5ca896f1ce0c1318c8e0ed0b273140e768727c38d0953434004f0",
+    "src/ceo_arena/economy/randomness.py": "89bde5f19d162f7d98f65e6fe316dcb2b324d7d2e6a66478685271cdbd4777c1",
+    "src/ceo_arena/economy/world.py": "56a7ce9b159aba14ba384882f0442d68da59337140cafdd386c0d806d7e08561",
+    "src/ceo_arena/evaluation/__init__.py": "7cbffb9a6e4fc6600e8dcec6bdaca3479c0e976ea49344cecd9fbc31109f60d5",
+    "src/ceo_arena/evaluation/arena.py": "b31e496fa2b3b1b13dfe8326a48e3f2506a8b027eb32d04d40f91e707c70f5b4",
+    "src/ceo_arena/evaluation/leave_one_out.py": "a1043788b2c4f4984529fe5575405e8a6a6a28b6b81b106a3049290967690bfe",
+    "src/ceo_arena/evaluation/rule_search.py": "93c6acff703dc718dd2077919a91073bc2d463384fd3c4a9bc4adc1e2c87951d",
+    "src/ceo_arena/evaluation/scoring.py": "e37b16a5e9535157a324e5b8ae83a98a1bafcf70a75c11ff673f91968a38e95d",
+    "src/ceo_arena/execution.py": "55fe2e8421706a4d7e491940efd75635f1ffca8eeaaa751562fffffaf521c37f",
+    "src/ceo_arena/harness/__init__.py": "28392b2c42dabf4e1604ec3c61d9765236b843fec91bd1bc02a4fe54406bb0de",
+    "src/ceo_arena/harness/bun.py": "164afbfa48c1958fde0f5ad971bf01d0b96dae6a8099a83b2b561ecf0915ac5d",
+    "src/ceo_arena/harness/draft.py": "ba7a65f77ab50c9c1af94b774ec784d08055db13d3a252f2b28f0b50f50f0347",
+    "src/ceo_arena/harness/newapi.py": "95cb8da64fc48199f5c6f14a5cdbe624066dc33b8da55e8db278009005008f3a",
+    "src/ceo_arena/harness/opencode.py": "7e5372265013cbcac5aab1e8d5ef0298de96c00ed48a689489575334e4235162",
+    "src/ceo_arena/harness/rule_ceo.py": "c6225446cec3cf53c50fec932bb6f58ab7674fc921f047864880f5e47471e07c",
+    "src/ceo_arena/harness/rule_profile.json": "59387d465434903a5facc660abde62e42a43b795df5091851f7984b7393266ba",
+    "src/ceo_arena/harness/wire.py": "6eb83fabdd62714a0bb3fe519e6fb158e0b97a78c92484882a06d23560b4d578",
+    "src/ceo_arena/harness/worker_pool.py": "c18a5ee4f17366752623c716547943e369a3abb0c54cd476ef1f8d8607309cab",
+    "src/ceo_arena/hashing.py": "6d154ffb1e541445f0b50bcee1b4c86d0b6d7952882eb8c35ce912503dc5bb16",
+    "src/ceo_arena/inference.py": "b56ea81b2b424d9e1e7aea7dc56f871fbcb029395c7104fbf11cf493976e8ea9",
+    "src/ceo_arena/models.py": "62686aa3416be2f387f06686b392f519340507294816160a5691afbd80f54b9a",
+    "src/ceo_arena/protocol.py": "507ccf1b20928a8e0df0aaa1552238ca0810153b898b0704bcf1ea14ea5689e5",
+    "src/ceo_arena/runtime/__init__.py": "2fbfeac5e20cdb9f6d5d41c7fab7116dbc4d1b769e5bfb46d134d3ae9f72c98d",
+    "src/ceo_arena/runtime/_atomic.py": "8b19f9426d692299a4dfdbdbf65787847926b5e5ee7c46faae9ef93ee5e2bb33",
+    "src/ceo_arena/runtime/_cleanup.py": "f152c84a10432634c05d8ed5f05e6a7d8305ceb49ccaa803248d3458f1abcda6",
+    "src/ceo_arena/runtime/_redact.py": "71a78b70b53f03389a8a442416b481cd5d407f992b04e2eddec96ff4efdefa8d",
+    "src/ceo_arena/runtime/admission.py": "9b699a68b83f5a724e2ab1e50a1f4197cd95f9690e9a19926dd5c43491512dbc",
+    "src/ceo_arena/runtime/allowance.py": "526829fd963ef6834a52b01778cb61dc527c34d794d662ada088579173b18fcc",
+    "src/ceo_arena/runtime/context.py": "dc7e401f2a51b9189965ea45a7049ee6363c3ed02759da0b8ca6906185124c0f",
+    "src/ceo_arena/runtime/coordinator.py": "820bd480b6370498bd7451126410b82ec7a94f82d4b84893793cac58d08662b0",
+    "src/ceo_arena/runtime/lock.py": "80369b6d95d0e2e8c01f9c4a9d66d1b703e74fa0674d1edf1d7c1452870e3a89",
+    "src/ceo_arena/runtime/performance.py": "760984a77e3c7f7451e7547010fae257d92759eb688a93586c13084ba9b16cdf",
+    "src/ceo_arena/runtime/persistence.py": "79fef610bb8f310059f4c5282483ff9b4b3a6121f4d77b3660b031937cdc5036",
+    "src/ceo_arena/runtime/ports.py": "e0a5cdb95750582f80dd3a4d79e7572e61e7a3ac9e3341a000f919c351bdd57a",
+    "src/ceo_arena/runtime/replay.py": "29189bd8ec0de99f7984dfe4918cc8791939649853d372ee87954047390b3e32",
+    "src/ceo_arena/runtime/retry.py": "1dd36826f4f1d98c1622f21eff060ca39c39bbbc826d785453056b495824a935",
+    "src/ceo_arena/runtime/store.py": "da4444722f6fae80147079e5037c2642d46fd43318a6cd8dcdb2b88e8f2ab08a",
+    "src/ceo_arena/runtime/trace.py": "0dc9e7d4fce0acc966179f5c2feac12b1ca26d028a4a2ae0a168882e9a9e893f"
+  },
+  "validation": {
+    "completed_runs": 27,
+    "company_trajectories": 216,
+    "verified_days": 13500,
+    "verified_windows": 1944,
+    "paid_requests_during_analysis": 0
+  },
+  "note": "Allowlisted scientific fields, not an executable credential-bearing campaign configuration. Paths and API indexes omitted; full private provenance retained separately."
+}

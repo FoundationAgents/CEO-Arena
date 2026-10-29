@@ -1,0 +1,323 @@
+{
+  "scenario_id": "ceos-market-v3",
+  "seed": 42,
+  "total_days": 500,
+  "days_per_decision_window": 7,
+  "initial_cash_cents": 50000000,
+  "initial_capacity_tier": 0,
+  "channels": [
+    "search",
+    "display",
+    "affiliate"
+  ],
+  "products": [
+    {
+      "product_id": "A",
+      "base_quality": 0.55,
+      "unit_cost_cents": 2600,
+      "salvage_value_cents": 800,
+      "holding_cost_cents": 2,
+      "procurement_lead_days": 5,
+      "initial_inventory": 600,
+      "initial_price_cents": 4000
+    },
+    {
+      "product_id": "B",
+      "base_quality": 0.68,
+      "unit_cost_cents": 4800,
+      "salvage_value_cents": 1500,
+      "holding_cost_cents": 3,
+      "procurement_lead_days": 7,
+      "initial_inventory": 400,
+      "initial_price_cents": 7500
+    },
+    {
+      "product_id": "C",
+      "base_quality": 0.82,
+      "unit_cost_cents": 8500,
+      "salvage_value_cents": 2600,
+      "holding_cost_cents": 6,
+      "procurement_lead_days": 10,
+      "initial_inventory": 200,
+      "initial_price_cents": 13500
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "value",
+      "base_daily_demand": 240.0,
+      "price_reference_cents": 4500,
+      "price_weight": 5.8,
+      "quality_weight": 1.7,
+      "service_weight": 0.7,
+      "awareness_weight": 0.3,
+      "loyalty_weight": 0.5,
+      "outside_utility": -2.145,
+      "macro_sensitivity": 1.2,
+      "seasonal_amplitude": 0.1,
+      "seasonal_period_days": 7,
+      "expected_quality": 0.5,
+      "service_level_target": 2.0,
+      "price_expectation_quality_slope": 0.12,
+      "product_match": {
+        "A": 0.45,
+        "B": 0.05,
+        "C": -0.35
+      },
+      "channel_effectiveness": {
+        "search": 1.25,
+        "display": 0.7,
+        "affiliate": 1.05
+      }
+    },
+    {
+      "segment_id": "mainstream",
+      "base_daily_demand": 300.0,
+      "price_reference_cents": 8000,
+      "price_weight": 4.4,
+      "quality_weight": 2.6,
+      "service_weight": 1.0,
+      "awareness_weight": 0.4,
+      "loyalty_weight": 0.8,
+      "outside_utility": -0.921,
+      "macro_sensitivity": 1.0,
+      "seasonal_amplitude": 0.08,
+      "seasonal_period_days": 30,
+      "expected_quality": 0.63,
+      "service_level_target": 1.5,
+      "price_expectation_quality_slope": 0.12,
+      "product_match": {
+        "A": 0.0,
+        "B": 0.4,
+        "C": 0.0
+      },
+      "channel_effectiveness": {
+        "search": 1.0,
+        "display": 1.1,
+        "affiliate": 0.9
+      }
+    },
+    {
+      "segment_id": "premium",
+      "base_daily_demand": 150.0,
+      "price_reference_cents": 14000,
+      "price_weight": 2.2,
+      "quality_weight": 2.7,
+      "service_weight": 1.6,
+      "awareness_weight": 0.3,
+      "loyalty_weight": 1.1,
+      "outside_utility": 0.086,
+      "macro_sensitivity": 0.7,
+      "seasonal_amplitude": 0.12,
+      "seasonal_period_days": 90,
+      "expected_quality": 0.78,
+      "service_level_target": 1.0,
+      "price_expectation_quality_slope": 0.12,
+      "product_match": {
+        "A": -0.45,
+        "B": 0.0,
+        "C": 0.55
+      },
+      "channel_effectiveness": {
+        "search": 0.85,
+        "display": 1.2,
+        "affiliate": 1.15
+      }
+    }
+  ],
+  "capacity_tiers": [
+    {
+      "tier": 0,
+      "units_per_day": 60,
+      "daily_cost_cents": 40000,
+      "expansion_cost_cents": 0,
+      "expansion_lead_days": 1
+    },
+    {
+      "tier": 1,
+      "units_per_day": 90,
+      "daily_cost_cents": 53000,
+      "expansion_cost_cents": 1200000,
+      "expansion_lead_days": 21
+    },
+    {
+      "tier": 2,
+      "units_per_day": 135,
+      "daily_cost_cents": 73000,
+      "expansion_cost_cents": 3000000,
+      "expansion_lead_days": 35
+    },
+    {
+      "tier": 3,
+      "units_per_day": 200,
+      "daily_cost_cents": 100000,
+      "expansion_cost_cents": 6000000,
+      "expansion_lead_days": 49
+    }
+  ],
+  "marketing": {
+    "attention_power": 0.45,
+    "outside_attention": 1.0,
+    "goodwill_decay": 0.025,
+    "awareness_gain": 0.08,
+    "spend_reference_cents": 10000
+  },
+  "innovation": {
+    "daily_depreciation": 0.00045,
+    "development_delay_days": 7,
+    "development_capital_multiplier": 2.0,
+    "quality_scale": 0.18,
+    "capital_reference_cents": 5000000,
+    "project_cost_cents": {
+      "1": 1000000,
+      "2": 3000000,
+      "3": 7500000
+    },
+    "project_median_days": {
+      "1": 45,
+      "2": 90,
+      "3": 150
+    },
+    "project_capital_gain_cents": {
+      "1": 2000000,
+      "2": 7000000,
+      "3": 20000000
+    },
+    "project_duration_log_std": 0.25,
+    "project_gain_log_std": 0.2
+  },
+  "operations": {
+    "base_failure_probability": 0.03,
+    "failure_probability_floor": 0.001,
+    "reliability_spend_scale_cents": 6000,
+    "support_agent_daily_cost_cents": 30000,
+    "tickets_per_agent_day": 12.0,
+    "base_ticket_rate": 0.015,
+    "failure_ticket_rate": 0.2,
+    "satisfaction_alpha": 0.04,
+    "negative_experience_weight": 1.8,
+    "abandonment_daily_rate": 0.05,
+    "stockout_switch_probability": 0.76,
+    "wait_satisfaction_weight": 0.15,
+    "failure_satisfaction_weight": 1.0,
+    "issue_satisfaction_weight": 1.0,
+    "remediation_cost_per_failure_cents": 1200
+  },
+  "research": {
+    "level_cost_cents": {
+      "1": 100000,
+      "2": 250000,
+      "3": 600000,
+      "4": 1250000,
+      "5": 2500000
+    },
+    "level_delay_days": {
+      "1": 2,
+      "2": 4,
+      "3": 7,
+      "4": 10,
+      "5": 14
+    },
+    "level_signal_std": {
+      "1": 0.65,
+      "2": 0.4,
+      "3": 0.25,
+      "4": 0.15,
+      "5": 0.08
+    },
+    "prior_std": 0.8,
+    "weekly_process_std": 0.03
+  },
+  "capacity_policy": {
+    "startup_cost_bps": 1000,
+    "cancellation_fee_bps": 500,
+    "downsize_fee_per_tier_cents": 100000,
+    "downsize_lead_days": 7
+  },
+  "market_dynamics": {
+    "phases": [
+      {
+        "phase_id": "balanced",
+        "demand_multiplier": 1.0,
+        "segment_weights": {},
+        "price_weight_multiplier": 1.0,
+        "quality_weight_multiplier": 1.0,
+        "service_weight_multiplier": 1.0,
+        "quality_expectation_shift": 0.0
+      },
+      {
+        "phase_id": "price_pressure",
+        "demand_multiplier": 0.9,
+        "segment_weights": {
+          "value": 1.5,
+          "mainstream": 1.0,
+          "premium": 0.7
+        },
+        "price_weight_multiplier": 1.08,
+        "quality_weight_multiplier": 0.9,
+        "service_weight_multiplier": 1.0,
+        "quality_expectation_shift": 0.0
+      },
+      {
+        "phase_id": "quality_growth",
+        "demand_multiplier": 1.1,
+        "segment_weights": {
+          "value": 0.8,
+          "mainstream": 1.0,
+          "premium": 1.4
+        },
+        "price_weight_multiplier": 0.95,
+        "quality_weight_multiplier": 1.25,
+        "service_weight_multiplier": 1.0,
+        "quality_expectation_shift": 0.035
+      },
+      {
+        "phase_id": "delivery_peak",
+        "demand_multiplier": 1.35,
+        "segment_weights": {},
+        "price_weight_multiplier": 0.97,
+        "quality_weight_multiplier": 1.0,
+        "service_weight_multiplier": 1.35,
+        "quality_expectation_shift": 0.0
+      }
+    ],
+    "transitions": [
+      [
+        0.9833333333333333,
+        0.005555555555555556,
+        0.005555555555555556,
+        0.005555555555555556
+      ],
+      [
+        0.005555555555555556,
+        0.9833333333333333,
+        0.005555555555555556,
+        0.005555555555555556
+      ],
+      [
+        0.005555555555555556,
+        0.005555555555555556,
+        0.9833333333333333,
+        0.005555555555555556
+      ],
+      [
+        0.005555555555555556,
+        0.005555555555555556,
+        0.005555555555555556,
+        0.9833333333333333
+      ]
+    ],
+    "initial_phase": 0,
+    "publication_delay_days": 7,
+    "daily_quality_drift": 0.00015,
+    "maximum_quality_drift": 0.075
+  },
+  "macro_mean": 1.0,
+  "macro_reversion": 0.02,
+  "macro_volatility": 0.0016,
+  "macro_publication_delay_days": 7,
+  "tender_interval_days": 14,
+  "tender_bid_window_days": 7,
+  "tender_delivery_days": 7,
+  "tender_default_penalty_bps": 1000
+}

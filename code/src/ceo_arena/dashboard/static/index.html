@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#ffd84d" />
+    <title>CEO Arena · Live Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/app.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-left" aria-hidden="true"></div>
+    <div class="ambient ambient-right" aria-hidden="true"></div>
+
+    <header class="app-header">
+      <a class="brand" href="/" aria-label="CEO Arena home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 6.5 12 2l7 4.5v11L12 22l-7-4.5v-11Z" />
+            <path d="m8.5 9 3.5-2 3.5 2v6L12 17l-3.5-2V9Z" />
+          </svg>
+        </span>
+        <span>CEO Arena</span>
+        <span class="brand-edition">LIVE</span>
+      </a>
+
+      <div class="header-actions">
+        <div
+          class="connection"
+          id="connectionStatus"
+          role="status"
+          aria-live="polite"
+        >
+          <span class="connection-dot"></span>
+          <span class="connection-label">Connecting to live updates</span>
+        </div>
+
+        <label class="run-picker experiment-picker" for="experimentSelect">
+          <span>Experiment</span>
+          <select id="experimentSelect" aria-label="Select experiment" disabled>
+            <option>Loading...</option>
+          </select>
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="m4 6 4 4 4-4" />
+          </svg>
+        </label>
+
+        <button
+          class="run-button"
+          id="runButton"
+          type="button"
+          aria-describedby="controlMessage"
+          disabled
+        >
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="m5.25 3.25 6.5 4.75-6.5 4.75v-9.5Z" />
+          </svg>
+          <span id="runButtonLabel">Run experiment</span>
+        </button>
+        <span
+          class="control-message"
+          id="controlMessage"
+          role="status"
+          aria-live="polite"
+        ></span>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section
+        class="state-panel is-visible"
+        id="loadingState"
+        aria-live="polite"
+      >
+        <div class="loading-orbit" aria-hidden="true"><span></span></div>
+        <p class="eyebrow">LIVE ECONOMY</p>
+        <h1>Loading the market</h1>
+        <p>Connecting to the runtime for company states and latest decisions.</p>
+      </section>
+
+      <section class="state-panel" id="emptyState" aria-live="polite">
+        <div class="state-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" />
+            <path d="M4 7.5 12 12l8-4.5M12 12v9" />
+          </svg>
+        </div>
+        <p class="eyebrow">NO RUNS YET</p>
+        <h1>No experiments yet</h1>
+        <p>Start an experiment and it will appear here automatically.</p>
+        <button
+          class="primary-button"
+          data-run-experiment
+          type="button"
+          disabled
+        >
+          Run experiment
+        </button>
+      </section>
+
+      <section class="state-panel" id="errorState" aria-live="assertive">
+        <div class="state-icon state-icon-error" aria-hidden="true">!</div>
+        <p class="eyebrow">CONNECTION INTERRUPTED</p>
+        <h1>Experiment temporarily unavailable</h1>
+        <p id="errorMessage">Check that the dashboard service is running.</p>
+        <button class="primary-button" data-retry type="button">
+          Reconnect
+        </button>
+      </section>
+
+      <section class="dashboard" id="dashboard">
+        <div class="notice" id="notice" role="alert">
+          <span class="notice-dot"></span>
+          <span id="noticeText"></span>
+          <button id="noticeRetry" type="button">Retry</button>
+        </div>
+
+        <section class="hero-section">
+          <div class="hero-copy">
+            <div class="hero-meta">
+              <span class="status-pill" id="runStatus"><span></span>—</span>
+              <span class="mono" id="scenarioId">SCENARIO —</span>
+            </div>
+            <h1 id="runTitle">Experiment —</h1>
+            <p id="runLineup">Shared standardized-product market</p>
+            <div id="runOverview" class="run-overview" aria-label="Run status overview"></div>
+            <div class="run-control-row">
+              <details id="runSelect" class="run-browser">
+                <summary id="runPickerSummary" aria-label="Choose a run">
+                  <span>Browse runs</span><strong id="runPickerValue">Loading...</strong>
+                  <span aria-hidden="true">⌄</span>
+                </summary>
+                <div class="run-menu">
+                  <div class="run-menu-heading"><strong>All runs</strong><button id="runPickerClose" type="button" aria-label="Close run list">Close ×</button></div>
+                  <div class="run-columns" aria-hidden="true"><span>Seed</span><span>Full model lineup</span><span>Days</span><span>Status</span></div>
+                  <div id="runOptions" class="run-options" role="group" aria-label="Choose lineup and seed"></div>
+                </div>
+              </details>
+              <button
+                class="run-button run-control-button"
+                id="runControlButton"
+                type="button"
+                disabled
+              >
+                <span id="runControlButtonLabel">Read-only</span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-sync">
+            <span>Last received · UTC+8</span>
+            <time class="mono" id="lastUpdated">—</time>
+          </div>
+        </section>
+
+        <p class="scheduler-status" id="schedulerStatus" role="status" aria-live="polite" hidden></p>
+        <p class="scheduler-status" id="marketSignal" hidden></p>
+        <p class="scheduler-status" id="runRetryStatus" role="status" hidden></p>
+
+        <section
+          class="metric-grid"
+          id="metricGrid"
+          aria-label="Experiment overview metrics"
+        ></section>
+
+        <section class="panel progress-panel">
+          <div class="panel-heading progress-heading">
+            <div>
+              <p class="eyebrow">SIMULATION PROGRESS</p>
+              <h2>Simulation time</h2>
+            </div>
+            <div class="day-counter">
+              <strong id="currentDay">0</strong>
+              <span>/ <span id="totalDays">0</span> days</span>
+            </div>
+          </div>
+          <div
+            class="progress-track"
+            id="progressTrack"
+            role="progressbar"
+            aria-label="Simulation progress"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <span id="progressBar"></span>
+          </div>
+          <div class="progress-footer">
+            <span id="progressPercent">0.0% complete</span>
+            <span id="decisionSummary">Awaiting the first decision</span>
+          </div>
+        </section>
+
+        <div class="content-grid">
+          <section class="panel ranking-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">MODEL PERFORMANCE</p>
+                <h2>Live ranking</h2>
+              </div>
+              <span class="panel-caption">Official metric - Score</span>
+            </div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Model / company</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="numeric">Cash</th>
+                    <th scope="col" class="numeric">Score</th>
+                  </tr>
+                </thead>
+                <tbody id="rankingBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel events-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">RECENT ACTIVITY</p>
+                <h2>Recent activity</h2>
+              </div>
+              <span class="live-label"><span></span>LIVE</span>
+            </div>
+            <ol class="event-list" id="eventList"></ol>
+          </section>
+        </div>
+
+        <section class="company-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">COMPANY OPERATIONS</p>
+              <h2>Company operations</h2>
+            </div>
+            <span id="companyCount">0 companies</span>
+          </div>
+          <div class="company-grid" id="companyGrid"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>CEO Arena · UTC+8</span>
+      <span id="transportStatus">Live updates · Connecting</span>
+    </footer>
+
+    <noscript>
+      <div class="noscript">Enable JavaScript to view experiment status.</div>
+    </noscript>
+  </body>
+</html>
