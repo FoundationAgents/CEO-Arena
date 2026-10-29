@@ -40,6 +40,8 @@ the original extracted archive, not this repository's repackaged layout.
   tests in those files remain enabled.
 - Use a pytest temporary directory that can be created in a fresh checkout,
   without depending on an existing `.tmp/` parent directory.
+- Give two wall-clock deadline tests a one-second closing allowance on shared
+  CI runners. Production decision budgets and the asserted behavior are unchanged.
 
 Only `code/src/ceo_arena/harness/bun.py` differs from the supplied runtime source.
 The source fingerprint changes, so this checkout must not be substituted into

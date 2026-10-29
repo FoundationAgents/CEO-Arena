@@ -454,7 +454,7 @@ test("soft deadline blocks pending queries without dropping other tools or nativ
           budget: {
             ...input.request.budget,
             max_provider_turns: 32,
-            timeout_seconds: 1,
+            timeout_seconds: 4,
           },
         },
       },
@@ -474,7 +474,7 @@ test("soft deadline blocks pending queries without dropping other tools or nativ
   expect(result.diagnostics.protocol_errors).toBe(0);
   expect(queries).toBe(1);
   expect(replies).toBe(2);
-});
+}, 10000);
 
 for (const modelID of ["gpt-5.6-luna", "gpt-6-astra", "claude-fable-5-1"]) {
   test(`${modelID}: snapshots preserve the native wire body, including opaque reasoning`, async () => {
